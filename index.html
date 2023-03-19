@@ -295,12 +295,12 @@
             <form action="needjavascript"  method="post">
 
                 <input name="name" id="txtName" type="text" placeholder="Your Name">
-                <input name="email" id="txtEmail" type="email" placeholder="Your Email">
-                <input name="number" id="txtnumber" type="tel" placeholder="Your Number">
+                <input name="email" id="txtEmail" type="email" placeholder="Your Email" required pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$">
+                <input name="number" id="txtnumber" type="tel" placeholder="Your Number" pattern="^[1-9]\d{2}-\d{3}-\d{4}">
                 <input name="subject" id="txtSubject " type="text" placeholder="Subject">
                 <input name="msg" id="txtMsg" type="text" placeholder="Write your massage here">
 
-                <button>Submit</button>
+                <button >Submit</button>
             </form>
 
             <aside>
