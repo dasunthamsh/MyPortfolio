@@ -38,6 +38,7 @@
              </nav>
 
         <Style>
+
             a:hover{     /*change mouse fourcus color to yellow in menu*/
                 color: #ffb400;
             }
@@ -56,6 +57,11 @@
             h2{       /*  heades colors to yellow*/
                 color: #ffb400;
             }
+
+            input{
+                border: blue;
+            }
+
 
         </Style>
 
@@ -323,7 +329,7 @@
             <!--     data aran yanna on thana       -->
             <form action="needjavascript"  method="post" id="cusfrom">
 
-                <input name="name" id="txtName" type="text" placeholder="Your Name">
+                <input name="name" id="txtName" type="text" placeholder="Your Name"  style= "border-radius: 10px" >
                 <input name="email" id="txtEmail" type="email" placeholder="Your Email" required pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$">
                 <input name="number" id="txtnumber" type="tel" placeholder="Your Number" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$">
                 <input name="subject" id="txtSubject " type="text" placeholder="Subject">
