@@ -51,7 +51,7 @@
                 background-color: #2b2d33;   /*  bodey clor to black*/
             }
             *{
-                color:white;
+                color:white;  /* all texts been white */
             }
 
             h2{       /*  heades colors to yellow*/
@@ -59,7 +59,22 @@
             }
 
             input{
-                border: blue;
+                border-radius: 10px;  /*key bord input radius*/
+                border-color: white;
+                background-color: #2b2d33;
+            }
+
+            button:hover{    /*butten hover action*/
+                color: white;
+                background-color: #ffb400;
+                border-radius: 50px;
+            }
+
+            textarea{
+                background-color: #2b2d33; /* input text area dtyles */
+                border-radius: 10px;
+                border-color: white;
+
             }
 
 
@@ -329,20 +344,16 @@
             <!--     data aran yanna on thana       -->
             <form action="needjavascript"  method="post" id="cusfrom">
 
-                <input name="name" id="txtName" type="text" placeholder="Your Name"  style= "border-radius: 10px" >
+                <input name="name" id="txtName" type="text" placeholder="Your Name"   >
                 <input name="email" id="txtEmail" type="email" placeholder="Your Email" required pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$">
-                <input name="number" id="txtnumber" type="tel" placeholder="Your Number" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$">
+                <input name="number" id="txtnumber" type="tel" placeholder="Your Number" >
                 <input name="subject" id="txtSubject " type="text" placeholder="Subject">
                 <textarea name="msg" id="txtMsg" placeholder="Write your massage here" cols="40" rows="10"></textarea>
 
                 <button>Submit</button>
-                <style>
-                    button:hover{
-                        color: white;
-                        background-color: #ffb400;
-                        border-radius: 50px;
-                    }
-                </style>
+
+
+
             </form>
 
 

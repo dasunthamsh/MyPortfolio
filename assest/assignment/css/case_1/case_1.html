@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href=" sty.css">
+  <style>
+    body{
+      border: 1px solid black;
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    body>div:first-child{
+      background-color: red;
+      width: 50%;
+      height: 50%;
+      position: relative;
+
+    }
+
+    body>div:nth-child(2){
+      background-color: orange;
+      width: 50%;
+      height: 50%;
+      position: relative;
+
+    }
+
+
+    body>div:nth-child(3){
+      background-color: green;
+      height: 50%;
+      width: 50%;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    body>div:nth-child(4){
+      background-color: deeppink;
+      height: 50%;
+      width: 50%;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+
+    body>div>div{
+      background-color: white;
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      border-radius: 1010px;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+
+    }
+
+    body>div>div>div{
+      background-color: red;
+      width: 50%;
+      height: 50%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+    }
+
+    body>section{
+      background-color: white;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      height: 200px;
+      width: 200px;
+    }
+
+    body>section>div{
+      background-color: red;
+      border-radius: 100%;
+      width: 60%;
+      height: 60%;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+      position: absolute;
+    }
+
+    #one{
+      background-color: white;
+      position: absolute;
+      border-bottom-left-radius: 200px;
+      width: 150px;
+      height: 150px;
+      top: 0;
+      right: 0;
+
+    }
+
+    #tow{
+      background-color: white;
+      position: absolute;
+      border-bottom-right-radius: 200px;
+      width: 150px;
+      height: 150px;
+      top: 0;
+      left: 0;
+    }
+
+    #three{
+      background-color: white;
+      position: absolute;
+      border-top-right-radius: 200px;
+      width: 150px;
+      height: 150px;
+      bottom: 0;
+      left: 0;
+    }
+
+    #fore{
+      background-color: white;
+      position: absolute;
+      border-top-left-radius: 200px;
+      width: 150px;
+      height: 150px;
+      bottom: 0;
+      right: 0;
+    }
+
+
+
+    #five{
+      background-color: white;
+      position: absolute;
+      border-top-right-radius: 200px;
+      border-top-left-radius: 200px;
+      width: 280px;
+      height: 140px;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      transform: rotate(180deg);
+    }
+
+
+    #six{
+      background-color: white;
+      position: absolute;
+      border-top-right-radius: 200px;
+      border-top-left-radius: 200px;
+      width: 280px;
+      height: 140px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+
+
+
+
+  </style>
+</head>
+<body>
+
+
+<div>
+  <div>
+    <div></div>
+  </div>
+</div>
+
+<div>
+  <div>
+    <div></div>
+  </div>
+</div>
+
+<div>
+  <div>
+    <div></div>
+  </div>
+</div>
+
+<div>
+  <div>
+    <div></div>
+  </div>
+</div>
+
+<div id="one"></div>
+<div id="tow"></div>
+<div id="three"></div>
+<div id="fore"></div>
+<div id="five"></div>
+<div id="six"></div>
+
+
+<section>
+  <div></div>
+</section>
+
+</body>
+</html>
+
