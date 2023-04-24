@@ -1,0 +1,118 @@
+::-webkit-scrollbar {
+    width: 5px;
+}
+/*------------------------Scroll bar--------------------------*/
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ffb400;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+
+
+body{
+    height:  100vh;
+    width: 99vw;
+}
+
+header{
+    height: 10%;
+    width: 100%;
+    position: fixed;
+    background: #2b2d33;
+
+}
+header>nav{
+    background: #131312;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    position: relative;
+    margin-right: 10px;
+    margin-left: 8px;
+    height: 93%;
+    width: 99%;
+    top: 8%;
+
+
+
+    /*margin-top: 10px;*/
+}
+
+header>nav>aside>img{
+    position: relative;
+    top: 23px;
+    left: 30px;
+
+}
+
+header>nav>menu{
+    display: inline-block;
+    position: relative;
+    /*left: 700px;*/
+    /*bottom: 42px;*/
+    left: 30%;
+    bottom: 60%;
+
+}
+
+
+a{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+li{
+    display: inline-block;
+    margin: 20px;
+
+}
+
+
+
+a:hover{     /*change mouse fourcus color to yellow in menu*/
+    color: #ffb400;
+}
+
+li::marker{     /*remove indexing in menu*/
+    content: "";
+}
+
+body{
+    background-color: #2b2d33;   /*  bodey clor to black*/
+}
+*{
+    color:white;  /* all texts been white */
+}
+
+h2{       /*  heades colors to yellow*/
+    color: #ffb400;
+}
+
+input{
+    border-radius: 10px;  /*key bord input radius*/
+    border-color: white;
+    background-color: #2b2d33;
+}
+
+button:hover{    /*butten hover action*/
+    color: white;
+    background-color: #ffb400;
+    border-radius: 50px;
+}
+
+textarea{
+    background-color: #2b2d33; /* input text area dtyles */
+    border-radius: 10px;
+    border-color: white;
+
+}
