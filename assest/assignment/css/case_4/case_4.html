@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="normalize.css">
+</head>
+
+<style>
+
+    main{
+
+    }
+
+    main>section>div{
+        height: 100vh;
+
+        position: relative;
+    }
+
+    section>div>div{
+        position: sticky;
+        height: 7%;
+        background: black;
+        opacity: 50%;
+        top: 0;
+    }
+
+    #first{
+        background: #ff253a;
+    }
+    #second{
+        background: dodgerblue
+    }
+    #threed{
+        background: dimgray
+    }
+    #forth{
+        background: #ff253a
+    }
+
+    section>div>div>h3{
+        position: relative;
+        color: white;
+        display: inline-block;
+        font-family: Arial;
+        font-size: 150%;
+        bottom: 30%;
+
+    }
+
+    section>div>h2{
+        color: white;
+        position: absolute;
+        display: inline-block;
+        font-size: 70px;
+        right: 46%;
+        bottom: 40%;
+
+
+    }
+</style>
+
+
+<body>
+    <main>
+        <section>
+            <div  id="first">
+                <h2>Hello</h2>
+                <div>
+                    <h3>Card 1</h3>
+                </div>
+            </div>
+
+
+            <div  id="second">
+                <h2>How</h2>
+                <div>
+                    <h3>Card 2</h3>
+                </div>
+            </div>
+
+
+            <div  id="threed">
+                <h2>Are</h2>
+                <div>
+                    <h3>Card 3</h3>
+                </div>
+            </div>
+
+
+            <div  id="forth">
+                <h2>You</h2>
+                <div>
+                    <h3>Card 4</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
