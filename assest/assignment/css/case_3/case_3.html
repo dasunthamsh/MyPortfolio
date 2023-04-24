@@ -8,12 +8,10 @@
   <style>
 
     main{
+      height: 100vh;
     }
 
-    main>section:first-child{
-      height: 240px;
 
-    }
 
     main>section:first-child>div:first-child{
       position: fixed;
@@ -46,7 +44,7 @@
     }
 
     main>section:nth-child(2){
-      height: 780px;
+      height: 100%;
 
     }
 
@@ -55,12 +53,12 @@
       background: blue;
       width: 260px;
       height: 260px;
-      margin: auto;
       top: 0;
       right: 0;
       left: 0;
       bottom: 0;
-      position: relative;
+      margin: auto;
+      position: absolute;
       font-family: Arial;
 
     }
@@ -96,17 +94,20 @@
     }
 
     main>section:nth-child(4){
-      height: 500px;
-
+      height: 100%;
+      position: relative;
     }
 
     main>section:nth-child(4)>div{
-      position: relative;
+      position: absolute;
       border-radius: 1000px;
       width: 260px;
       height: 260px;
       background: gray;
-
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
       margin: auto;
     }
 
