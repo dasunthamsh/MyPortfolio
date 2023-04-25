@@ -139,8 +139,34 @@ main>section>nav{
 
 
 main>section>nav>div{
-    margin-right: 1rem;
+    margin-right: 0.5rem;
 }
+
+
+
+/*------------------------About me page--------------------------*/
+
+main>section:nth-child(2)>aside>h2{
+    position: absolute;
+    left: 40px;
+    font-size: 170%;
+    bottom: -25%
+
+
+}
+
+main>section:nth-child(2)>aside>img{
+    position: relative;
+    left: 100px;
+}
+
+main>section:nth-child(2)>aside:last-child>p:first-child{
+
+}
+
+
+
+
 a:hover{     /*change mouse fourcus color to yellow in menu*/
     color: #ffb400;
 }
