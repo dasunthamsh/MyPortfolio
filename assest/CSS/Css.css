@@ -1,7 +1,8 @@
-::-webkit-scrollbar {
-    width: 5px;
-}
 /*------------------------Scroll bar--------------------------*/
+
+::-webkit-scrollbar {
+    width: 2px;
+}
 
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
@@ -16,65 +17,113 @@
 }
 
 
-
+/*------------------------hedder--------------------------*/
 
 body{
     height:  100vh;
     width: 99vw;
+
+}
+body>section{
+    height:  100vh;
+    width: 99vw;
+    background: #131312;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-left: 5px;
+
+}
+
+body>section:nth-child(2){
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    left: 60vw;
+    top: -4px;
+    border-radius: 100%;
+    background: #1746EC;
+    filter: blur(350px);
 }
 
 header{
     height: 10%;
     width: 100%;
     position: fixed;
-    background: #2b2d33;
+    top: 0;
+
 
 }
 header>nav{
-    background: #131312;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    position: relative;
-    margin-right: 10px;
-    margin-left: 8px;
-    height: 93%;
-    width: 99%;
-    top: 8%;
-
-
-
-    /*margin-top: 10px;*/
+    /*background: #131312;*/
+    /*border-top-right-radius: 20px;*/
+    /*border-top-left-radius: 20px;*/
+    /*position: relative;*/
+    /*margin-right: 10px;*/
+    /*margin-left: 8px;*/
+    /*height: 93%;*/
+    /*width: 99%;*/
+    /*top: 8%;*/
 }
 
 header>nav>aside>img{
     position: relative;
-    top: 23px;
+    top: 18px;
     left: 30px;
 
 }
 
-header>nav>menu{
+header>nav{
+    height: 10vh;
+}
+
+header>nav>li{
     display: inline-block;
     position: relative;
-    /*left: 700px;*/
-    /*bottom: 42px;*/
-    left: 30%;
-    bottom: 60%;
-
+    left: 40%;
+    bottom: 40%;
+    margin: 20px;
 }
+/*------------------------Main Home Page--------------------------*/
+
+
+main{
+    height:  100vh;
+    width: 99vw;
+}
+
+
+main>section:first-child{
+  position: absolute;
+    top: 150px;
+    left: 80px;
+}
+
+
+
 
 
 a{
     font-family: Arial,Helvetica,sans-serif;
-    font-size: 20px;
+    font-size: 10px;
     text-decoration: none;
-    font-weight: bold;
+
 
 }
-li{
-    display: inline-block;
-    margin: 20px;
 
+main>section:first-child>h2{
+  font-family: "Robo";
+}
+
+main>section:first-child>h1{
+    font-family: "Yu Gothic UI";
+    font-weight: bold;
+    font-size: 40px;
+    margin:auto;
+}
+main>section:first-child>img{
+    position: absolute;
+    left: 50vw;
+    bottom: 8vh;
 }
 
 
