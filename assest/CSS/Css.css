@@ -127,16 +127,20 @@ main>section>article{
     font-family: "Agency FB";
 }
 
-main>section:first-child>nav{
-    position: relative;
-    width: 300px
+
+main>section>nav{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 9rem;
+    height: 4rem;
+    margin: 3rem 1.5rem 3rem 0;
 }
 
-main>section>nav>div>{
-    height: 100%;
-    width: calc(100%/4);
-}
 
+main>section>nav>div{
+    margin-right: 1rem;
+}
 a:hover{     /*change mouse fourcus color to yellow in menu*/
     color: #ffb400;
 }
