@@ -83,6 +83,14 @@ header>nav>li{
     bottom: 40%;
     margin: 20px;
 }
+
+
+a{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 10px;
+    text-decoration: none;
+
+}
 /*------------------------Main Home Page--------------------------*/
 
 
@@ -98,17 +106,6 @@ main>section:first-child{
     left: 80px;
 }
 
-
-
-
-
-a{
-    font-family: Arial,Helvetica,sans-serif;
-    font-size: 10px;
-    text-decoration: none;
-
-
-}
 
 main>section:first-child>h2{
   font-family: "Robo";
@@ -126,7 +123,19 @@ main>section:first-child>img{
     bottom: 8vh;
 }
 
+main>section>article{
+    font-family: "Agency FB";
+}
 
+main>section:first-child>nav{
+    position: relative;
+    width: 300px
+}
+
+main>section>nav>div>{
+    height: 100%;
+    width: calc(100%/4);
+}
 
 a:hover{     /*change mouse fourcus color to yellow in menu*/
     color: #ffb400;
