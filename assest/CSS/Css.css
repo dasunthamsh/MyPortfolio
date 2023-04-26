@@ -214,7 +214,24 @@ main>section:nth-child(2)>aside:nth-child(2)>p:last-child{
     font-size: 150%;
 }
 
+                /*---------------------------aducation-------------------------------------*/
 
+
+main>section:nth-child(3){
+    position: relative;
+    width: 99vw;
+    height: 100vh;
+}
+
+
+main>section:nth-child(3)>h2{
+    font-size: 250%;
+    font-family: "Merriweather Sans";
+    position: absolute;
+    margin: auto;
+
+
+}
 
 a:hover{     /*change mouse fourcus color to yellow in menu*/
     color: #ffb400;
