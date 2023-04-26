@@ -1,20 +1,4 @@
-/*------------------------Scroll bar--------------------------*/
 
-::-webkit-scrollbar {
-    width: 2px;
-}
-
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #ffb400;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
 
 
 /*------------------------hedder--------------------------*/
@@ -121,20 +105,27 @@ main>section:first-child{
 }
 
 
-main>section:first-child>h2{
+main>section:first-child>h2{        /*hellow i am*/
   font-family: "Robo";
+    font-size: 2.5rem;
+    position: relative;
+    top: 11vh;
 }
 
-main>section:first-child>h1{
-    font-family: "Yu Gothic UI";
+main>section:first-child>h1{          /*dasun*/
+    font-family: "Fjalla One";
     font-weight: bold;
-    font-size: 40px;
+    font-size: 60px;
     margin:auto;
+    position: relative;
+    top: 10vh;
+
+
 }
 main>section:first-child>img{  /*main png*/
     position: relative;
     left: 50vw;
-    bottom: 8vh;
+    bottom: 20vh;
 
 }
 
@@ -142,16 +133,23 @@ main>section:first-child>img{  /*main png*/
 
 main>section>article{
     font-family: "Agency FB";
+    font-size: 25px;
+    position: relative;
+    bottom: 35vh;
 }
 
 
-main>section>nav{
+main>section>nav{           /*soceal meadia*/
     display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 9rem;
-    height: 4rem;
-    margin: 3rem 1.5rem 3rem 0;
+    height: 10rem;
+    margin: -1rem 1rem 4rem 0;
+    position: relative;
+    bottom: 35vh;
+    left: 1.5vw;
+
 }
 
 
@@ -163,24 +161,58 @@ main>section>nav>div{
 
 /*------------------------About me page--------------------------*/
 
-main>section:nth-child(2)>aside>h2{
+
+
+main>section:nth-child(2)>aside>h2{     /*about me*/
     position: absolute;
-    left: 40px;
-    font-size: 170%;
-    bottom: -25%
-
+    left: 20.5%;
+    font-size: 250%;
+    bottom: -25%;
+    font-family: "Merriweather Sans";
 
 }
 
-main>section:nth-child(2)>aside>img{
+main>section:nth-child(2)>aside>img{  /*about me img*/
     position: relative;
-    left: 100px;
+    left: 20vw;
+    top: 25vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
+    rgba(0, 0, 0, 0.19);
+    text-align: center;
+
 }
 
-main>section:nth-child(2)>aside:last-child>p:first-child{
+main>section:nth-child(2)>div{
+    position: relative;
+    width: 120px;
+    height: 150px;
+    left: 25vw;
+    top: -60vh;
+    border-radius: 100%;
+    background: #ffb400;
+    z-index: -1;
+    filter: blur(200px);
 
 }
 
+
+main>section:nth-child(2)>aside:nth-child(2){
+    position: relative;
+    display: inline-block;
+    left: 43%;
+    top: -25vh
+
+}
+
+main>section:nth-child(2)>aside:nth-child(2)>p:first-child{
+    font-size:250%;
+    font-weight: bold;
+}
+
+main>section:nth-child(2)>aside:nth-child(2)>p:last-child{
+    font-family: "Agency FB";
+    font-size: 150%;
+}
 
 
 
