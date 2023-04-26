@@ -19,6 +19,11 @@
 
 /*------------------------hedder--------------------------*/
 
+html{
+    scroll-behavior: smooth;
+}
+
+
 body{
     height:  100vh;
     width: 99vw;
@@ -87,7 +92,7 @@ header>nav>li{
 
 a{
     font-family: Arial,Helvetica,sans-serif;
-    font-size: 10px;
+    font-size: 1rem;
     text-decoration: none;
 
 }
@@ -95,8 +100,7 @@ a{
 
 
 main{
-    height:  100vh;
-    width: 99vw;
+
 }
 
 
@@ -121,6 +125,7 @@ main>section:first-child>img{
     position: absolute;
     left: 50vw;
     bottom: 8vh;
+
 }
 
 main>section>article{
@@ -176,7 +181,7 @@ li::marker{     /*remove indexing in menu*/
 }
 
 body{
-    background-color: #2b2d33;   /*  bodey clor to black*/
+    background-color: #212428;   /*  bodey clor to black*/
 }
 *{
     color:white;  /* all texts been white */
