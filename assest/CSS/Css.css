@@ -42,12 +42,12 @@ body>section{
 body>section:nth-child(2){
     position: absolute;
     width: 350px;
-    height: 250px;
-    left: 60vw;
+    height: 400px;
+    left: 70vw;
     top: -4px;
     border-radius: 100%;
     background: #1746EC;
-    filter: blur(350px);
+    filter: blur(300px);
 }
 
 header{
@@ -94,9 +94,7 @@ header>nav>li{             /*menu*/
 }
 @media screen and (max-width: 768px) {
 
-    header > nav > li {
-        display: none;
-    }
+
 }
 
 
@@ -119,6 +117,7 @@ main>section:first-child{
   position: absolute;
     top: 150px;
     left: 80px;
+
 }
 
 
@@ -138,6 +137,8 @@ main>section:first-child>img{  /*main png*/
     bottom: 8vh;
 
 }
+
+
 
 main>section>article{
     font-family: "Agency FB";
