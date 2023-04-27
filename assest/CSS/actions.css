@@ -56,3 +56,14 @@ button:hover:after {
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
+
+.imgs {
+    transition: .35s;
+    cursor: pointer;
+}
+
+.hoverImg:hover>:not(:hover){
+    opacity: .4;
+    transform: scale(0.9);
+}
+

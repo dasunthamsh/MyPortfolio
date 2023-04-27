@@ -186,8 +186,8 @@ main>section:nth-child(2)>div{
 main>section:nth-child(2)>aside:nth-child(2){
     position: relative;
     display: inline-block;
-    left: 43%;
-    top: -25vh
+    left: 670px;
+    top: -25vh;
 
 }
 
@@ -269,6 +269,116 @@ main>section:nth-child(3)>aside:nth-child(7){
     font-size: 20px;
 }
 
+
+/*---------------------------portfolo-------------------------------------*/
+
+main>section:nth-child(4){
+    position: relative;
+}
+
+main>section:nth-child(4)>h2{
+    font-size: 250%;
+    font-family: "Merriweather Sans";
+    position: absolute;
+    top: 0;
+    left: 45vw;
+}
+
+main>section:nth-child(4)>div:nth-child(2){
+    position: relative;
+    left: 17vw;
+    top: 15vh;
+    display: inline-block;
+
+}
+
+
+main>section:nth-child(4)>div:nth-child(2)>img{
+    margin-right: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
+    rgba(0, 0, 0, 0.19);
+
+}
+
+#img1{
+    position: relative;
+    top: 20vh;
+    border-radius: 20px;
+}
+
+#img2{
+    position: relative;
+    top: 20vh;
+    border-radius: 20px;
+}
+
+main>section:nth-child(4)>div:nth-child(3){
+    display: inline-block;
+    position: relative;
+    left: 17vw;
+    top: 17vh;
+
+}
+
+main>section:nth-child(4)>div:nth-child(3)>img{
+    margin-right: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
+    rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+
+}
+main>section:nth-child(4)>img{
+
+}
+
+
+/*main>section:nth-child(4)>div>aside:nth-child(1){*/
+/*    position: relative;*/
+/*    left: 16.2vw;*/
+/*    top: 30vh;*/
+/*    display: inline-block;*/
+/*}*/
+
+
+/*main>section:nth-child(4)>div>aside:nth-child(2){*/
+/*    position: relative;*/
+/*    left: 17vw;*/
+/*    top: 10vh;*/
+/*    display: inline-block;*/
+
+/*}*/
+
+
+/*main>section:nth-child(4)>div>aside:nth-child(3){*/
+/*    position: relative;*/
+/*    left: 18vw;*/
+/*    top: 30vh;*/
+/*    display: inline-block;*/
+/*}*/
+
+
+/*main>section:nth-child(4)>div>aside:nth-child(4) {*/
+/*    position: relative;*/
+/*    left: -49vw;*/
+/*    top: 76vh;*/
+/*    display: inline-block;*/
+/*}*/
+
+
+/*main>section:nth-child(4)>div>aside:nth-child(5) {*/
+/*    position: relative;*/
+/*    left: 38.8vw;*/
+/*    top: 12vh;*/
+/*    display: inline-block;*/
+/*}*/
+
+
+/*main>section:nth-child(4)>div>aside:nth-child(6) {*/
+/*    position: relative;*/
+/*    left: 615px;*/
+/*    top: 90px;*/
+/*    display: inline-block;*/
+/*}*/
 a:hover{     /*change mouse fourcus color to yellow in menu*/
     color: #ffb400;
 }
