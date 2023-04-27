@@ -13,6 +13,7 @@ body{
     width: 99vw;
 
 }
+
 body>section{
     height:  100vh;
     width: 99vw;
@@ -39,19 +40,11 @@ header{
     width: 100%;
     position: fixed;
     top: 0;
-
-
 }
-header>nav{
-    /*background: #131312;*/
-    /*border-top-right-radius: 20px;*/
-    /*border-top-left-radius: 20px;*/
-    /*position: relative;*/
-    /*margin-right: 10px;*/
-    /*margin-left: 8px;*/
-    /*height: 93%;*/
-    /*width: 99%;*/
-    /*top: 8%;*/
+
+
+header:hover{
+    background: black;
 }
 
 header>nav>aside>img{    /*tuna*/
@@ -76,12 +69,6 @@ header>nav>li{             /*menu*/
     transition: all 0.1s ease-in;
 
 }
-@media screen and (max-width: 768px) {
-
-
-}
-
-
 
 a{
     font-family: Arial,Helvetica,sans-serif;
@@ -228,9 +215,58 @@ main>section:nth-child(3)>h2{
     font-size: 250%;
     font-family: "Merriweather Sans";
     position: absolute;
-    margin: auto;
+    top: 0;
+    left: 45vw;
+
+    }
+
+#yellowlineOne{
+    position: relative;
+    left: 23vw;
+    top: 25vh;
+}
+
+#yellowlineTow{
+    position: relative;
+    top: 25vh;
+    left: 57vw;
+}
 
 
+main>section:nth-child(3)>aside:nth-child(4){
+    position: relative;
+    left: 27vw;
+    bottom: 6vh;
+    display: inline-block;
+    font-family: "Barlow";
+    font-size: 20px;
+}
+
+main>section:nth-child(3)>aside:nth-child(5){
+    position: relative;
+    left: 9vw;
+    top: 25vh;
+    display: inline-block;
+    font-family: "Barlow";
+    font-size: 20px;
+}
+
+main>section:nth-child(3)>aside:nth-child(6) {
+    position: relative;
+    display: inline-block;
+    top: -6vh;
+    left: 32vw;
+    font-family: "Barlow";
+    font-size: 20px;
+}
+
+main>section:nth-child(3)>aside:nth-child(7){
+    position: relative;
+    display: inline-block;
+    top: 24vh;
+    left: 22vw;
+    font-family: "Barlow";
+    font-size: 20px;
 }
 
 a:hover{     /*change mouse fourcus color to yellow in menu*/
