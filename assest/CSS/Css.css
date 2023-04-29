@@ -332,53 +332,7 @@ main>section:nth-child(4)>img{
 }
 
 
-/*main>section:nth-child(4)>div>aside:nth-child(1){*/
-/*    position: relative;*/
-/*    left: 16.2vw;*/
-/*    top: 30vh;*/
-/*    display: inline-block;*/
-/*}*/
 
-
-/*main>section:nth-child(4)>div>aside:nth-child(2){*/
-/*    position: relative;*/
-/*    left: 17vw;*/
-/*    top: 10vh;*/
-/*    display: inline-block;*/
-
-/*}*/
-
-
-/*main>section:nth-child(4)>div>aside:nth-child(3){*/
-/*    position: relative;*/
-/*    left: 18vw;*/
-/*    top: 30vh;*/
-/*    display: inline-block;*/
-/*}*/
-
-
-/*main>section:nth-child(4)>div>aside:nth-child(4) {*/
-/*    position: relative;*/
-/*    left: -49vw;*/
-/*    top: 76vh;*/
-/*    display: inline-block;*/
-/*}*/
-
-
-/*main>section:nth-child(4)>div>aside:nth-child(5) {*/
-/*    position: relative;*/
-/*    left: 38.8vw;*/
-/*    top: 12vh;*/
-/*    display: inline-block;*/
-/*}*/
-
-
-/*main>section:nth-child(4)>div>aside:nth-child(6) {*/
-/*    position: relative;*/
-/*    left: 615px;*/
-/*    top: 90px;*/
-/*    display: inline-block;*/
-/*}*/
 a:hover{     /*change mouse fourcus color to yellow in menu*/
     color: #ffb400;
 }
