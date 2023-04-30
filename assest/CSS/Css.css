@@ -137,6 +137,12 @@ main>section>nav{           /*soceal meadia*/
     bottom: 35vh;
     left: 1.5vw;
 
+
+}
+
+main>section>nav>img{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
+    rgba(255, 255, 255, 0.2);
 }
 
 
@@ -255,16 +261,17 @@ main>section:nth-child(3)>aside:nth-child(6) {
     position: relative;
     display: inline-block;
     top: -6vh;
-    left: 32vw;
+    left: 33vw;
     font-family: "Barlow";
     font-size: 20px;
+
 }
 
 main>section:nth-child(3)>aside:nth-child(7){
     position: relative;
     display: inline-block;
     top: 24vh;
-    left: 22vw;
+    left: 23vw;
     font-family: "Barlow";
     font-size: 20px;
 }
@@ -302,13 +309,13 @@ main>section:nth-child(4)>div:nth-child(2)>img{
 
 #img1{
     position: relative;
-    top: 20vh;
+    top: 20.5vh;
     border-radius: 20px;
 }
 
 #img2{
     position: relative;
-    top: 20vh;
+    top: 20.5vh;
     border-radius: 20px;
 }
 
@@ -327,9 +334,92 @@ main>section:nth-child(4)>div:nth-child(3)>img{
     border-radius: 20px;
 
 }
-main>section:nth-child(4)>img{
+
+/*---------------------------Skills-------------------------------------*/
+
+
+main>section:nth-child(5){
+
+    height: 150vh;
+}
+
+main>section:nth-child(5)>h2:nth-child(1){ /*skills*/
+    font-family: "Merriweather Sans";
+    position: relative;
+    top: 220px;
+    left: 50%;
+    display: inline-block;
+    font-size: 250%;
+}
+
+main>section:nth-child(5)>aside:nth-child(2)>h1{ /*Development skills*/
+    position: relative;
+    top: 280px;
+    left: 260px;
+    display: inline-block;
+}
+
+main>section:nth-child(5)>aside:nth-child(2)>h1:nth-child(1){
+    font-size: 16px;
+    top: 295px;
+
 
 }
+
+main>section:nth-child(5)>aside:nth-child(3){   /*container*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 30%;
+    position: relative;
+    height: 170px;
+
+
+
+}
+
+main>section:nth-child(5)>aside:nth-child(3)>div{ /*item*/
+
+    row-gap: 2px;
+    column-gap: 2px;
+    position: relative;
+    left: 220px;
+    top: 300px;
+    height: 180px;
+
+}
+
+main>section:nth-child(5)>aside:nth-child(3)>div>img {
+    position: relative;
+    left: 25%;
+    border-radius: 20px;
+    border: solid  0.001cm;
+    border-left-color: #131312;
+    border-right-color: #ffb400;
+    border-bottom-color: #ffb400;
+    border-top-color: #131312;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
+    rgba(0, 0, 0, 0.19);
+
+}
+
+main>section:nth-child(5)>aside:nth-child(3)>div>h6 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 25px;
+    font-family: "Abel";
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -368,5 +458,6 @@ textarea{
     background-color: #2b2d33; /* input text area dtyles */
     border-radius: 10px;
     border-color: white;
+
 
 }
