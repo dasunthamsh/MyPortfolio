@@ -412,14 +412,124 @@ main>section:nth-child(5)>aside:nth-child(3)>div>h6 {
     font-size: 20px;
 }
 
+/*---------------------------Skills-------------------------------------*/
+
+main>section:nth-child(6){
+    position: relative;
+}
+
+main>section:nth-child(6)>h2:nth-child(1){
+    font-size: 250%;
+    font-family: "Merriweather Sans";
+    display: inline-block;
+    position: relative;
+    left: 45%;
+}
+
+/*------------------------------------------------------------------------------*/
+main>section:nth-child(6)>div:nth-child(2)>aside:nth-child(1){ /*image lb*/
+    position: relative;
+    left: 19%;
+    top: 80px;
+    display: inline-block;
+
+}
+
+
+main>section:nth-child(6)>div:nth-child(2)>aside:nth-child(1)>h6:nth-child(3){ /*application*/
+    color: #ffb400;
+    position: relative;
+    display: inline-block;
+    bottom:100px;
+    left: 4%;
+}
+
+main>section:nth-child(6)>div:nth-child(2)>aside:nth-child(1)>h3:nth-child(4){  /*library*/
+    position: relative;
+    display: inline-block;
+    right: 60px;
+    bottom: 70px;
+}
+
+/*------------------------------------------------------------------------------*/
+
+
+main>section:nth-child(6)>div:nth-child(2)>aside:nth-child(2){ /*image game*/
+    position: relative;
+    left: 20%;
+    top: 124px;
+    display: inline-block;
+}
+
+
+main>section:nth-child(6)>div:nth-child(2)>aside:nth-child(2)>h6:nth-child(3){ /*game*/
+    color: #ffb400;
+    position: relative;
+    bottom:100px;
+    left: 4%;
+}
+
+main>section:nth-child(6)>div:nth-child(2)>aside:nth-child(2)>h3:nth-child(4){  /*conet4*/
+    position: relative;
+    right: -20px;
+    bottom: 115px;
+}
+
+/*------------------------------------------------------------------------------*/
+
+
+main>section:nth-child(6)>div:nth-child(2)>aside:nth-child(3){ /*image hotel*/
+    position: relative;
+    right: 170px;
+    top: 440px;
+    display: inline-block;
+}
+
+
+main>section:nth-child(6)>div:nth-child(2)>aside:nth-child(3)>h6:nth-child(3){ /*app*/
+    color: #ffb400;
+    position: relative;
+    bottom:100px;
+    left: 4%;
+}
+
+main>section:nth-child(6)>div:nth-child(2)>aside:nth-child(3)>h3:nth-child(4){  /*hotel*/
+    position: relative;
+    right: -20px;
+    bottom: 115px;
+}
+
+
+/*------------------------------------------------------------------------------*/
 
 
 
+main>section:nth-child(6)>div:nth-child(2)>aside:nth-child(4){ /*image cmd*/
+    position: relative;
+    left: 19%;
+    top: 31px;
+    display: inline-block;
+}
 
 
+main>section:nth-child(6)>div:nth-child(2)>aside:nth-child(4)>h6:nth-child(3){ /*cmd */
+    color: #ffb400;
+    position: relative;
+    bottom:100px;
+    left: 4%;
+}
 
+main>section:nth-child(6)>div:nth-child(2)>aside:nth-child(4)>h3:nth-child(4){  /*student*/
+    position: relative;
+    right: -20px;
+    bottom: 115px;
+}
 
-
+.projects{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
+    rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+}
 
 
 

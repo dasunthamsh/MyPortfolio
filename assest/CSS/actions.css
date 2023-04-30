@@ -67,3 +67,6 @@ button:hover:after {
     transform: scale(0.9);
 }
 
+main>section:nth-child(5)>aside:nth-child(3)>div>img:hover {
+    transform: scale(1.5);
+}
