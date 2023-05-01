@@ -67,6 +67,37 @@ button:hover:after {
     transform: scale(0.9);
 }
 
+/*------------------------Skills img--------------------------*/
+
+
 main>section:nth-child(5)>aside:nth-child(3)>div>img:hover {
     transform: scale(1.5);
+}
+
+/*------------------------project --------------------------*/
+
+main>section:nth-child(6)>div:nth-child(2)>aside>div{
+    width: 85%;
+    height: 80%;
+    top:100%;
+    right: 3%;
+    position: absolute;
+    background: linear-gradient(#1f3d4738, black);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    padding: 30px;
+    transition: 1.5s;
+}
+
+main>section:nth-child(6)>div:nth-child(2)>aside:hover div{
+    top: 0;
+}
+
+main>section:nth-child(6)>div:nth-child(2)>aside>div>h2{
+    text-transform: uppercase;
+    font-size: 30px;
+    color: white;
+}
+
+main>section:nth-child(6)>div:nth-child(2)>aside>div>p{
 }
