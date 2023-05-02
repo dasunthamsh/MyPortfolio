@@ -463,11 +463,55 @@ main>section:nth-child(6)>div:nth-child(2)>aside>h3 {
     border-radius: 15px;
 }
 
+/*---------------------------services-------------------------------------*/
 
-
-a:hover{     /*change mouse fourcus color to yellow in menu*/
-    color: #ffb400;
+main>section:nth-child(7){
 }
+
+main>section:nth-child(7)>div{
+    display: flex;
+    gap: 20px;
+    flex-wrap:wrap;
+    position: relative;
+    justify-content: center;
+    margin: auto;
+    width: 1000px;
+}
+
+main>section:nth-child(7)>div>aside{
+    border-radius: 15px ;
+    border: 1px solid white;
+    height: 52vh;
+    width: 20vw;
+    position: relative;
+
+}
+
+
+main>section:nth-child(7)>div>aside>img{
+    position: relative;
+    display: inline-block;
+    left: 40%;
+    top: 15%;
+}
+
+main>section:nth-child(7)>div>aside>h4{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 18%;
+
+}
+
+main>section:nth-child(7)>div>aside>p{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 25%;
+
+}
+
+
 
 li::marker{     /*remove indexing in menu*/
     content: "";

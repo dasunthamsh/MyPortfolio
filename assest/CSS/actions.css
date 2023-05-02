@@ -16,6 +16,11 @@
     background: #555;
 }
 
+a:hover{     /*change mouse fourcus color to yellow in menu*/
+    color: #ffb400;
+    font-weight: bold;
+
+}
 
 
 .btn {
