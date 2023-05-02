@@ -428,7 +428,7 @@ main>section:nth-child(6)>div:nth-child(2){
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr  1fr;
-    width: 30%;
+    width: 65%;
     position: relative;
     left: 19%;
     top: 10vh;
@@ -486,11 +486,8 @@ main>section:nth-child(7)>h1:nth-child(3){
 main>section:nth-child(7)>div:nth-child(4){
     display: flex;
     gap: 20px;
-    flex-wrap:wrap;
     position: relative;
     justify-content: center;
-    margin: auto;
-    width: 1000px;
     top: 22%;
 }
 
@@ -542,10 +539,27 @@ main>section:nth-child(7)>div:nth-child(1){
 }
 
 
-/*---------------------------services-------------------------------------*/
+/*---------------------------Assigment-------------------------------------*/
 
+
+
+main>section:nth-child(8){
+    height: 110vh;
+}
 
 main>section:nth-child(8)>div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+    position: relative;
+    top: 40vh;
+    width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    overflow-x:scroll;
+    scroll-padding: 24px;
+    justify-content: start;
+
 
 }
 
@@ -556,8 +570,24 @@ main>section:nth-child(8)>div:nth-child(2)>aside{
     width: 20vw;
     position: relative;
     box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.5);
+    flex-shrink: 0;
+    margin: 12px;
+
 
 }
+
+main>section:nth-child(8)>h2:nth-child(1){
+    position: relative;
+    display: flex;
+    top: 20vh;
+    justify-content: center;
+    font-size: 250%;
+    font-family: "Merriweather Sans";
+}
+
+
+
+
 
 li::marker{     /*remove indexing in menu*/
     content: "";
