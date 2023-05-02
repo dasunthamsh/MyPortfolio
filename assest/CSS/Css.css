@@ -169,9 +169,9 @@ main>section:nth-child(2)>aside>img{  /*about me img*/
     position: relative;
     left: 20vw;
     top: 25vh;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
-    rgba(0, 0, 0, 0.19);
+    box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.4);
     text-align: center;
+    border-radius: 15px;
 
 }
 
@@ -301,11 +301,9 @@ main>section:nth-child(4)>div:nth-child(2){
 }
 
 
-main>section:nth-child(4)>div:nth-child(2)>img{
+main>section:nth-child(4)>div>img{
     margin-right: 15px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
-    rgba(0, 0, 0, 0.19);
-
+    box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.5);
 }
 
 #img1{
@@ -330,8 +328,7 @@ main>section:nth-child(4)>div:nth-child(3){
 
 main>section:nth-child(4)>div:nth-child(3)>img{
     margin-right: 15px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
-    rgba(0, 0, 0, 0.19);
+    box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.5);
     border-radius: 20px;
 
 }
@@ -459,16 +456,34 @@ main>section:nth-child(6)>div:nth-child(2)>aside>h3 {
 }
 
 .projects{
-    filter: drop-shadow(0.25rem 0.25rem 0.5rem #181716);
+    box-shadow: 7px 7px 7px 1px rgba(0, 0, 0, 0.3);
     border-radius: 15px;
 }
 
 /*---------------------------services-------------------------------------*/
 
 main>section:nth-child(7){
+    position: relative;
+    height: 120vh;
 }
 
-main>section:nth-child(7)>div{
+main>section:nth-child(7)>h2:nth-child(2){
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 10%;
+    font-size: 250%;
+    font-family: "Merriweather Sans";
+}
+
+main>section:nth-child(7)>h1:nth-child(3){
+    position: relative;
+    left: 18%;
+    top: 18%;
+    display: inline-block;
+}
+
+main>section:nth-child(7)>div:nth-child(4){
     display: flex;
     gap: 20px;
     flex-wrap:wrap;
@@ -476,26 +491,27 @@ main>section:nth-child(7)>div{
     justify-content: center;
     margin: auto;
     width: 1000px;
+    top: 22%;
 }
 
-main>section:nth-child(7)>div>aside{
+main>section:nth-child(7)>div:nth-child(4)>aside{
     border-radius: 15px ;
     border: 1px solid white;
-    height: 52vh;
+    height: 56vh;
     width: 20vw;
     position: relative;
+    box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.5);
 
 }
 
-
-main>section:nth-child(7)>div>aside>img{
+main>section:nth-child(7)>div:nth-child(4)>aside>img{
     position: relative;
     display: inline-block;
     left: 40%;
     top: 15%;
 }
 
-main>section:nth-child(7)>div>aside>h4{
+main>section:nth-child(7)>div:nth-child(4)>aside>h4{
     position: relative;
     display: flex;
     justify-content: center;
@@ -503,15 +519,45 @@ main>section:nth-child(7)>div>aside>h4{
 
 }
 
-main>section:nth-child(7)>div>aside>p{
+main>section:nth-child(7)>div:nth-child(4)>aside>p{
     position: relative;
     display: flex;
     justify-content: center;
     top: 25%;
+    font-family: Abel;
+    font-size: 18px;
 
 }
 
+main>section:nth-child(7)>div:nth-child(1){
+    position: relative;
+    width: 150px;
+    height: 150px;
+    left: 10vw;
+    top: 63vh;
+    border-radius: 100%;
+    background: #ffb400;
+    z-index: -1;
+    filter: blur(200px);
+}
 
+
+/*---------------------------services-------------------------------------*/
+
+
+main>section:nth-child(8)>div:nth-child(2){
+
+}
+
+main>section:nth-child(8)>div:nth-child(2)>aside{
+    border-radius: 15px ;
+    border: 1px solid white;
+    height: 56vh;
+    width: 20vw;
+    position: relative;
+    box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.5);
+
+}
 
 li::marker{     /*remove indexing in menu*/
     content: "";
