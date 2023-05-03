@@ -7,6 +7,7 @@
 <body>
     <main>
       <section>
+          <div></div>
         <h1>RWAD</h1>
       </section>
     </main>
@@ -17,10 +18,13 @@
       body{
             background: #1746EC;
       }
+main>section{
+    background: #ffb400;
+}
 
-    main>section{
-      width: 500px;
-      height: 500px;
+    main>section>div{
+      width: 300px;
+      height: 300px;
       border-radius: 100%;
       background: gray;
       position: absolute;
@@ -33,7 +37,7 @@
         border-top: 20px solid red;
     }
 
-    main>section:hover{
+    main>section>div:hover{
       transform: rotate(360deg);
         transition: all 1s;
     }
@@ -51,11 +55,8 @@
 
     }
 
-      main>section:hover h1{
-          transform: rotate(-360deg);
-          transition: all 1s;
 
-
-      }
   </style>
 </html>
+
+/**dsd**/
