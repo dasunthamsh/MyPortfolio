@@ -4,7 +4,7 @@
 <head>
     <title>Basic web layout</title>
     <link rel="stylesheet" href="normalize.css">
-    <meta name="viewport" content="with=device intial-scale=1">
+    <meta name="viewport" content="with=device initial-scale=1">
 </head>
 
 <style>
@@ -105,11 +105,8 @@
     }
 
     main>section:nth-child(2)>p{
-
         display: inline-block;
         margin-left: 320px;
-
-
 
     }
 
@@ -132,12 +129,16 @@
         margin-left: 320px;
     }
 
-
+        @media all and (min-width:375px) and (max-width: 425px) {
+            main>section:nth-child(2){
+                width: 70vh;
+            }
+        }
 </style>
 
 <body>
     <header>
-        <img src="/assest/img/ijse.png" alt="IJSE png" width="250">
+        <img src="../../../assest/img/ijse.png" alt="IJSE png" width="250">
         <div>
             <ul>
                 <li>Home</li>
@@ -167,13 +168,13 @@
 
             <aside>
                 <div>
-                    <img src="/assest/img/added.gif">
+                    <img src="../../../assest/img/added.gif">
                 </div>
                 <div>
-                    <img src="/assest/img/added.gif">
+                    <img src="../../../assest/img/added.gif">
                 </div>
                 <div>
-                    <img src="/assest/img/added.gif">
+                    <img src="../../../assest/img/added.gif">
                 </div>
 
 

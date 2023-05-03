@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 460px) {
 
     main>section:first-child>img {
 
@@ -13,5 +13,9 @@
 
     header > nav > li {
         display: none;
+    }
+
+    h3{
+      color: #1746EC;
     }
 }

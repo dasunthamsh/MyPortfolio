@@ -436,7 +436,6 @@ main>section:nth-child(6)>div:nth-child(2){
 }
 
 main>section:nth-child(6)>div:nth-child(2)>aside{
-    width: 487px;
     height: 320px;
     position: relative;
     overflow: hidden;
