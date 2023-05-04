@@ -14,13 +14,14 @@ body{
 
 }
 
-body>section{
+body>section:nth-child(1){
     height:  100vh;
     width: 99vw;
     background: #131312;
     border-radius: 20px;
     margin-top: 5px;
     margin-left: 5px;
+    overflow: hidden;
 
 }
 
@@ -126,7 +127,7 @@ main>section>article{
 }
 
 
-main>section>nav{           /*soceal meadia*/
+main>section:nth-child(1)>nav{           /*soceal meadia*/
     display: inline-flex;
     justify-content: center;
     align-items: center;

@@ -1,0 +1,48 @@
+body>section:nth-child(1)>div>p{
+    position: relative;
+    top: 720px;
+    right: 590px;
+    animation-name: animation1;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    font-size: 10px;
+    word-spacing: 10px;
+    letter-spacing: 15px;
+    font-family: Barlow;
+
+
+
+}
+
+@keyframes animation1 {
+    from{
+
+    }
+    to{
+        right: -100%;
+
+
+    }
+    
+}
+
+
+body>section:nth-child(1)>aside{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
