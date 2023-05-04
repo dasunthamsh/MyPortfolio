@@ -5,80 +5,109 @@
     <title>Title</title>
 </head>
 <body>
-  <section>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-  </section>
+    <section>
+        <div></div>
+    </section>
 </body>
 
-  <style>
+    <style>
 
-    div:nth-child(1){
-      background:url("../../../assest/img/1.png") ;
-      background-position: center;
-      background-size:cover ;
+        section{
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
 
-    }
-    div:nth-child(2){
-      background:url("../../../assest/img/2.png");
-      background-position: center;
-      background-size:cover ;
-    }
-    div:nth-child(3){
-      background:url("../../../assest/img/3.png") ;
-      background-position: center;
-      background-size:cover ;
-    }
-    div:nth-child(4){
-      background:url("../../../assest/img/4.png") ;
-      background-position: center;
-      background-size:cover ;
-    }
-    div:nth-child(5){
-      background:url("../../../assest/img/5.png") ;
-      background-position: center;
-      background-size:cover ;
-    }
+        section>div{
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+            border: 1px solid red;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            animation-name: animation;
+            animation-iteration-count: infinite;
+            animation-duration: 1s;
+        }
+
+            @keyframes animation {
+                0%{
+                    width: 200px;
+                    height: 200px;
+
+                }
+                10%{
+                    width: 210px;
+                    height: 210px;
+                }
+                20%{
+                    width: 220px;
+                    height:220px;
+                }
+                30%{
+                    width: 230px;
+                    height: 230px;
+                }
+                40%{
+                    width: 240px;
+                    height: 240px;
+                    opacity: 75%;
+                }
+
+                50%{
+                    width: 250px;
+                    height: 250px;
+
+                }
+
+                50%{
+                    width: 260px;
+                    height: 260px;
+                    opacity: 40%;
+
+                }
+
+                60%{
+                    width: 270px;
+                    height: 270px;
+                    opacity: 50%;
+
+                }
+
+                70%{
+                    width: 280px;
+                    height: 280px;
+                    opacity: 60%;
+
+                }
+
+                80%{
+                    width: 290px;
+                    height: 290px;
+                    opacity: 40%;
 
 
-    section{
-      position:relative;
-      margin: auto;
-      display: flex;
-      width: calc(5*100vw);
-      height: 100vh;
-      animation-iteration-count: infinite;
-      animation-duration: 10s;
-      animation-name: animation;
-      animation-direction: alternate-reverse ;
-    }
+                }
 
-    div{
-      height: 100vh;
-      width: 100vw;
-      margin: auto;
-    }
+                90%{
+                    width: 300px;
+                    height: 300px;
+                    opacity: 20%;
 
-    @keyframes animation {
-      0%{
-        left: 0;
-      }
-      25%{
-        left: -100vw;
-      }
-      50%{
-        left: -200vw;
-      }
-      75%{
-        left: -300vw;
-      }
-      100%{
-        left: -400vw;
-      }
+                }
 
-    }
-  </style>
+                100%{
+                    width: 310px;
+                    height: 310px;
+                    opacity: 0;
+                }
+
+
+            }
+
+    </style>
 </html>
