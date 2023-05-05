@@ -2,7 +2,7 @@ body>section:nth-child(1)>div>p{
     position: relative;
     top: 720px;
     right: 590px;
-    animation-name: animation1;
+    /*animation-name: animation1;*/
     animation-duration: 30s;
     animation-iteration-count: infinite;
     font-size: 10px;
@@ -27,10 +27,83 @@ body>section:nth-child(1)>div>p{
 }
 
 
-body>section:nth-child(1)>aside{
+body>section:nth-child(1)>aside>div:nth-child(1){
+    background: #1746EC;
+    width: 200px;
+    height: 200px;
+    /*animation-name: blueAnimation;*/
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    position: relative;
+    top: 55vh;
+    left: 25vw;
+    filter: blur(80px);
+
 
 }
 
+@keyframes blueAnimation {
+    0%{
+        top: 0;
+        left: 0;
+    }
+    25%{
+        top: 15vh;
+        left: 25vw;
+    }
+    50%{
+        top: 35vh;
+        left: 50vw;
+    }
+    75%{
+        top: 55vh;
+        left: 25vw;
+    }
+    100%{
+        top: 0;
+        left: 0;
+    }
+
+
+}
+
+body>section:nth-child(1)>aside>div:nth-child(2) {
+    background: #ffb400;
+    width: 200px;
+    height: 200px;
+    animation-duration: 10s;
+    /*animation-name: redAnimation;*/
+    animation-iteration-count: infinite;
+    position: relative;
+    left: 173vh;
+    bottom: -45vh;
+    filter: blur(80px);
+}
+
+@keyframes redAnimation {
+    0%{
+        left: 173vh;
+        bottom: -45vh;
+
+    }
+    25%{
+        left: 100vh;
+        bottom: -10vh;
+
+
+    }
+    50%{
+        left: 150vh;
+        bottom: 12vh;
+    }
+    75%{
+
+    }
+    100%{
+        left: 173vh;
+        bottom: -45vh;
+    }
+}
 
 
 

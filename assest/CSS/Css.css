@@ -11,8 +11,9 @@ html{
 body{
     height:  100vh;
     width: 99vw;
-
+    background-color: #191a1c;   /*  bodey clor to black*/  
 }
+
 
 body>section:nth-child(1){
     height:  100vh;
@@ -586,6 +587,338 @@ main>section:nth-child(8)>h2:nth-child(1){
 }
 
 
+/*---------------------------animation page-------------------------------------*/
+
+main>section:nth-child(9){
+    overflow: hidden;
+    position: relative;
+    top: 100px;
+    left: 5px;
+
+}
+main>section:nth-child(9)>div{
+    position: relative;
+    height: 90vh;
+    width: 110vw;
+    display: flex;
+    transform: rotate(322deg);
+    bottom: 300px;
+    right: 300px;
+
+
+}
+
+main>section:nth-child(9)>div>aside{
+    width: 100vw;
+    height: 200vh;
+    margin: 7px;
+
+}
+
+main>section:nth-child(9)>div>aside:nth-child(1)>div:nth-child(1) {
+    background: url("../../assest/img/ani1.jpg");
+    background-size:cover;
+    background-position:center;
+}
+
+main>section:nth-child(9)>div>aside:nth-child(1)>div:nth-child(2) {
+    background: url("../../assest/img/ani12.png");
+    background-size:cover;
+    background-position:center;
+}
+
+main>section:nth-child(9)>div>aside:nth-child(1)>div:nth-child(3) {
+    background: url("../../assest/img/ani5.jpg");
+    background-size:cover;
+    background-position:center;
+}
+
+
+/*main>section:nth-child(9)>div>aside:nth-child(1)>div:nth-child(4) {*/
+/*    background: url("../../assest/img/ani6.jpg");*/
+/*    background-size:cover;*/
+/*    background-position:center;*/
+/*}*/
+
+main>section:nth-child(9)>div>aside:nth-child(2)>div:nth-child(1) {
+    background: url("../../assest/img/ani6.jpg");
+    background-size:cover;
+    background-position:center;
+}
+
+main>section:nth-child(9)>div>aside:nth-child(2)>div:nth-child(2) {
+    background: url("../../assest/img/ani8.jpg");
+    background-size:cover;
+    background-position:center;
+}
+
+main>section:nth-child(9)>div>aside:nth-child(2)>div:nth-child(3) {
+    background: url("../../assest/img/ani1.jpg");
+    background-size:cover;
+    background-position:center;
+}
+
+main>section:nth-child(9)>div>aside:nth-child(2)>div:nth-child(4) {
+    background: url("../../assest/img/ani12.png");
+    background-size:cover;
+    background-position:center;
+}
+
+main>section:nth-child(9)>div>aside:nth-child(3)>div:nth-child(1) {
+    background: url("../../assest/img/ani9.png");
+    background-size:cover;
+    background-position:center;
+}
+
+main>section:nth-child(9)>div>aside:nth-child(3)>div:nth-child(2) {
+    background: url("../../assest/img/ani3.jpg");
+    background-size:cover;
+    background-position:center;
+}
+
+main>section:nth-child(9)>div>aside:nth-child(3)>div:nth-child(3) {
+    background: url("../../assest/img/ani13.png");
+    background-size:cover;
+    background-position:center;
+}
+
+main>section:nth-child(9)>div>aside:nth-child(3)>div:nth-child(4) {
+    background: url("../../assest/img/ani10.png");
+    background-size:cover;
+    background-position:center;
+}
+
+main>section:nth-child(9)>div>aside:nth-child(4)>div:nth-child(1) {
+    background: url("../../assest/img/ani4.jpg");
+    background-size:cover;
+    background-position:center;
+}
+
+main>section:nth-child(9)>div>aside:nth-child(4)>div:nth-child(2) {
+    background: url("../../assest/img/ani14.jpg");
+    background-size:cover;
+    background-position:center;
+}
+
+main>section:nth-child(9)>div>aside:nth-child(4)>div:nth-child(3) {
+    background: url("../../assest/img/ani9.png");
+    background-size:cover;
+    background-position:center;
+}
+
+main>section:nth-child(9)>div>aside:nth-child(4)>div:nth-child(4) {
+    background: url("../../assest/img/ani11.png");
+    background-size:cover;
+    background-position:center;
+}
+
+main>section:nth-child(9)>div>aside:nth-child(5)>div:nth-child(1) {
+    background: url("../../assest/img/ani11.png");
+    background-size:cover;
+    background-position:center;
+}
+
+main>section:nth-child(9)>div>aside:nth-child(5)>div:nth-child(2) {
+    background: url("../../assest/img/ani11.png");
+    background-size:cover;
+    background-position:center;
+}
+
+main>section:nth-child(9)>div>aside:nth-child(5)>div:nth-child(3) {
+    background: url("../../assest/img/ani11.png");
+    background-size:cover;
+    background-position:center;
+}
+
+main>section:nth-child(9)>div>aside:nth-child(5)>div:nth-child(4) {
+    background: url("../../assest/img/ani11.png");
+    background-size:cover;
+    background-position:center;
+}
+
+
+
+
+main>section:nth-child(9)>div:nth-child(1)>aside>div {
+    width: 100%;
+    height: calc(100%/3);
+    margin: 15px;
+    /*animation-name: mainAnimation;*/
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+/*---------------------------pane on animation-------------------------------------*/
+
+
+main>section:nth-child(10){
+    position: relative;
+    bottom: 81.1vh;
+    background: rgba(0,0,0,0.6);
+    height: 90vh;
+    left: 5px;
+}
+
+main>section:nth-child(10)>div:nth-child(1) {
+    position:relative;
+    top: 30vh;
+    left: 7vw;
+    width: 7vw;
+}
+
+main>section:nth-child(10)>div:nth-child(1)>h6 {
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+main>section:nth-child(10)>div:nth-child(1)>h1 {
+    font-size: 50px;
+    font-family: sans-serif;
+}
+
+main>section:nth-child(10)>div:nth-child(1)>p {
+    font-size: 14px;
+    font-family: Arial;
+}
+
+main>section:nth-child(10)>div:nth-child(1)>button {
+    font-size: 14px;
+    font-family: Arial;
+    color: white;
+    height: 40px;
+    width: 130px;
+    background: transparent;
+    border: solid white;
+    margin: 30px 0 0 0 ;
+}
+
+
+
+
+
+
+
+@keyframes mainAnimation {
+    0%{
+        transform: translateY(12%);
+    }
+    100%{
+        transform: translateY(-150%);
+
+    }
+
+}
+
+
+/*---------------------------contact me-------------------------------------*/
+
+footer{
+    position: relative;
+    bottom: 650px;
+}
+
+
+footer>section:nth-child(1){
+    position: relative;
+}
+
+
+#ContactMe{
+    position: relative;
+    top: 35vh;
+    display: flex;
+    justify-content: center;
+    font-size: 250%;
+    font-family: "Merriweather Sans";
+
+
+}
+
+
+footer>section:nth-child(1)>div>img{
+    position: relative;
+    left: 15vw;
+    bottom: 7vh;
+    display: flex;
+    margin: 50px;
+}
+
+
+footer>section:nth-child(1)>aside>h2{
+    position: relative;
+    left: 22vw;
+    top: 42vh;
+    display: inline-block;
+    margin: 45px;
+}
+
+footer>section:nth-child(1)>aside>h4{
+    position: relative;
+    left: 13.5vw;
+    top: 45vh;
+    display: inline-block;
+    font-family: Barlow;
+
+}
+
+footer>section:nth-child(2)>form{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    display: grid;
+    width: 41vw;
+    gap: 10px;
+    position: relative;
+    left: 41vw;
+    bottom: 54vh;
+    font-family: Barlow;
+
+
+}
+
+footer>section:nth-child(2)>form>textarea {
+    position: relative;
+    width: 202%;
+}
+
+footer>section:nth-child(2)>form>input{
+    height: 6vh;
+    border-radius: 10px;  /*key bord input radius*/
+    border: solid white 1px;
+    background-color: transparent;
+
+}
+
+footer>section:nth-child(1)>aside:nth-child(3)>h4{
+    left: 30vh;
+}
+
+footer>section:nth-child(2)>button:nth-child(2){
+    position: relative;
+    bottom: 52vh;
+    left: 83.5vh;
+    width: 150px;
+    height: 40px;
+    background: transparent;
+    border-radius: 15px;
+    border: solid white 1px;
+
+
+}
+footer>section:nth-child(2)>aside:nth-child(3)>button {
+    position: relative;
+    bottom: 57.3vh;
+    left: 52vw;
+    border-radius: 15px;
+    border: solid white 1px;
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    background: transparent;
+}
+
+
 
 
 
@@ -593,31 +926,20 @@ li::marker{     /*remove indexing in menu*/
     content: "";
 }
 
-body{
-    background-color: #212428;   /*  bodey clor to black*/
-}
+
 *{
     color:white;  /* all texts been white */
+
 }
 
 h2{       /*  heades colors to yellow*/
     color: #ffb400;
 }
 
-input{
-    border-radius: 10px;  /*key bord input radius*/
-    border-color: white;
-    background-color: #2b2d33;
-}
 
-button:hover{    /*butten hover action*/
-    color: white;
-    background-color: #ffb400;
-    border-radius: 50px;
-}
 
 textarea{
-    background-color: #2b2d33; /* input text area dtyles */
+    background-color: transparent; /* input text area dtyles */
     border-radius: 10px;
     border-color: white;
 
