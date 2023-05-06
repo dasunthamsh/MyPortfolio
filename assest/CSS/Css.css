@@ -95,8 +95,8 @@ main>section:first-child{
 
 
 main>section:first-child>h2{        /*hellow i am*/
-  font-family: "Robo";
-    font-size: 2.5rem;
+    font-family: teko;
+    font-size: 2.8rem;
     position: relative;
     top: 11vh;
 }
@@ -121,7 +121,8 @@ main>section:first-child>img{  /*main png*/
 
 
 main>section>article{
-    font-family: "Agency FB";
+    font-family: teko;
+    letter-spacing: 1px;
     font-size: 25px;
     position: relative;
     bottom: 35vh;
@@ -161,9 +162,10 @@ main>section>nav>div{
 main>section:nth-child(2)>aside>h2{     /*about me*/
     position: absolute;
     left: 20.5%;
-    font-size: 250%;
     bottom: -25%;
-    font-family: "Merriweather Sans";
+    font-size: 350%;
+    font-family: teko;
+
 
 }
 
@@ -202,6 +204,8 @@ main>section:nth-child(2)>aside:nth-child(2){
 main>section:nth-child(2)>aside:nth-child(2)>p:first-child{
     font-size:250%;
     font-weight: bold;
+    font-family: teko;
+
 }
 
 main>section:nth-child(2)>aside:nth-child(2)>p:last-child{
@@ -220,8 +224,8 @@ main>section:nth-child(3){
 
 
 main>section:nth-child(3)>h2{
-    font-size: 250%;
-    font-family: "Merriweather Sans";
+    font-size: 350%;
+    font-family: teko;
     position: absolute;
     top: 0;
     left: 45vw;
@@ -287,8 +291,8 @@ main>section:nth-child(4){
 }
 
 main>section:nth-child(4)>h2{
-    font-size: 250%;
-    font-family: "Merriweather Sans";
+    font-size: 350%;
+    font-family: teko;
     position: absolute;
     top: 0;
     left: 45vw;
@@ -344,12 +348,12 @@ main>section:nth-child(5){
 }
 
 main>section:nth-child(5)>h2:nth-child(1){ /*skills*/
-    font-family: "Merriweather Sans";
+    font-family: teko;
     position: relative;
     top: 220px;
     left: 50%;
     display: inline-block;
-    font-size: 250%;
+    font-size: 350%;
 }
 
 main>section:nth-child(5)>aside:nth-child(2)>h1{ /*Development skills*/
@@ -419,8 +423,8 @@ main>section:nth-child(6){
 }
 
 main>section:nth-child(6)>h2:nth-child(1){
-    font-size: 250%;
-    font-family: "Merriweather Sans";
+    font-size: 350%;
+    font-family: teko;
     display: inline-block;
     position: relative;
     left: 45%;
@@ -448,12 +452,14 @@ main>section:nth-child(6)>div:nth-child(2)>aside>h6 {
     left: 4%;
     bottom: 31%;
     color: #ffb400;
+
 }
 
 main>section:nth-child(6)>div:nth-child(2)>aside>h3 {
     position: relative;
     left: 4%;
     bottom: 35%;
+
 }
 
 .projects{
@@ -473,8 +479,8 @@ main>section:nth-child(7)>h2:nth-child(2){
     display: flex;
     justify-content: center;
     top: 10%;
-    font-size: 250%;
-    font-family: "Merriweather Sans";
+    font-size: 350%;
+    font-family: teko;
 }
 
 main>section:nth-child(7)>h1:nth-child(3){
@@ -482,6 +488,8 @@ main>section:nth-child(7)>h1:nth-child(3){
     left: 18%;
     top: 18%;
     display: inline-block;
+    font-family: teko;
+    letter-spacing: 2px;
 }
 
 main>section:nth-child(7)>div:nth-child(4){
@@ -514,6 +522,10 @@ main>section:nth-child(7)>div:nth-child(4)>aside>h4{
     display: flex;
     justify-content: center;
     top: 18%;
+    font-family: teko;
+    letter-spacing: 1px;
+    font-size: 25px;
+    color: #ffb400;
 
 }
 
@@ -524,6 +536,8 @@ main>section:nth-child(7)>div:nth-child(4)>aside>p{
     top: 25%;
     font-family: Abel;
     font-size: 18px;
+    margin: 20px;
+
 
 }
 
@@ -582,8 +596,49 @@ main>section:nth-child(8)>h2:nth-child(1){
     display: flex;
     top: 20vh;
     justify-content: center;
-    font-size: 250%;
-    font-family: "Merriweather Sans";
+    font-size: 350%;
+    font-family: teko;
+    color: #ffb400;
+
+}
+
+main>section:nth-child(8)>div:nth-child(2)>aside>img{
+    position: relative;
+    top: 15%;
+    left: 40%;
+}
+
+main>section:nth-child(8)>div:nth-child(2)>aside>h3{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 19%;
+    font-family: teko;
+    letter-spacing: 1px;
+    font-size: 25px;
+}
+
+
+
+main>section:nth-child(8)>div:nth-child(2)>aside>p{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 25%;
+    font-family: Abel;
+    font-size: 18px;
+    margin: 20px;
+}
+
+main>section:nth-child(8)>aside:nth-child(3){
+    position: relative;
+    width: 150px;
+    height: 150px;
+        left: 70vw;
+        bottom: 450px;
+    border-radius: 100%;
+    background: #1746EC;
+    filter: blur(200px);
 }
 
 
@@ -592,7 +647,7 @@ main>section:nth-child(8)>h2:nth-child(1){
 main>section:nth-child(9){
     overflow: hidden;
     position: relative;
-    top: 100px;
+    top: 170px;
     left: 5px;
 
 }
@@ -755,7 +810,7 @@ main>section:nth-child(9)>div:nth-child(1)>aside>div {
 
 main>section:nth-child(10){
     position: relative;
-    bottom: 81.1vh;
+    bottom: 72.2vh;
     background: rgba(0,0,0,0.6);
     height: 90vh;
     left: 5px;
@@ -765,17 +820,20 @@ main>section:nth-child(10)>div:nth-child(1) {
     position:relative;
     top: 30vh;
     left: 7vw;
-    width: 7vw;
+    width: 30vw;
 }
 
 main>section:nth-child(10)>div:nth-child(1)>h6 {
-    font-size: 14px;
-    font-family: sans-serif;
+    font-size: 15px;
+    font-family: teko;
+    letter-spacing: 1.3px;
+    opacity: 50%;
+
 }
 
 main>section:nth-child(10)>div:nth-child(1)>h1 {
     font-size: 50px;
-    font-family: sans-serif;
+    font-family: teko;
 }
 
 main>section:nth-child(10)>div:nth-child(1)>p {
@@ -784,8 +842,9 @@ main>section:nth-child(10)>div:nth-child(1)>p {
 }
 
 main>section:nth-child(10)>div:nth-child(1)>button {
-    font-size: 14px;
-    font-family: Arial;
+    font-size: 16px;
+    font-family: teko;
+    letter-spacing: 1.5px;
     color: white;
     height: 40px;
     width: 130px;
@@ -830,8 +889,9 @@ footer>section:nth-child(1){
     top: 35vh;
     display: flex;
     justify-content: center;
-    font-size: 250%;
-    font-family: "Merriweather Sans";
+    font-size: 350%;
+    font-family: teko;
+
 
 
 }
@@ -852,6 +912,7 @@ footer>section:nth-child(1)>aside>h2{
     top: 42vh;
     display: inline-block;
     margin: 45px;
+    font-family: Abel;
 }
 
 footer>section:nth-child(1)>aside>h4{
