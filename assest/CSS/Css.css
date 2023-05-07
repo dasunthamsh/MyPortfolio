@@ -42,6 +42,7 @@ header{
     width: 100%;
     position: fixed;
     top: 0;
+    z-index: 100;
 }
 
 
@@ -361,6 +362,10 @@ main>section:nth-child(5)>aside:nth-child(2)>h1{ /*Development skills*/
     top: 280px;
     left: 260px;
     display: inline-block;
+    font-family: teko;
+    letter-spacing: 3px;
+    font-size: 40px;
+
 }
 
 main>section:nth-child(5)>aside:nth-child(2)>h1:nth-child(1){
@@ -411,9 +416,9 @@ main>section:nth-child(5)>aside:nth-child(3)>div>h6 {
     display: flex;
     justify-content: center;
     position: relative;
-    bottom: 25px;
-    font-family: "Abel";
-    font-size: 20px;
+    bottom: 33px;
+    font-family: Barlow;
+    font-size: 19px;
 }
 
 /*---------------------------projects-------------------------------------*/
@@ -421,6 +426,7 @@ main>section:nth-child(5)>aside:nth-child(3)>div>h6 {
 main>section:nth-child(6){
     position: relative;
 }
+
 
 main>section:nth-child(6)>h2:nth-child(1){
     font-size: 350%;
@@ -452,6 +458,7 @@ main>section:nth-child(6)>div:nth-child(2)>aside>h6 {
     left: 4%;
     bottom: 31%;
     color: #ffb400;
+    font-family: sans-serif;
 
 }
 
@@ -459,7 +466,9 @@ main>section:nth-child(6)>div:nth-child(2)>aside>h3 {
     position: relative;
     left: 4%;
     bottom: 35%;
-
+    font-family: teko;
+    font-size: 25px;
+    letter-spacing: 1px;
 }
 
 .projects{
@@ -568,7 +577,7 @@ main>section:nth-child(8)>div:nth-child(2){
     gap: 0px;
     position: relative;
     top: 40vh;
-    width: 1000px;
+    width: 65vw;
     margin: auto;
     overflow: hidden;
     overflow-x:scroll;
@@ -582,7 +591,7 @@ main>section:nth-child(8)>div:nth-child(2)>aside{
     border-radius: 15px ;
     border: 1px solid white;
     height: 56vh;
-    width: 20vw;
+    width: 31%;
     position: relative;
     box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.5);
     flex-shrink: 0;
@@ -892,37 +901,59 @@ footer>section:nth-child(1){
     font-size: 350%;
     font-family: teko;
 
-
-
 }
 
 
-footer>section:nth-child(1)>div>img{
+footer>section:nth-child(1)>aside:nth-child(2){
+    display: flex;
+    flex-direction: column;
+}
+
+footer>section:nth-child(1)>aside:nth-child(2)>div>aside{
     position: relative;
     left: 15vw;
-    bottom: 7vh;
-    display: flex;
-    margin: 50px;
-}
-
-
-footer>section:nth-child(1)>aside>h2{
-    position: relative;
-    left: 22vw;
-    top: 42vh;
+    top: 40vh;
     display: inline-block;
-    margin: 45px;
-    font-family: Abel;
+    font-family: Arial;
+
 }
 
-footer>section:nth-child(1)>aside>h4{
+footer>section:nth-child(1)>aside:nth-child(2)>div>img{
     position: relative;
-    left: 13.5vw;
-    top: 45vh;
-    display: inline-block;
-    font-family: Barlow;
-
+    left: 14vw;
+    top: 40vh;
 }
+
+
+
+
+
+
+/*footer>section:nth-child(1)>div>img{*/
+/*    position: relative;*/
+/*    left: 15vw;*/
+/*    bottom: 7vh;*/
+/*    display: flex;*/
+/*    margin: 50px;*/
+/*}*/
+
+
+/*footer>section:nth-child(1)>aside>h2{*/
+/*    position: relative;*/
+/*    left: 22vw;*/
+/*    top: 42vh;*/
+/*    display: inline-block;*/
+/*    margin: 45px;*/
+/*}*/
+
+/*footer>section:nth-child(1)>aside>h4{*/
+/*    position: relative;*/
+/*    left: 13.5vw;*/
+/*    top: 45vh;*/
+/*    display: inline-block;*/
+/*    font-family: Barlow;*/
+
+/*}*/
 
 footer>section:nth-child(2)>form{
     grid-template-columns: 1fr 1fr;
@@ -932,7 +963,7 @@ footer>section:nth-child(2)>form{
     gap: 10px;
     position: relative;
     left: 41vw;
-    bottom: 54vh;
+    bottom: 1vh;
     font-family: Barlow;
 
 
@@ -951,14 +982,12 @@ footer>section:nth-child(2)>form>input{
 
 }
 
-footer>section:nth-child(1)>aside:nth-child(3)>h4{
-    left: 30vh;
-}
+
 
 footer>section:nth-child(2)>button:nth-child(2){
     position: relative;
-    bottom: 52vh;
-    left: 83.5vh;
+    bottom: -0.1vh;
+    left: 41.1vw;
     width: 150px;
     height: 40px;
     background: transparent;
@@ -969,7 +998,7 @@ footer>section:nth-child(2)>button:nth-child(2){
 }
 footer>section:nth-child(2)>aside:nth-child(3)>button {
     position: relative;
-    bottom: 57.3vh;
+    bottom: 5vh;
     left: 52vw;
     border-radius: 15px;
     border: solid white 1px;

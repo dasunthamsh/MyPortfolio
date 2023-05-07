@@ -1,27 +1,318 @@
 @media screen and (max-width: 320px) {
 
-
-    body>section:nth-child(1) {
+    /*---------------------------hedder-------------------------------------*/
+    body > section:nth-child(1) {
         height: 106vh;
-        width: 265vw;
+        width: 95.5vw;
     }
 
-    header{
-    height: 4%;
+    header {
+        height: 2%;
+    }
+
+    header > nav > aside > img { /*tuna*/
+        top: 9px;
     }
 
     header > nav > li {
         display: none;
     }
 
-    main>section:first-child>img {
-        bottom: 29vh;
-        left: 106vw;
-        margin: auto;
-        height: 47vh;
-        width: 300px;
+    main > section:first-child > img { /*profile pic*/
+        bottom: 36vh;
+        left: -10vw;
+        height: 34vh;
+        width: 230px;
     }
 
+    header {
+        display: none;
+    }
+
+    header>nav {
+        display: none;
+    }
+
+    /*---------------------------main-------------------------------------*/
+    main > section:first-child > h2 { /*hellow i am*/
+        font-size: 2.3rem;
+        top: 20vh;
+    }
+
+    main > section:first-child > h1 { /*dasun*/
+        font-size: 38px;
+        top: 15vh;
+    }
+
+    main > section > article {
+        bottom: 8vh;
+    }
+
+    main > section:nth-child(1) > nav { /*soceal meadia*/
+        bottom: 8vh;
+    }
+
+    body>section:nth-child(2) {
+        width: 196px;
+        height: 201px;
+        left: 21vw;
+        top: 66px;
+    }
+
+
+    /*---------------------------about me-------------------------------------*/
+    main > section:nth-child(2) > aside > h2 {
+        left: 20.5%;
+        bottom: -25%;
+        font-size: 250%;
+    }
+
+    main > section:nth-child(2) > aside > img {
+        left: 17vw;
+        top: 18vh;
+        width: 70vw;
+        height: 40vh;
+    }
+
+    main > section:nth-child(2) > aside:nth-child(2) {
+        left: 18px;
+        top: 14vh;
+    }
+
+    main > section:nth-child(2) > aside:nth-child(2) > p:first-child {
+        font-size: 200%;
+    }
+
+    main > section:nth-child(2) > aside:nth-child(2) > p:last-child {
+        font-size: 100%;
+    }
+
+    /*------------------------------adeucation----------------------------------*/
+    main > section:nth-child(3) > aside > h5 {
+        font-size: 11px;
+    }
+
+    main > section:nth-child(3) > h2 {
+        font-size: 250%;
+        left: 29vw;
+    }
+
+    main > section:nth-child(3) > aside:nth-child(4) {
+        left: 15vw;
+        bottom: -17vh;
+    }
+
+    main > section:nth-child(3) > aside:nth-child(5) {
+        left: -42vw;
+        top: 40vh;
+    }
+
+    main > section:nth-child(3) > aside:nth-child(6) {
+        top: 44vh;
+        left: 16vw;
+    }
+
+    main > section:nth-child(3) > aside:nth-child(7) {
+        top: 68vh;
+        left: -18vw;
+    }
+
+    #yellowlineOne {
+        display: none;
+    }
+
+    #yellowlineTow {
+        display: none;
+    }
+
+    /*------------------------------portfolio----------------------------------*/
+    main > section:nth-child(4) > h2 {
+        font-size: 250%;
+        top: 10vh;
+        left: 25vw;
+    }
+
+    #img1 {
+        top: 1.5vh;
+        border-radius: 20px;
+    }
+
+    #img2 {
+        top: 20.5vh;
+        border-radius: 20px;
+    }
+
+    main > section:nth-child(4) > div:nth-child(2) {
+        left: -1vw;
+        top: 26vh;
+    }
+
+    #img2 {
+        top: -4.5vh;
+    }
+
+    main > section:nth-child(4) > div:nth-child(3) {
+        left: -1vw;
+        top: 19vh;
+    }
+
+
+    /*------------------------------skills----------------------------------*/
+    main > section:nth-child(5) > h2:nth-child(1) {
+        top: 220px;
+        left: 33%;
+        font-size: 250%;
+    }
+
+    main > section:nth-child(5) > aside:nth-child(3) > div {
+        left: 180px;
+        top: 214px;
+        margin: 8px;
+    }
+
+
+    main > section:nth-child(5) > aside:nth-child(3) {
+        height: 170px;
+        left: -28vh;
+    }
+
+    main > section:nth-child(5) > aside:nth-child(2) > h1:nth-child(1) {
+        top: 229px;
+    }
+
+    main > section:nth-child(5) > aside:nth-child(2) > h1 {
+        top: 202px;
+        left: 22px;
+    }
+
+    main > section:nth-child(5) > aside:nth-child(3) > div > h6 {
+        font-size: 14px;
+    }
+
+    /*------------------------------my projects----------------------------------*/
+    main > section:nth-child(6) > div:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        left: 5%;
+
+    }
+
+    main > section:nth-child(6) > div:nth-child(2) > aside {
+        width: 143%;
+    }
+
+    main > section:nth-child(6) > h2:nth-child(1) {
+        font-size: 250%;
+        left: 25%;
+    }
+
+    /*------------------------------servese----------------------------------*/
+    main > section:nth-child(7) > h2:nth-child(2) {
+        top: -2%;
+    }
+
+    main > section:nth-child(7) > h1:nth-child(3) {
+        left: 18%;
+        top: -4%;
+
+    }
+
+    main > section:nth-child(7) > div:nth-child(4) {
+        top: 1%;
+        flex-direction: column;
+        left: 20px;
+    }
+
+    main > section:nth-child(7) > div:nth-child(4) > aside {
+        min-width: 280px;
+    }
+
+    main > section:nth-child(7) {
+        height: 230vh;
+    }
+
+
+    /*------------------------------assigment----------------------------------*/
+    main > section:nth-child(8) > h2:nth-child(1) {
+        font-size: 250%;
+    }
+
+    main > section:nth-child(8) > div:nth-child(2) > aside {
+
+        min-width: 179px;
+    }
+
+
+    /*------------------------------animation----------------------------------*/
+    main > section:nth-child(9) > div {
+        height: 103vh;
+        width: 196vw;
+        right: 413px;
+    }
+
+    main > section:nth-child(10) {
+        bottom: 81.2vh;
+        height: 103.5vh;
+    }
+
+    main > section:nth-child(10) > div:nth-child(1) > h6 {
+        font-size: 10px;
+    }
+
+    main > section:nth-child(10) > div:nth-child(1) > h1 {
+        font-size: 30px;
+    }
+
+    main > section:nth-child(10) > div:nth-child(1) {
+        top: 16vh;
+        left: 9vw;
+        width: 60vw;
+    }
+
+
+    /*------------------------------contact me----------------------------------*/
+    #ContactMe {
+        font-size: 250%;
+    }
+
+    footer > section:nth-child(2) > form > input {
+        width: 82vw;
+    }
+
+    footer > section:nth-child(2) > form > textarea {
+        width: 98%;
+    }
+
+    footer > section:nth-child(2) > button:nth-child(2) {
+        bottom: -44.1vh;
+        left: 8.100000000000001vw;
+        width: 117px;
+    }
+
+    footer > section:nth-child(2) > aside:nth-child(3) > button {
+        bottom: -38vh;
+        left: 49vw;
+        width: 136px;
+    }
+
+    footer > section:nth-child(2) > form {
+        left: 8vw;
+        bottom: -42vh;
+        grid-template-columns: revert;
+    }
+
+    footer > section:nth-child(1) > aside:nth-child(3) > h4 {
+        font-size: 10px;
+    }
+
+    footer > section:nth-child(1) > aside:nth-child(2) > div > aside {
+        font-size: 10px;
+    }
+
+    footer > section:nth-child(1) > aside:nth-child(2) > div > img {
+        height: 50px;
+        width: 50px;
+    }
 
 
 }
@@ -33,3 +324,4 @@
 @media screen and (min-width: 1024px) and (max-width: 1440px){}
 
 /* screen pix 1520px*/
+/*browser-sync start --server --files "css/*.css"*/
