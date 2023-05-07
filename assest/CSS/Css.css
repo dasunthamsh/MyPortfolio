@@ -28,8 +28,8 @@ body>section:nth-child(1){
 
 body>section:nth-child(2){
     position: absolute;
-    width: 350px;
-    height: 400px;
+    width: 20vw;
+    height: 50vh;
     left: 70vw;
     top: -4px;
     border-radius: 100%;
@@ -70,7 +70,6 @@ header>nav>li{             /*menu*/
     bottom: 15px;
     margin: 20px;
     transition: all 0.1s ease-in;
-
 }
 
 a{
@@ -82,16 +81,12 @@ a{
 /*------------------------Main Home Page--------------------------*/
 
 
-main{
-
-}
 
 
 main>section:first-child{
   position: absolute;
-    top: 150px;
-    left: 80px;
-
+    top: 22vh;
+    left: 6vw;
 }
 
 
@@ -182,8 +177,8 @@ main>section:nth-child(2)>aside>img{  /*about me img*/
 
 main>section:nth-child(2)>div{
     position: relative;
-    width: 120px;
-    height: 150px;
+    width: 12vw;
+    height: 15vh;
     left: 25vw;
     top: -60vh;
     border-radius: 100%;
@@ -197,9 +192,8 @@ main>section:nth-child(2)>div{
 main>section:nth-child(2)>aside:nth-child(2){
     position: relative;
     display: inline-block;
-    left: 670px;
+    left: 44%;
     top: -25vh;
-
 }
 
 main>section:nth-child(2)>aside:nth-child(2)>p:first-child{
@@ -642,8 +636,8 @@ main>section:nth-child(8)>div:nth-child(2)>aside>p{
 
 main>section:nth-child(8)>aside:nth-child(3){
     position: relative;
-    width: 150px;
-    height: 150px;
+    width: 15vw;
+    height: 25vh;
         left: 70vw;
         bottom: 450px;
     border-radius: 100%;
@@ -669,6 +663,7 @@ main>section:nth-child(9)>div{
     transform: rotate(322deg);
     bottom: 300px;
     right: 300px;
+
 
 
 }
