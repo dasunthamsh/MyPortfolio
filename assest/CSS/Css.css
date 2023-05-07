@@ -516,7 +516,7 @@ main>section:nth-child(7)>div:nth-child(4)>aside{
     width: 20vw;
     position: relative;
     box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.5);
-
+    min-width: 280px;
 }
 
 main>section:nth-child(7)>div:nth-child(4)>aside>img{
@@ -596,6 +596,7 @@ main>section:nth-child(8)>div:nth-child(2)>aside{
     box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.5);
     flex-shrink: 0;
     margin: 12px;
+    min-width: 257px;
 
 
 }
