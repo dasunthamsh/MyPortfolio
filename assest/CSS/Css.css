@@ -11,18 +11,23 @@ html{
 body{
     height:  100vh;
     width: 99vw;
-    background-color: #191a1c;   /*  bodey clor to black*/  
+    background-color: #191a1c;   /*  bodey clor to black*/
+    overflow-x: hidden;
+
 }
+
+
 
 
 body>section:nth-child(1){
     height:  100vh;
-    width: 99vw;
+    width: 98vw;
     background: #131312;
     border-radius: 20px;
     margin-top: 5px;
     margin-left: 5px;
     overflow: hidden;
+
 
 }
 
@@ -39,7 +44,7 @@ body>section:nth-child(2){
 
 header{
     height: 10%;
-    width: 100%;
+    width: 98vw;
     position: fixed;
     top: 0;
     z-index: 100;
@@ -61,6 +66,7 @@ header>nav{
 
     width: 90%;
     position: relative;
+    display: inline-block;
 }
 
 header>nav>li{             /*menu*/
@@ -81,7 +87,9 @@ a{
 /*------------------------Main Home Page--------------------------*/
 
 
-
+main{
+    overflow-x: hidden;
+}
 
 main>section:first-child{
   position: absolute;
@@ -147,6 +155,7 @@ main>section>nav>img{
 
 main>section>nav>div{
     margin-right: 0.5rem;
+
 }
 
 
@@ -295,9 +304,11 @@ main>section:nth-child(4)>h2{
 
 main>section:nth-child(4)>div:nth-child(2){
     position: relative;
-    left: 17vw;
-    top: 15vh;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    top: 30vh;
+    height: 60vh;
+
 
 }
 
@@ -307,23 +318,19 @@ main>section:nth-child(4)>div>img{
     box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.5);
 }
 
-#img1{
+#imgPos{
     position: relative;
-    top: 20.5vh;
     border-radius: 20px;
+    bottom: 20vh;
 }
 
-#img2{
-    position: relative;
-    top: 20.5vh;
-    border-radius: 20px;
-}
 
 main>section:nth-child(4)>div:nth-child(3){
-    display: inline-block;
     position: relative;
-    left: 17vw;
-    top: 17vh;
+    display: flex;
+    justify-content: center;
+    top: 32vh;
+    height: 60vh;
 
 }
 
@@ -578,7 +585,6 @@ main>section:nth-child(8)>div:nth-child(2){
     scroll-padding: 24px;
     justify-content: start;
 
-
 }
 
 main>section:nth-child(8)>div:nth-child(2)>aside{
@@ -682,13 +688,13 @@ main>section:nth-child(9)>div>aside:nth-child(1)>div:nth-child(1) {
 }
 
 main>section:nth-child(9)>div>aside:nth-child(1)>div:nth-child(2) {
-    background: url("../../assest/img/ani12.png");
+    background: url("../../assest/img/ani2.jpg");
     background-size:cover;
     background-position:center;
 }
 
 main>section:nth-child(9)>div>aside:nth-child(1)>div:nth-child(3) {
-    background: url("../../assest/img/ani5.jpg");
+    background: url("../../assest/img/ani3.JPG");
     background-size:cover;
     background-position:center;
 }
@@ -701,97 +707,97 @@ main>section:nth-child(9)>div>aside:nth-child(1)>div:nth-child(3) {
 /*}*/
 
 main>section:nth-child(9)>div>aside:nth-child(2)>div:nth-child(1) {
-    background: url("../../assest/img/ani6.jpg");
+    background: url("../../assest/img/ani9.jpg");
     background-size:cover;
     background-position:center;
 }
 
 main>section:nth-child(9)>div>aside:nth-child(2)>div:nth-child(2) {
-    background: url("../../assest/img/ani8.jpg");
-    background-size:cover;
-    background-position:center;
-}
-
-main>section:nth-child(9)>div>aside:nth-child(2)>div:nth-child(3) {
-    background: url("../../assest/img/ani1.jpg");
-    background-size:cover;
-    background-position:center;
-}
-
-main>section:nth-child(9)>div>aside:nth-child(2)>div:nth-child(4) {
-    background: url("../../assest/img/ani12.png");
-    background-size:cover;
-    background-position:center;
-}
-
-main>section:nth-child(9)>div>aside:nth-child(3)>div:nth-child(1) {
-    background: url("../../assest/img/ani9.png");
-    background-size:cover;
-    background-position:center;
-}
-
-main>section:nth-child(9)>div>aside:nth-child(3)>div:nth-child(2) {
-    background: url("../../assest/img/ani3.jpg");
-    background-size:cover;
-    background-position:center;
-}
-
-main>section:nth-child(9)>div>aside:nth-child(3)>div:nth-child(3) {
-    background: url("../../assest/img/ani13.png");
-    background-size:cover;
-    background-position:center;
-}
-
-main>section:nth-child(9)>div>aside:nth-child(3)>div:nth-child(4) {
-    background: url("../../assest/img/ani10.png");
-    background-size:cover;
-    background-position:center;
-}
-
-main>section:nth-child(9)>div>aside:nth-child(4)>div:nth-child(1) {
     background: url("../../assest/img/ani4.jpg");
     background-size:cover;
     background-position:center;
 }
 
+main>section:nth-child(9)>div>aside:nth-child(2)>div:nth-child(3) {
+    background: url("../../assest/img/ani13.jpg");
+    background-size:cover;
+    background-position:center;
+}
+
+main>section:nth-child(9)>div>aside:nth-child(2)>div:nth-child(4) {
+    background: url("../../assest/img/ani7.jpg");
+    background-size:cover;
+    background-position:center;
+}
+
+main>section:nth-child(9)>div>aside:nth-child(3)>div:nth-child(1) {
+    background: url("../../assest/img/ani8.jpg");
+    background-size:cover;
+    background-position:center;
+}
+
+main>section:nth-child(9)>div>aside:nth-child(3)>div:nth-child(2) {
+    background: url("../../assest/img/ani6.JPG");
+    background-size:cover;
+    background-position:center;
+}
+
+main>section:nth-child(9)>div>aside:nth-child(3)>div:nth-child(3) {
+    background: url("../../assest/img/ani10.jpg");
+    background-size:cover;
+    background-position:center;
+}
+
+main>section:nth-child(9)>div>aside:nth-child(3)>div:nth-child(4) {
+    background: url("../../assest/img/ani11.jpg");
+    background-size:cover;
+    background-position:center;
+}
+
+main>section:nth-child(9)>div>aside:nth-child(4)>div:nth-child(1) {
+    background: url("../../assest/img/ani12.jpg");
+    background-size:cover;
+    background-position:center;
+}
+
 main>section:nth-child(9)>div>aside:nth-child(4)>div:nth-child(2) {
-    background: url("../../assest/img/ani14.jpg");
+    background: url("../../assest/img/ani5.JPG");
     background-size:cover;
     background-position:center;
 }
 
 main>section:nth-child(9)>div>aside:nth-child(4)>div:nth-child(3) {
-    background: url("../../assest/img/ani9.png");
+    background: url("../../assest/img/ani17.jpg");
     background-size:cover;
     background-position:center;
 }
 
 main>section:nth-child(9)>div>aside:nth-child(4)>div:nth-child(4) {
-    background: url("../../assest/img/ani11.png");
+    background: url("../../assest/img/ani15.jpg");
     background-size:cover;
     background-position:center;
 }
 
 main>section:nth-child(9)>div>aside:nth-child(5)>div:nth-child(1) {
-    background: url("../../assest/img/ani11.png");
+    background: url("../../assest/img/ani16.jpg");
     background-size:cover;
     background-position:center;
 }
 
 main>section:nth-child(9)>div>aside:nth-child(5)>div:nth-child(2) {
-    background: url("../../assest/img/ani11.png");
+    background: url("../../assest/img/ani14.jpg");
     background-size:cover;
     background-position:center;
 }
 
 main>section:nth-child(9)>div>aside:nth-child(5)>div:nth-child(3) {
-    background: url("../../assest/img/ani11.png");
+    background: url("../../assest/img/ani18.jpg");
     background-size:cover;
     background-position:center;
 }
 
 main>section:nth-child(9)>div>aside:nth-child(5)>div:nth-child(4) {
-    background: url("../../assest/img/ani11.png");
+    background: url("../../assest/img/ani19.jpg");
     background-size:cover;
     background-position:center;
 }
@@ -804,7 +810,7 @@ main>section:nth-child(9)>div:nth-child(1)>aside>div {
     height: calc(100%/3);
     margin: 15px;
     /*animation-name: mainAnimation;*/
-    animation-duration: 15s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 

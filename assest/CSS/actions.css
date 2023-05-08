@@ -1,21 +1,21 @@
 /*------------------------Scroll bar--------------------------*/
 
-::-webkit-scrollbar {
-    width: 5px;
-}
+    /*::-webkit-scrollbar {*/
+    /*    width: 5px;*/
+    /*}*/
 
-::-webkit-scrollbar-track {
+    /*::-webkit-scrollbar-track {*/
 
-}
+    /*}*/
 
-::-webkit-scrollbar-thumb {
-    background: #ffb400;
+    ::-webkit-scrollbar-thumb {
+        background: #ffb400;
 
-}
+    }
 
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
+    /*::-webkit-scrollbar-thumb:hover {*/
+    /*    background: blueviolet;*/
+    /*}*/
 
 a:hover{     /*change mouse fourcus color to yellow in menu*/
     color: #ffb400;
@@ -126,11 +126,11 @@ main > section:nth-child(8) > div:nth-child(2)::-webkit-scrollbar {
 }
 
 main > section:nth-child(8) > div:nth-child(2)::-webkit-scrollbar-track {
+
 }
 
 main > section:nth-child(8) > div:nth-child(2)::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    border: solid black 1px;
 
 }
 
