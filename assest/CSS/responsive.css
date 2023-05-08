@@ -20,10 +20,11 @@
 
     main > section:first-child > img { /*profile pic*/
         bottom: 36vh;
-        left: -10vw;
+        left: 6vw;
         height: 34vh;
         width: 230px;
     }
+
 
     header {
         display: none;
@@ -50,7 +51,10 @@
 
     main > section:nth-child(1) > nav { /*soceal meadia*/
         bottom: 8vh;
+        left: 17.5vw;
     }
+
+
 
     body>section:nth-child(2) {
         width: 196px;
@@ -88,6 +92,7 @@
     }
 
     /*------------------------------adeucation----------------------------------*/
+
     main > section:nth-child(3) > aside > h5 {
         font-size: 11px;
     }
@@ -190,6 +195,7 @@
     }
 
     /*------------------------------my projects----------------------------------*/
+
     main > section:nth-child(6) > div:nth-child(2) {
         display: flex;
         flex-direction: column;
@@ -280,16 +286,16 @@
         width: 98%;
     }
 
-    footer > section:nth-child(2) > button:nth-child(2) {
-        bottom: -44.1vh;
-        left: 8.100000000000001vw;
-        width: 117px;
+    #btnCv {
+        bottom: -44vh;
+        left: 12.5vw;
+        width: 137px;
     }
 
-    footer > section:nth-child(2) > aside:nth-child(3) > button {
-        bottom: -38vh;
-        left: 49vw;
-        width: 136px;
+    #btnSubmit {
+        bottom: -44.1vh;
+        left: 8.100000000000001vw;
+        width: 110px;
     }
 
     footer > section:nth-child(2) > form {
@@ -330,11 +336,17 @@
 
 
 
-@media screen and (min-width: 1024px) and (max-width: 1440px){
+@media screen and (max-width: 1024px){
 
 
+    /*------------------------------main---------------------------------*/
 
-    /*------------------------------skills----------------------------------*/
+    main>section:first-child>img {
+        width: 30vw;
+        height: 45vh;
+    }
+
+    /*------------------------------about---------------------------------*/
 
 
 
@@ -347,6 +359,10 @@
     main>section:nth-child(2)>aside:nth-child(2)>p:last-child {
         font-size: 120%;
     }
+
+
+    /*------------------------------aducation----------------------------------*/
+
 
     #yellowlineOne {
         left: 13vw;
@@ -372,9 +388,34 @@
     /*------------------------------skills----------------------------------*/
 
 
+    main>section:nth-child(5) {
+        height: 166vh;
+    }
+
+    /*------------------------------animation----------------------------------*/
 
 
+    main>section:nth-child(10) {
+        bottom: 70vh;
+    }
 
+    main>section:nth-child(10)>div:nth-child(1) {
+        top: 10vh;
+    }
+
+
+    /*------------------------------contact me----------------------------------*/
+
+
+    footer>section:nth-child(1)>aside:nth-child(2)>div>aside{
+        font-size: 13px;
+
+    }
+
+    footer>section:nth-child(1)>aside:nth-child(2)>div>img {
+        height: 50px;
+        width: 50px;
+    }
 
 }
 

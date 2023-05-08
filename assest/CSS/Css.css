@@ -309,13 +309,12 @@ main>section:nth-child(4)>div:nth-child(2){
     top: 30vh;
     height: 60vh;
 
-
 }
 
-
-main>section:nth-child(4)>div>img{
+main>section:nth-child(4)>div>aside{
     margin-right: 15px;
     box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
 }
 
 #imgPos{
@@ -334,12 +333,50 @@ main>section:nth-child(4)>div:nth-child(3){
 
 }
 
-main>section:nth-child(4)>div:nth-child(3)>img{
+main>section:nth-child(4)>div:nth-child(3)>aside{
     margin-right: 15px;
     box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.5);
-    border-radius: 20px;
 
 }
+
+main>section:nth-child(4)>div:nth-child(2)>aside:nth-child(1){
+    background: url("../img/green.jpg");
+    background-position: center ;
+    background-size:cover ;
+}
+
+main>section:nth-child(4)>div:nth-child(2)>aside:nth-child(2){
+    background: url("../img/benley.JPG");
+    background-position: center ;
+    background-size:cover ;
+}
+
+main>section:nth-child(4)>div:nth-child(2)>aside:nth-child(3){
+    background: url("../img/nature.JPG");
+    background-position: center ;
+    background-size:cover ;
+}
+
+main>section:nth-child(4)>div:nth-child(3)>aside:nth-child(1){
+    background: url("../img/pic.JPG");
+    background-position: center ;
+    background-size:cover ;
+}
+
+main>section:nth-child(4)>div:nth-child(3)>aside:nth-child(2){
+    background: url("../img/gutir.JPG");
+    background-position: center ;
+    background-size:cover ;
+}
+
+main>section:nth-child(4)>div:nth-child(3)>aside:nth-child(3){
+    background: url("../img/pixart.JPG");
+    background-position: center ;
+    background-size:cover ;
+}
+
+
+
 
 /*---------------------------Skills-------------------------------------*/
 
@@ -917,6 +954,7 @@ footer>section:nth-child(1)>aside:nth-child(2)>div>aside{
     top: 40vh;
     display: inline-block;
     font-family: Arial;
+    font-size: 13px;
 
 }
 
@@ -927,35 +965,6 @@ footer>section:nth-child(1)>aside:nth-child(2)>div>img{
 }
 
 
-
-
-
-
-/*footer>section:nth-child(1)>div>img{*/
-/*    position: relative;*/
-/*    left: 15vw;*/
-/*    bottom: 7vh;*/
-/*    display: flex;*/
-/*    margin: 50px;*/
-/*}*/
-
-
-/*footer>section:nth-child(1)>aside>h2{*/
-/*    position: relative;*/
-/*    left: 22vw;*/
-/*    top: 42vh;*/
-/*    display: inline-block;*/
-/*    margin: 45px;*/
-/*}*/
-
-/*footer>section:nth-child(1)>aside>h4{*/
-/*    position: relative;*/
-/*    left: 13.5vw;*/
-/*    top: 45vh;*/
-/*    display: inline-block;*/
-/*    font-family: Barlow;*/
-
-/*}*/
 
 footer>section:nth-child(2)>form{
     grid-template-columns: 1fr 1fr;
@@ -986,7 +995,7 @@ footer>section:nth-child(2)>form>input{
 
 
 
-footer>section:nth-child(2)>button:nth-child(2){
+#btnSubmit{
     position: relative;
     bottom: -0.1vh;
     left: 41.1vw;
@@ -998,10 +1007,10 @@ footer>section:nth-child(2)>button:nth-child(2){
 
 
 }
-footer>section:nth-child(2)>aside:nth-child(3)>button {
+#btnCv{
     position: relative;
-    bottom: 5vh;
-    left: 52vw;
+    bottom: 0;
+    left: 41.5vw;
     border-radius: 15px;
     border: solid white 1px;
     display: inline-block;
