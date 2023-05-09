@@ -236,54 +236,47 @@ main>section:nth-child(3)>h2{
 
     }
 
-#yellowlineOne{
+/*#yellowlineOne{*/
+/*    position: relative;*/
+/*    left: 23vw;*/
+/*    top: 25vh;*/
+/*}*/
+
+/*#yellowlineTow{*/
+/*    position: relative;*/
+/*    top: 25vh;*/
+/*    left: 57vw;*/
+/*}*/
+
+
+main>section:nth-child(3)>aside:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    gap: 40vw;
+    right: 15%;
+    top: 32%;
     position: relative;
-    left: 23vw;
-    top: 25vh;
 }
 
-#yellowlineTow{
+
+main>section:nth-child(3)>div{
+    display: flex;
+    justify-content: center;
+    gap: 15vw;
     position: relative;
-    top: 25vh;
-    left: 57vw;
+
 }
 
-
-main>section:nth-child(3)>aside:nth-child(4){
-    position: relative;
-    left: 27vw;
-    bottom: 6vh;
-    display: inline-block;
-    font-family: "Barlow";
+main>section:nth-child(3)>div>aside {
+    width: 30vw;
     font-size: 20px;
-}
-
-main>section:nth-child(3)>aside:nth-child(5){
-    position: relative;
-    left: 9vw;
-    top: 24vh;
-    display: inline-block;
     font-family: "Barlow";
-    font-size: 20px;
-
-}
-
-main>section:nth-child(3)>aside:nth-child(6) {
     position: relative;
-    display: inline-block;
-    top: -6vh;
-    left: 33vw;
-    font-family: "Barlow";
-    font-size: 20px;
-}
+    left: 7%;
+    bottom: 150px;
+    letter-spacing: 2px;
 
-main>section:nth-child(3)>aside:nth-child(7){
-    position: relative;
-    display: inline-block;
-    top: 24vh;
-    left: 23vw;
-    font-family: "Barlow";
-    font-size: 20px;
+
 
 }
 
@@ -458,6 +451,8 @@ main>section:nth-child(5)>aside:nth-child(3)>div>h6 {
     font-family: Barlow;
     font-size: 19px;
 }
+
+
 
 /*---------------------------projects-------------------------------------*/
 
@@ -954,7 +949,6 @@ footer>section:nth-child(1)>aside:nth-child(2)>div>aside{
     top: 40vh;
     display: inline-block;
     font-family: Arial;
-    font-size: 13px;
 
 }
 
@@ -1046,3 +1040,4 @@ textarea{
 
 
 }
+

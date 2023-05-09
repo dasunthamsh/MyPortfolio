@@ -319,12 +319,73 @@
 
 
 }
-
+/*---------------------------------------------------------------------------------*/
 @media screen and (min-width: 320px) and (max-width: 375px){
 }
 @media screen and (min-width: 375px) and (max-width: 425px){}
 @media screen and (min-width: 425px) and (max-width: 768px){}
-@media screen and (min-width: 768px) and (max-width: 1024px){}
+
+
+/*---------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 768px) {
+
+
+    /*------------------------------ main form ----------------------------------*/
+
+
+    /*main>section:first-child>img {*/
+    /*    width: 39vw;*/
+    /*}*/
+
+    /*main>section:first-child>h1 {*/
+    /*    font-size: 50px;*/
+    /*}*/
+
+    /*main>section>article {*/
+    /*    font-size: 20px;*/
+    /*}*/
+
+    /*------------------------------ about me ----------------------------------*/
+
+
+    /*main>section:nth-child(2)>aside:nth-child(2) {*/
+    /*    left: 20%;*/
+    /*    top: 21vh;*/
+    /*    width: 87vh;*/
+    /*}*/
+
+    /*main>section:nth-child(2)>aside:nth-child(2)>p:first-child {*/
+    /*    font-size: 200%;*/
+    /*}*/
+    /*main>section:nth-child(2)>aside:nth-child(2)>p:last-child {*/
+    /*    font-size: 120%;*/
+    /*}*/
+
+
+    /*------------------------------ skills ----------------------------------*/
+
+    main>section:nth-child(5)>aside:nth-child(3)>div>img {
+        margin: 10px;
+    }
+
+
+    /*------------------------------ contact me ----------------------------------*/
+
+
+    footer>section:nth-child(1)>aside:nth-child(2)>div>img {
+        left: 5vw;
+    }
+
+    footer>section:nth-child(1)>aside:nth-child(2)>div>aside {
+        left: 7vw;
+    }
+
+
+
+
+
+}
 
 
 
@@ -335,8 +396,20 @@
 
 
 
+
+
+
+/*---------------------------------------------------------------------------------*/
 
 @media screen and (max-width: 1024px){
+
+
+
+    header>nav>li {
+        left: 30vw;
+        font-size: 12px;
+        margin: 15px;
+    }
 
 
     /*------------------------------main---------------------------------*/
@@ -361,28 +434,6 @@
     }
 
 
-    /*------------------------------aducation----------------------------------*/
-
-
-    #yellowlineOne {
-        left: 13vw;
-    }
-
-    main>section:nth-child(3)>aside:nth-child(4) {
-        left: 18vw;
-    }
-
-    main>section:nth-child(3)>aside:nth-child(5) {
-        left: -9vw;
-    }
-
-    main>section:nth-child(3)>aside:nth-child(6) {
-        left: 21vw;
-    }
-
-    main>section:nth-child(3)>aside:nth-child(7) {
-        left: 5vw;
-    }
 
 
     /*------------------------------skills----------------------------------*/
@@ -409,7 +460,6 @@
 
     footer>section:nth-child(1)>aside:nth-child(2)>div>aside{
         font-size: 13px;
-
     }
 
     footer>section:nth-child(1)>aside:nth-child(2)>div>img {

@@ -106,6 +106,114 @@ body>section:nth-child(1)>aside>div:nth-child(2) {
 }
 
 
+/*------------------------------------ skills animation --------------------------------------------------------*/
+
+/*main>section:nth-child(5)>aside:nth-child(4){*/
+/*    position: relative;*/
+/*    width: 40%;*/
+/*    height: 50%;*/
+/*    left: 50vw;*/
+/*}*/
+
+/*main>section:nth-child(5)>aside:nth-child(4)>img{*/
+/*    width: 40px;*/
+/*    height: 40px;*/
+/*    position: relative;*/
+/*    animation-name:skills ;*/
+/*    animation-iteration-count: infinite;*/
+/*    animation-duration: 6s;*/
+/*    opacity: 20%;*/
+
+
+
+/*}*/
+
+/*@keyframes skills {*/
+/*    0%{*/
+/*        transform: translatey(0px);*/
+/*    }*/
+/*    50%{*/
+/*        transform: translatey(-20px);*/
+
+/*    }*/
+/*    100%{*/
+/*        transform: translatey(0px);*/
+
+/*    }*/
+
+
+/*}*/
+
+
+/*main>section:nth-child(5)>aside:nth-child(4)>img:nth-child(1){*/
+/*    left: 50%;*/
+/*    top: 60%;*/
+/*}*/
+
+/*main>section:nth-child(5)>aside:nth-child(4)>img:nth-child(2){*/
+/*    left: 20%;*/
+/*    top: 30%;*/
+/*    width: 50px;*/
+/*    height: 50px;*/
+/*}*/
+
+/*main>section:nth-child(5)>aside:nth-child(4)>img:nth-child(3){*/
+/*    left: 60%;*/
+/*    top: 30%;*/
+/*}*/
+
+
+/*main>section:nth-child(5)>aside:nth-child(4)>img:nth-child(4){*/
+/*    left: 40%;*/
+/*    top: 50%;*/
+
+/*}*/
+
+/*main>section:nth-child(5)>aside:nth-child(4)>img:nth-child(5){*/
+/*    left: 20%;*/
+/*    top: 20%;*/
+/*}*/
+/*main>section:nth-child(5)>aside:nth-child(4)>img:nth-child(6){*/
+/*    right: 10%;*/
+/*    top: 70%;*/
+/*}*/
+/*main>section:nth-child(5)>aside:nth-child(4)>img:nth-child(7){*/
+/*    left: 20%;*/
+/*    top: 30%;*/
+/*}*/
+/*main>section:nth-child(5)>aside:nth-child(4)>img:nth-child(8){*/
+/*    left: 20%;*/
+/*    top: 60%;*/
+/*}*/
+/*main>section:nth-child(5)>aside:nth-child(4)>img:nth-child(9){*/
+/*    right: 10%;*/
+/*    top: 10%;*/
+/*}*/
+/*main>section:nth-child(5)>aside:nth-child(4)>img:nth-child(10){*/
+/*    right: 42%;*/
+/*    top: 50%;*/
+/*}*/
+/*main>section:nth-child(5)>aside:nth-child(4)>img:nth-child(11){*/
+/*    right: 15%;*/
+/*    top: 35%;*/
+/*}*/
+
+/*main>section:nth-child(5)>aside:nth-child(4)>img:nth-child(12){*/
+/*    right: 35%;*/
+/*    top: 50%;*/
+/*    width: 70px;*/
+/*    height: 70px;*/
+/*}*/
+
+/*main>section:nth-child(5)>aside:nth-child(4)>img:nth-child(13){*/
+/*    right: 20%;*/
+/*    top: 10%;*/
+/*}*/
+
+
+
+
+
 
 
 

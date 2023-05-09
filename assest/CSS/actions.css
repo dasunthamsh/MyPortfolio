@@ -174,3 +174,13 @@ main>section:nth-child(8)>div:nth-child(2)>aside:hover>:not(:hover) {
     transform: scale(.9);
 
 }
+
+/*------------------------skills animation hover --------------------------*/
+
+
+/*main>section:nth-child(5)>aside:nth-child(4)>img:hover{*/
+/*    filter: invert(63%) sepia(94%) saturate(727%) hue-rotate(358deg) brightness(99%) contrast(107%);*/
+/*    opacity: 100%;*/
+/*    box-shadow: 1px 1px 10px 1px;*/
+
+/*}*/
