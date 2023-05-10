@@ -5,80 +5,52 @@
     <title>Title</title>
 </head>
 <body>
-  <section>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-  </section>
+  <main>
+    <section></section>
+    </main>
 </body>
 
   <style>
-
-    div:nth-child(1){
-      background:url("../../../assest/img/1.png") ;
-      background-position: center;
-      background-size:cover ;
-
-    }
-    div:nth-child(2){
-      background:url("../../../assest/img/2.png");
-      background-position: center;
-      background-size:cover ;
-    }
-    div:nth-child(3){
-      background:url("../../../assest/img/3.png") ;
-      background-position: center;
-      background-size:cover ;
-    }
-    div:nth-child(4){
-      background:url("../../../assest/img/4.png") ;
-      background-position: center;
-      background-size:cover ;
-    }
-    div:nth-child(5){
-      background:url("../../../assest/img/5.png") ;
-      background-position: center;
-      background-size:cover ;
-    }
-
-
-    section{
-      position:relative;
-      margin: auto;
-      display: flex;
-      width: calc(5*100vw);
-      height: 100vh;
+    main>section{
+      background: yellow;
+      border-radius: 10px;
+      width: 150px;
+      height: 50px;
+      animation-duration: 5s;
+      animation-name: cse_3;
       animation-iteration-count: infinite;
-      animation-duration: 10s;
-      animation-name: animation;
-      animation-direction: alternate-reverse ;
+        animation-direction:alternate;/*atart end --> end start */
+
     }
 
-    div{
-      height: 100vh;
-      width: 100vw;
-      margin: auto;
-    }
 
-    @keyframes animation {
-      0%{
-        left: 0;
-      }
-      25%{
-        left: -100vw;
-      }
-      50%{
-        left: -200vw;
-      }
-      75%{
-        left: -300vw;
-      }
-      100%{
-        left: -400vw;
-      }
+    @keyframes cse_3 {
+        0%{
+            background: blue;
+            margin: 0px 0px 0px 0px;
 
+        }
+        25%{
+            background: yellow;
+            margin: 0px 0px 0px 450px;
+
+        }
+        50%{
+            background: red;
+            margin: 550px 0px 0px 450px;
+            transform: rotate(-360deg);
+
+
+        }
+        75%{
+            background: deeppink;
+            margin: 550px 450px 0px 0px;
+
+
+        }
+        100%{
+
+        }
     }
   </style>
 </html>

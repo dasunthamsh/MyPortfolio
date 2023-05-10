@@ -1,10 +1,7 @@
 @media screen and (max-width: 320px) {
 
     /*---------------------------hedder-------------------------------------*/
-    body > section:nth-child(1) {
-        height: 106vh;
-        width: 95.5vw;
-    }
+
 
     header {
         height: 2%;
@@ -14,30 +11,28 @@
         top: 9px;
     }
 
-    header > nav > li {
-        display: none;
-    }
-
-    main > section:first-child > img { /*profile pic*/
-        bottom: 36vh;
-        left: 6vw;
-        width: 76vw;
-        height: 37vh;
-    }
-
-    main>section:first-child>img {
-        width: 76vw;
-        height: 37vh;
-    }
 
 
-    header {
-        display: none;
-    }
+    /*main > section:first-child > img { !*profile pic*!*/
+    /*    bottom: 36vh;*/
+    /*    left: 6vw;*/
+    /*    width: 76vw;*/
+    /*    height: 37vh;*/
+    /*}*/
 
-    header>nav {
-        display: none;
-    }
+    /*main>section:first-child>img {*/
+    /*    width: 76vw;*/
+    /*    height: 37vh;*/
+    /*}*/
+
+
+    /*header {*/
+    /*    display: none;*/
+    /*}*/
+
+    /*header>nav {*/
+    /*    display: none;*/
+    /*}*/
 
     /*---------------------------main-------------------------------------*/
     main > section:first-child > h2 { /*hellow i am*/
@@ -70,31 +65,31 @@
 
 
     /*---------------------------about me-------------------------------------*/
-    main > section:nth-child(2) > aside > h2 {
-        left: 20.5%;
-        bottom: -25%;
-        font-size: 250%;
-    }
+    /*main > section:nth-child(2) > aside > h2 {*/
+    /*    left: 20.5%;*/
+    /*    bottom: -25%;*/
+    /*    font-size: 250%;*/
+    /*}*/
 
-    main > section:nth-child(2) > aside > img {
-        left: 17vw;
-        top: 18vh;
-        width: 70vw;
-        height: 40vh;
-    }
+    /*main > section:nth-child(2) > aside > img {*/
+    /*    left: 17vw;*/
+    /*    top: 18vh;*/
+    /*    width: 70vw;*/
+    /*    height: 40vh;*/
+    /*}*/
 
-    main > section:nth-child(2) > aside:nth-child(2) {
-        left: 18px;
-        top: 14vh;
-    }
+    /*main > section:nth-child(2) > aside:nth-child(2) {*/
+    /*    left: 18px;*/
+    /*    top: 14vh;*/
+    /*}*/
 
-    main > section:nth-child(2) > aside:nth-child(2) > p:first-child {
-        font-size: 200%;
-    }
+    /*main > section:nth-child(2) > aside:nth-child(2) > p:first-child {*/
+    /*    font-size: 200%;*/
+    /*}*/
 
-    main > section:nth-child(2) > aside:nth-child(2) > p:last-child {
-        font-size: 100%;
-    }
+    /*main > section:nth-child(2) > aside:nth-child(2) > p:last-child {*/
+    /*    font-size: 100%;*/
+    /*}*/
 
     /*------------------------------adeucation----------------------------------*/
 
@@ -252,11 +247,11 @@
 
 
     /*------------------------------animation----------------------------------*/
-    main > section:nth-child(9) > div {
-        height: 103vh;
-        width: 196vw;
-        right: 413px;
-    }
+    /*main > section:nth-child(9) > div {*/
+    /*    height: 103vh;*/
+    /*    width: 196vw;*/
+    /*    right: 413px;*/
+    /*}*/
 
     main > section:nth-child(10) {
         bottom: 81.2vh;
@@ -328,7 +323,25 @@
 @media screen and (min-width: 320px) and (max-width: 375px){
 }
 @media screen and (min-width: 375px) and (max-width: 425px){}
-@media screen and (min-width: 425px) and (max-width: 768px){}
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------*/
+@media screen and (max-width: 426px) {
+
+
+
+    /*--------------------------------------header---------------------------------------*/
+
+
+    header > nav > li {
+        display: none;
+    }
+}
 
 
 /*---------------------------------------------------------------------------------*/
@@ -337,6 +350,10 @@
 
 
     /*------------------------------ main form ----------------------------------*/
+
+
+
+
 
 
     /*main>section:first-child>img:nth-child(3) {*/
@@ -406,7 +423,7 @@
 
 /*---------------------------------------------------------------------------------*/
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) {
 
 
 
@@ -419,23 +436,38 @@
 
     /*------------------------------main---------------------------------*/
 
-    main>section:first-child>img {
-        width: 30vw;
-        height: 45vh;
-    }
+    /*main>section:first-child>div:nth-child(3){*/
+    /*    width: 263px;*/
+    /*    height: 263px;*/
+    /*    display: flex;*/
+    /*    left: 0;*/
+    /*    right: 0;*/
+    /*    margin: auto;*/
+    /*    bottom: 38vh;*/
+    /*}*/
 
     /*------------------------------about---------------------------------*/
 
 
 
     main>section:nth-child(2)>aside:nth-child(2) {
-        left: 54%;
-        top: -30vh;
-        width: 60vh;
+        left: 0;
+        right: 0;
+        top: 170px;
+        margin: auto;
+        display: flex;
+        width: 100vh;
     }
 
     main>section:nth-child(2)>aside:nth-child(2)>p:last-child {
         font-size: 120%;
+    }
+
+    main>section:nth-child(2)>aside>img {
+        display: flex;
+        left: 0;
+        right: 0;
+        margin: auto;
     }
 
 
@@ -447,6 +479,24 @@
     main>section:nth-child(5) {
         height: 166vh;
     }
+
+
+
+    /*------------------------------servease----------------------------------*/
+
+
+
+    main>section:nth-child(7) {
+        height: 285vh;
+    }
+
+    main>section:nth-child(7)>div:nth-child(4) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
 
     /*------------------------------animation----------------------------------*/
 

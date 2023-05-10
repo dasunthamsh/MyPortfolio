@@ -9,24 +9,20 @@ html{
 
 
 body{
-    height:  100vh;
-    width: 99vw;
     background-color: #191a1c;   /*  bodey clor to black*/
     overflow-x: hidden;
-
+    position: relative;
 }
 
-
+/*main{*/
+/*    overflow: hidden;*/
+/*}*/
 
 
 body>section:nth-child(1){
     height:  100vh;
-    width: 98vw;
     background: #131312;
     border-radius: 20px;
-    margin-top: 5px;
-    margin-left: 5px;
-    overflow: hidden;
 
 
 }
@@ -64,7 +60,7 @@ header>nav>aside>img{    /*tuna*/
 
 header>nav{
 
-    width: 90%;
+    width: 98%;
     position: relative;
     display: inline-block;
 }
@@ -87,15 +83,15 @@ a{
 /*------------------------Main Home Page--------------------------*/
 
 
-main{
-    overflow-x: hidden;
-}
+
 
 main>section:first-child{
   position: absolute;
     top: 22vh;
     left: 6vw;
-}
+    width: 90vw;
+
+    }
 
 
 main>section:first-child>h2{        /*hellow i am*/
@@ -118,8 +114,8 @@ main>section:first-child>h1{          /*dasun*/
 }
 main>section:first-child>div:nth-child(3){  /*main png*/
     position: relative;
-    width: 400px;
-    height: 400px;
+    /*width: 400px;*/
+    /*height: 400px;*/
     left: 50vw;
     border-radius: 100%;
     bottom: 20vh;
@@ -127,8 +123,8 @@ main>section:first-child>div:nth-child(3){  /*main png*/
     background-size: cover;
     background-position: center;
     display: inline-block;
-    /*width: 26vw;*/
-    /*height: 53vh;*/
+    width: 28vw;
+    height: 53vh;
 }
 
 
@@ -197,12 +193,13 @@ main>section:nth-child(2)>div{
     position: relative;
     width: 12vw;
     height: 15vh;
-    left: 25vw;
-    top: -60vh;
+    left: -13vw;
+    top: -35vh;
     border-radius: 100%;
     background: #ffb400;
     z-index: -1;
     filter: blur(200px);
+    display: inline-block;
 
 }
 
@@ -231,7 +228,7 @@ main>section:nth-child(2)>aside:nth-child(2)>p:last-child{
 
 main>section:nth-child(3){
     position: relative;
-    width: 99vw;
+    width: 95vw;
     height: 100vh;
 }
 
@@ -245,17 +242,6 @@ main>section:nth-child(3)>h2{
 
     }
 
-/*#yellowlineOne{*/
-/*    position: relative;*/
-/*    left: 23vw;*/
-/*    top: 25vh;*/
-/*}*/
-
-/*#yellowlineTow{*/
-/*    position: relative;*/
-/*    top: 25vh;*/
-/*    left: 57vw;*/
-/*}*/
 
 
 main>section:nth-child(3)>aside:nth-child(2) {
@@ -701,8 +687,10 @@ main>section:nth-child(9){
     position: relative;
     top: 170px;
     left: 5px;
+    width: 98vw;
 
 }
+
 main>section:nth-child(9)>div{
     position: relative;
     height: 90vh;
@@ -711,10 +699,7 @@ main>section:nth-child(9)>div{
     transform: rotate(322deg);
     bottom: 300px;
     right: 300px;
-
-
-
-}
+    }
 
 main>section:nth-child(9)>div>aside{
     width: 100vw;
@@ -742,11 +727,11 @@ main>section:nth-child(9)>div>aside:nth-child(1)>div:nth-child(3) {
 }
 
 
-/*main>section:nth-child(9)>div>aside:nth-child(1)>div:nth-child(4) {*/
-/*    background: url("../../assest/img/ani6.jpg");*/
-/*    background-size:cover;*/
-/*    background-position:center;*/
-/*}*/
+main>section:nth-child(9)>div>aside:nth-child(1)>div:nth-child(4) {
+    background: url("../../assest/img/ani6.jpg");
+    background-size:cover;
+    background-position:center;
+}
 
 main>section:nth-child(9)>div>aside:nth-child(2)>div:nth-child(1) {
     background: url("../../assest/img/ani9.jpg");
@@ -866,7 +851,6 @@ main>section:nth-child(10){
     bottom: 72.2vh;
     background: rgba(0,0,0,0.6);
     height: 90vh;
-    left: 5px;
 }
 
 main>section:nth-child(10)>div:nth-child(1) {
