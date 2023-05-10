@@ -170,7 +170,7 @@ main>section>nav>div{
 
 
 main>section:nth-child(2)>aside>h2{     /*about me*/
-    position: absolute;
+    position: relative;
     left: 20.5%;
     bottom: -25%;
     font-size: 350%;

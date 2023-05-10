@@ -453,7 +453,7 @@
     main>section:nth-child(2)>aside:nth-child(2) {
         left: 0;
         right: 0;
-        top: 170px;
+        top: 111px;
         margin: auto;
         display: flex;
         width: 100vh;
@@ -468,6 +468,7 @@
         left: 0;
         right: 0;
         margin: auto;
+        top: 4vh    ;
     }
 
 
