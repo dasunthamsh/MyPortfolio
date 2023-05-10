@@ -21,8 +21,13 @@
     main > section:first-child > img { /*profile pic*/
         bottom: 36vh;
         left: 6vw;
-        height: 34vh;
-        width: 230px;
+        width: 76vw;
+        height: 37vh;
+    }
+
+    main>section:first-child>img {
+        width: 76vw;
+        height: 37vh;
     }
 
 
@@ -328,13 +333,13 @@
 
 /*---------------------------------------------------------------------------------*/
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
 
 
     /*------------------------------ main form ----------------------------------*/
 
 
-    /*main>section:first-child>img {*/
+    /*main>section:first-child>img:nth-child(3) {*/
     /*    width: 39vw;*/
     /*}*/
 

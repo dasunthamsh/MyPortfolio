@@ -114,12 +114,21 @@ main>section:first-child>h1{          /*dasun*/
     top: 10vh;
 
 
-}
-main>section:first-child>img{  /*main png*/
-    position: relative;
-    left: 50vw;
-    bottom: 20vh;
 
+}
+main>section:first-child>div:nth-child(3){  /*main png*/
+    position: relative;
+    width: 400px;
+    height: 400px;
+    left: 50vw;
+    border-radius: 100%;
+    bottom: 20vh;
+    background: url("../img/profile.png");
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    /*width: 26vw;*/
+    /*height: 53vh;*/
 }
 
 
@@ -308,7 +317,7 @@ main>section:nth-child(4)>div>aside{
     margin-right: 15px;
     box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.5);
     border-radius: 20px;
-}
+    }
 
 #imgPos{
     position: relative;
@@ -323,6 +332,7 @@ main>section:nth-child(4)>div:nth-child(3){
     justify-content: center;
     top: 32vh;
     height: 60vh;
+
 
 }
 
