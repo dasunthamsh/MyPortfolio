@@ -34,289 +34,306 @@
     /*    display: none;*/
     /*}*/
 
-    /*---------------------------main-------------------------------------*/
-    main > section:first-child > h2 { /*hellow i am*/
-        font-size: 2.3rem;
-        top: 20vh;
-    }
+    /*!*---------------------------main-------------------------------------*!*/
+    /*main > section:first-child > h2 { !*hellow i am*!*/
+    /*    font-size: 2.3rem;*/
+    /*    top: 20vh;*/
+    /*}*/
 
-    main > section:first-child > h1 { /*dasun*/
-        font-size: 38px;
-        top: 15vh;
-    }
+    /*main > section:first-child > h1 { !*dasun*!*/
+    /*    font-size: 38px;*/
+    /*    top: 15vh;*/
+    /*}*/
 
-    main > section > article {
-        bottom: 8vh;
-    }
+    /*main > section > article {*/
+    /*    bottom: 8vh;*/
+    /*}*/
 
-    main > section:nth-child(1) > nav { /*soceal meadia*/
-        bottom: 8vh;
-        left: 17.5vw;
-    }
-
-
-
-    body>section:nth-child(2) {
-        width: 196px;
-        height: 201px;
-        left: 21vw;
-        top: 66px;
-    }
+    /*main > section:nth-child(1) > nav { !*soceal meadia*!*/
+    /*    bottom: 8vh;*/
+    /*    left: 17.5vw;*/
+    /*}*/
 
 
-    /*---------------------------about me-------------------------------------*/
-    /*main > section:nth-child(2) > aside > h2 {*/
-    /*    left: 20.5%;*/
-    /*    bottom: -25%;*/
+
+    /*body>section:nth-child(2) {*/
+    /*    width: 196px;*/
+    /*    height: 201px;*/
+    /*    left: 21vw;*/
+    /*    top: 66px;*/
+    /*}*/
+
+
+    /*!*---------------------------about me-------------------------------------*!*/
+    /*!*main > section:nth-child(2) > aside > h2 {*!*/
+    /*!*    left: 20.5%;*!*/
+    /*!*    bottom: -25%;*!*/
+    /*!*    font-size: 250%;*!*/
+    /*!*}*!*/
+
+    /*!*main > section:nth-child(2) > aside > img {*!*/
+    /*!*    left: 17vw;*!*/
+    /*!*    top: 18vh;*!*/
+    /*!*    width: 70vw;*!*/
+    /*!*    height: 40vh;*!*/
+    /*!*}*!*/
+
+    /*!*main > section:nth-child(2) > aside:nth-child(2) {*!*/
+    /*!*    left: 18px;*!*/
+    /*!*    top: 14vh;*!*/
+    /*!*}*!*/
+
+    /*!*main > section:nth-child(2) > aside:nth-child(2) > p:first-child {*!*/
+    /*!*    font-size: 200%;*!*/
+    /*!*}*!*/
+
+    /*!*main > section:nth-child(2) > aside:nth-child(2) > p:last-child {*!*/
+    /*!*    font-size: 100%;*!*/
+    /*!*}*!*/
+
+    /*!*------------------------------adeucation----------------------------------*!*/
+
+    /*main > section:nth-child(3) > aside > h5 {*/
+    /*    font-size: 11px;*/
+    /*}*/
+
+    /*main > section:nth-child(3) > h2 {*/
+    /*    font-size: 250%;*/
+    /*    left: 29vw;*/
+    /*}*/
+
+    /*main > section:nth-child(3) > aside:nth-child(4) {*/
+    /*    left: 15vw;*/
+    /*    bottom: -17vh;*/
+    /*}*/
+
+    /*main > section:nth-child(3) > aside:nth-child(5) {*/
+    /*    left: -42vw;*/
+    /*    top: 40vh;*/
+    /*}*/
+
+    /*main > section:nth-child(3) > aside:nth-child(6) {*/
+    /*    top: 44vh;*/
+    /*    left: 16vw;*/
+    /*}*/
+
+    /*main > section:nth-child(3) > aside:nth-child(7) {*/
+    /*    top: 68vh;*/
+    /*    left: -18vw;*/
+    /*}*/
+
+    /*#yellowlineOne {*/
+    /*    display: none;*/
+    /*}*/
+
+    /*#yellowlineTow {*/
+    /*    display: none;*/
+    /*}*/
+
+    /*!*------------------------------portfolio----------------------------------*!*/
+    /*main > section:nth-child(4) > h2 {*/
+    /*    font-size: 250%;*/
+    /*    top: 10vh;*/
+    /*    left: 25vw;*/
+    /*}*/
+
+    /*#img1 {*/
+    /*    top: 1.5vh;*/
+    /*    border-radius: 20px;*/
+    /*}*/
+
+    /*#img2 {*/
+    /*    top: 20.5vh;*/
+    /*    border-radius: 20px;*/
+    /*}*/
+
+    /*main > section:nth-child(4) > div:nth-child(2) {*/
+    /*    left: -1vw;*/
+    /*    top: 26vh;*/
+    /*}*/
+
+    /*#img2 {*/
+    /*    top: -4.5vh;*/
+    /*}*/
+
+    /*main > section:nth-child(4) > div:nth-child(3) {*/
+    /*    left: -1vw;*/
+    /*    top: 19vh;*/
+    /*}*/
+
+
+    /*!*------------------------------skills----------------------------------*!*/
+    /*main > section:nth-child(5) > h2:nth-child(1) {*/
+    /*    top: 220px;*/
+    /*    left: 33%;*/
     /*    font-size: 250%;*/
     /*}*/
 
-    /*main > section:nth-child(2) > aside > img {*/
-    /*    left: 17vw;*/
-    /*    top: 18vh;*/
-    /*    width: 70vw;*/
-    /*    height: 40vh;*/
+    /*main > section:nth-child(5) > aside:nth-child(3) > div {*/
+    /*    left: 180px;*/
+    /*    top: 214px;*/
+    /*    margin: 8px;*/
     /*}*/
 
-    /*main > section:nth-child(2) > aside:nth-child(2) {*/
-    /*    left: 18px;*/
-    /*    top: 14vh;*/
+
+    /*main > section:nth-child(5) > aside:nth-child(3) {*/
+    /*    height: 170px;*/
+    /*    left: -28vh;*/
     /*}*/
 
-    /*main > section:nth-child(2) > aside:nth-child(2) > p:first-child {*/
-    /*    font-size: 200%;*/
+    /*main > section:nth-child(5) > aside:nth-child(2) > h1:nth-child(1) {*/
+    /*    top: 229px;*/
     /*}*/
 
-    /*main > section:nth-child(2) > aside:nth-child(2) > p:last-child {*/
-    /*    font-size: 100%;*/
+    /*main > section:nth-child(5) > aside:nth-child(2) > h1 {*/
+    /*    top: 202px;*/
+    /*    left: 22px;*/
     /*}*/
 
-    /*------------------------------adeucation----------------------------------*/
-
-    main > section:nth-child(3) > aside > h5 {
-        font-size: 11px;
-    }
-
-    main > section:nth-child(3) > h2 {
-        font-size: 250%;
-        left: 29vw;
-    }
-
-    main > section:nth-child(3) > aside:nth-child(4) {
-        left: 15vw;
-        bottom: -17vh;
-    }
-
-    main > section:nth-child(3) > aside:nth-child(5) {
-        left: -42vw;
-        top: 40vh;
-    }
-
-    main > section:nth-child(3) > aside:nth-child(6) {
-        top: 44vh;
-        left: 16vw;
-    }
-
-    main > section:nth-child(3) > aside:nth-child(7) {
-        top: 68vh;
-        left: -18vw;
-    }
-
-    #yellowlineOne {
-        display: none;
-    }
-
-    #yellowlineTow {
-        display: none;
-    }
-
-    /*------------------------------portfolio----------------------------------*/
-    main > section:nth-child(4) > h2 {
-        font-size: 250%;
-        top: 10vh;
-        left: 25vw;
-    }
-
-    #img1 {
-        top: 1.5vh;
-        border-radius: 20px;
-    }
-
-    #img2 {
-        top: 20.5vh;
-        border-radius: 20px;
-    }
-
-    main > section:nth-child(4) > div:nth-child(2) {
-        left: -1vw;
-        top: 26vh;
-    }
-
-    #img2 {
-        top: -4.5vh;
-    }
-
-    main > section:nth-child(4) > div:nth-child(3) {
-        left: -1vw;
-        top: 19vh;
-    }
-
-
-    /*------------------------------skills----------------------------------*/
-    main > section:nth-child(5) > h2:nth-child(1) {
-        top: 220px;
-        left: 33%;
-        font-size: 250%;
-    }
-
-    main > section:nth-child(5) > aside:nth-child(3) > div {
-        left: 180px;
-        top: 214px;
-        margin: 8px;
-    }
-
-
-    main > section:nth-child(5) > aside:nth-child(3) {
-        height: 170px;
-        left: -28vh;
-    }
-
-    main > section:nth-child(5) > aside:nth-child(2) > h1:nth-child(1) {
-        top: 229px;
-    }
-
-    main > section:nth-child(5) > aside:nth-child(2) > h1 {
-        top: 202px;
-        left: 22px;
-    }
-
-    main > section:nth-child(5) > aside:nth-child(3) > div > h6 {
-        font-size: 14px;
-    }
-
-    /*------------------------------my projects----------------------------------*/
-
-    main > section:nth-child(6) > div:nth-child(2) {
-        display: flex;
-        flex-direction: column;
-        left: 5%;
-
-    }
-
-    main > section:nth-child(6) > div:nth-child(2) > aside {
-        width: 143%;
-    }
-
-    main > section:nth-child(6) > h2:nth-child(1) {
-        font-size: 250%;
-        left: 25%;
-    }
-
-    /*------------------------------servese----------------------------------*/
-    main > section:nth-child(7) > h2:nth-child(2) {
-        top: -2%;
-    }
-
-    main > section:nth-child(7) > h1:nth-child(3) {
-        left: 18%;
-        top: -4%;
-
-    }
-
-    main > section:nth-child(7) > div:nth-child(4) {
-        top: 1%;
-        flex-direction: column;
-        left: 20px;
-    }
-
-
-
-    main > section:nth-child(7) {
-        height: 230vh;
-    }
-
-
-    /*------------------------------assigment----------------------------------*/
-    main > section:nth-child(8) > h2:nth-child(1) {
-        font-size: 250%;
-    }
-
-    main>section:nth-child(8)>div:nth-child(2) {
-        width: 85vw;
-    }
-
-
-    /*------------------------------animation----------------------------------*/
-    /*main > section:nth-child(9) > div {*/
-    /*    height: 103vh;*/
-    /*    width: 196vw;*/
-    /*    right: 413px;*/
+    /*main > section:nth-child(5) > aside:nth-child(3) > div > h6 {*/
+    /*    font-size: 14px;*/
     /*}*/
 
-    main > section:nth-child(10) {
-        bottom: 81.2vh;
-        height: 103.5vh;
-    }
+    /*!*------------------------------my projects----------------------------------*!*/
 
-    main > section:nth-child(10) > div:nth-child(1) > h6 {
-        font-size: 10px;
-    }
+    /*main > section:nth-child(6) > div:nth-child(2) {*/
+    /*    display: flex;*/
+    /*    flex-direction: column;*/
+    /*    left: 5%;*/
 
-    main > section:nth-child(10) > div:nth-child(1) > h1 {
-        font-size: 30px;
-    }
+    /*}*/
 
-    main > section:nth-child(10) > div:nth-child(1) {
-        top: 16vh;
-        left: 9vw;
-        width: 60vw;
-    }
+    /*main > section:nth-child(6) > div:nth-child(2) > aside {*/
+    /*    width: 143%;*/
+    /*}*/
+
+    /*main > section:nth-child(6) > h2:nth-child(1) {*/
+    /*    font-size: 250%;*/
+    /*    left: 25%;*/
+    /*}*/
+
+    /*!*------------------------------servese----------------------------------*!*/
+    /*main > section:nth-child(7) > h2:nth-child(2) {*/
+    /*    top: -2%;*/
+    /*}*/
+
+    /*main > section:nth-child(7) > h1:nth-child(3) {*/
+    /*    left: 18%;*/
+    /*    top: -4%;*/
+
+    /*}*/
+
+    /*main > section:nth-child(7) > div:nth-child(4) {*/
+    /*    top: 1%;*/
+    /*    flex-direction: column;*/
+    /*    left: 20px;*/
+    /*}*/
 
 
-    /*------------------------------contact me----------------------------------*/
-    #ContactMe {
-        font-size: 250%;
-    }
 
-    footer > section:nth-child(2) > form > input {
-        width: 82vw;
-    }
+    /*main > section:nth-child(7) {*/
+    /*    height: 230vh;*/
+    /*}*/
 
-    footer > section:nth-child(2) > form > textarea {
+
+    /*!*------------------------------assigment----------------------------------*!*/
+    /*main > section:nth-child(8) > h2:nth-child(1) {*/
+    /*    font-size: 250%;*/
+    /*}*/
+
+    /*main>section:nth-child(8)>div:nth-child(2) {*/
+    /*    width: 85vw;*/
+    /*}*/
+
+
+    /*!*------------------------------animation----------------------------------*!*/
+    /*!*main > section:nth-child(9) > div {*!*/
+    /*!*    height: 103vh;*!*/
+    /*!*    width: 196vw;*!*/
+    /*!*    right: 413px;*!*/
+    /*!*}*!*/
+
+    /*main > section:nth-child(10) {*/
+    /*    bottom: 81.2vh;*/
+    /*    height: 103.5vh;*/
+    /*}*/
+
+    /*main > section:nth-child(10) > div:nth-child(1) > h6 {*/
+    /*    font-size: 10px;*/
+    /*}*/
+
+    /*main > section:nth-child(10) > div:nth-child(1) > h1 {*/
+    /*    font-size: 30px;*/
+    /*}*/
+
+    /*main > section:nth-child(10) > div:nth-child(1) {*/
+    /*    top: 16vh;*/
+    /*    left: 9vw;*/
+    /*    width: 60vw;*/
+    /*}*/
+
+
+    /*!*------------------------------contact me----------------------------------*!*/
+    /*#ContactMe {*/
+    /*    font-size: 250%;*/
+    /*}*/
+
+    /*footer > section:nth-child(2) > form > input {*/
+    /*    width: 82vw;*/
+    /*}*/
+
+    /*footer > section:nth-child(2) > form > textarea {*/
+    /*    width: 98%;*/
+    /*}*/
+
+    /*#btnCv {*/
+    /*    bottom: -44vh;*/
+    /*    left: 12.5vw;*/
+    /*    width: 137px;*/
+    /*}*/
+
+    /*#btnSubmit {*/
+    /*    bottom: -44.1vh;*/
+    /*    left: 8.100000000000001vw;*/
+    /*    width: 110px;*/
+    /*}*/
+
+    /*footer > section:nth-child(2) > form {*/
+    /*    left: 8vw;*/
+    /*    bottom: -42vh;*/
+    /*    grid-template-columns: revert;*/
+    /*}*/
+
+    /*footer > section:nth-child(1) > aside:nth-child(3) > h4 {*/
+    /*    font-size: 10px;*/
+    /*}*/
+
+    /*footer > section:nth-child(1) > aside:nth-child(2) > div > aside {*/
+    /*    font-size: 10px;*/
+    /*}*/
+
+    /*footer > section:nth-child(1) > aside:nth-child(2) > div > img {*/
+    /*    height: 50px;*/
+    /*    width: 50px;*/
+    /*}*/
+    footer>section:nth-child(2)>form>textarea {
         width: 98%;
     }
 
-    #btnCv {
-        bottom: -44vh;
-        left: 12.5vw;
-        width: 137px;
-    }
-
-    #btnSubmit {
-        bottom: -44.1vh;
-        left: 8.100000000000001vw;
-        width: 110px;
-    }
 
     footer > section:nth-child(2) > form {
-        left: 8vw;
-        bottom: -42vh;
         grid-template-columns: revert;
+        width: 83vw;
+
+    }
+    #btnSubmit {
+        width: 267px;
     }
 
-    footer > section:nth-child(1) > aside:nth-child(3) > h4 {
-        font-size: 10px;
+    #btnCv {
+        position: relative;
+        width: 264px;
     }
-
-    footer > section:nth-child(1) > aside:nth-child(2) > div > aside {
-        font-size: 10px;
-    }
-
-    footer > section:nth-child(1) > aside:nth-child(2) > div > img {
-        height: 50px;
-        width: 50px;
-    }
-
 
 }
 /*---------------------------------------------------------------------------------*/
@@ -341,6 +358,64 @@
     header > nav > li {
         display: none;
     }
+
+    /*------------------------------ aduction ----------------------------------*/
+
+
+    main>section:nth-child(3)>h2 {
+
+        left: 30vw;
+    }
+
+
+
+    /*------------------------------ skills ----------------------------------*/
+
+
+    main>section:nth-child(5)>aside:nth-child(2)>h1 {
+        display: none;
+    }
+
+
+    /*--------------------------------------portfolio---------------------------------------*/
+
+
+    main>section:nth-child(4)>h2 {
+        left: 33vw;
+    }
+
+
+    /*--------------------------------------myproject---------------------------------------*/
+
+
+    main>section:nth-child(6)>h2:nth-child(1) {
+        left: 24vw;
+    }
+
+    /*--------------------------------------contact me---------------------------------------*/
+
+
+    footer>section:nth-child(2)>form {
+        justify-content: center;
+        top: 280px;
+        right: 0;
+        margin: auto;
+        left:8px;
+
+    }
+
+    #btnCv {
+        top: 43vh;
+        left: 15.5vw;
+
+    }
+
+    #btnSubmit {
+        bottom: -43.1vh;
+        left: 12.100000000000001vw;
+
+    }
+
 }
 
 
@@ -384,11 +459,25 @@
     /*    font-size: 120%;*/
     /*}*/
 
+    main>section:nth-child(2)>aside:nth-child(2)>p:first-child {
+        display: none;
 
+
+    }
     /*------------------------------ skills ----------------------------------*/
 
     main>section:nth-child(5)>aside:nth-child(3)>div>img {
         margin: 10px;
+    }
+
+    main>section:nth-child(5)>aside:nth-child(3) {
+        left: -33vw;
+        right: 0;
+        margin: auto;
+    }
+
+    main>section:nth-child(5)>aside:nth-child(3)>div {
+        left: 0;
     }
 
 
@@ -456,7 +545,7 @@
         top: 111px;
         margin: auto;
         display: flex;
-        width: 100vh;
+        width: 90vw;
     }
 
     main>section:nth-child(2)>aside:nth-child(2)>p:last-child {
@@ -468,7 +557,7 @@
         left: 0;
         right: 0;
         margin: auto;
-        top: 4vh    ;
+        top: 4vh;
     }
 
 
@@ -502,13 +591,13 @@
     /*------------------------------animation----------------------------------*/
 
 
-    main>section:nth-child(10) {
-        bottom: 70vh;
-    }
+    /*main>section:nth-child(10) {*/
+    /*    bottom: 70vh;*/
+    /*}*/
 
-    main>section:nth-child(10)>div:nth-child(1) {
-        top: 10vh;
-    }
+    /*main>section:nth-child(10)>div:nth-child(1) {*/
+    /*    top: 10vh;*/
+    /*}*/
 
 
     /*------------------------------contact me----------------------------------*/

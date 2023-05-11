@@ -10,20 +10,15 @@ html{
 
 body{
     background-color: #191a1c;   /*  bodey clor to black*/
-    overflow-x: hidden;
-    position: relative;
 }
 
-/*main{*/
-/*    overflow: hidden;*/
-/*}*/
 
 
 body>section:nth-child(1){
     height:  100vh;
     background: #131312;
     border-radius: 20px;
-
+    overflow: hidden;
 
 }
 
@@ -36,6 +31,7 @@ body>section:nth-child(2){
     border-radius: 100%;
     background: #1746EC;
     filter: blur(300px);
+
 }
 
 header{
@@ -170,13 +166,12 @@ main>section>nav>div{
 
 
 main>section:nth-child(2)>aside>h2{     /*about me*/
-    position: relative;
+    position: absolute;
     left: 20.5%;
     bottom: -25%;
     font-size: 350%;
     font-family: teko;
-
-
+    display: inline-block;
 }
 
 main>section:nth-child(2)>aside>img{  /*about me img*/
