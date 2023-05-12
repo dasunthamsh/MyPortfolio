@@ -392,6 +392,25 @@
         left: 24vw;
     }
 
+    main>section:nth-child(4) {
+        position: relative;
+        top: 25vh;
+    }
+    main>section:nth-child(6)>div:nth-child(2) {
+
+        grid-template-columns: revert;
+    }
+
+    /*--------------------------------------animation---------------------------------------*/
+
+
+    main>section:nth-child(10)>div:nth-child(1) {
+        width: 63vw;
+    }
+
+    main>section:nth-child(10)>div:nth-child(1)>h1 {
+        font-size: 30px;
+    }
     /*--------------------------------------contact me---------------------------------------*/
 
 
@@ -416,6 +435,11 @@
 
     }
 
+    footer {
+        position: relative;
+        bottom: 102vh;
+    }
+
 }
 
 
@@ -428,6 +452,21 @@
 
 
 
+
+    main>section:first-child>div{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 30vh;
+    }
+
+    main>section:first-child>div:nth-child(1) {
+        left: 31vw;
+        width: 200px;
+        height: 200px;
+        top: -9vh;
+    }
 
 
 

@@ -2,7 +2,7 @@ body>section:nth-child(1)>div>p{
     position: relative;
     top: 97vh;
     right: 590px;
-    /*animation-name: animation1;*/
+    animation-name: animation1;
     animation-duration: 30s;
     animation-iteration-count: infinite;
     font-size: 10px;
@@ -23,6 +23,9 @@ body>section:nth-child(1)>div>p{
     }
     
 }
+
+
+
 
 
 body>section:nth-child(1)>aside>div:nth-child(1){
@@ -70,7 +73,7 @@ body>section:nth-child(1)>aside>div:nth-child(2) {
     width: 200px;
     height: 200px;
     animation-duration: 10s;
-    /*animation-name: redAnimation;*/
+    animation-name: redAnimation;
     animation-iteration-count: infinite;
     position: relative;
     left: 173vh;

@@ -70,6 +70,7 @@ header>nav>li{             /*menu*/
     transition: all 0.1s ease-in;
 }
 
+
 a{
     font-family: Arial,Helvetica,sans-serif;
     font-size: 100%;
@@ -80,52 +81,84 @@ a{
 
 
 
-
 main>section:first-child{
-  position: absolute;
+    position: absolute;
     top: 22vh;
     left: 6vw;
     width: 90vw;
 
-    }
-
-
-main>section:first-child>h2{        /*hellow i am*/
-    font-family: teko;
-    font-size: 2.8rem;
-    position: relative;
-    top: 11vh;
 }
 
-main>section:first-child>h1{          /*dasun*/
+
+
+
+/*main>section:first-child>div>h2{        !*hellow i am*!*/
+/*    font-family: teko;*/
+/*    font-size: 2.8rem;*/
+/*    position: relative;*/
+/*    top: 11vh;*/
+/*}*/
+
+
+main>section:first-child>div>h1 {
     font-family: "Fjalla One";
     font-weight: bold;
     font-size: 60px;
-    margin:auto;
+    margin: auto;
     position: relative;
-    top: 10vh;
-
-
-
+    top: -43vh;
 }
-main>section:first-child>div:nth-child(3){  /*main png*/
+
+/*main>section:first-child>div>h1 { !*dasun*!*/
+/*    font-family: "Fjalla One";*/
+/*    font-weight: bold;*/
+/*    font-size: 60px;*/
+/*    margin: auto;*/
+/*    position: relative;*/
+/*    top: 10vh;*/
+/*}*/
+
+main>section:first-child>div>h2 {
+    font-family: teko;
+    font-size: 2.8rem;
     position: relative;
-    /*width: 400px;*/
-    /*height: 400px;*/
+    top: -41vh;
+}
+
+
+/*main>section:first-child>div:nth-child(1){  !*main png*!*/
+/*    position: relative;*/
+/*    !*width: 400px;*!*/
+/*    !*height: 400px;*!*/
+/*    left: 50vw;*/
+/*    border-radius: 100%;*/
+/*    bottom: 20vh;*/
+/*    background: url("../img/profile.png");*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*    display: inline-block;*/
+/*    width: 28vw;*/
+/*    height: 53vh;*/
+/*}*/
+
+main>section:first-child>div:nth-child(1) {
+    position: relative;
+    /* width: 400px; */
+    /* height: 400px; */
     left: 50vw;
     border-radius: 100%;
-    bottom: 20vh;
+    bottom: 187vh;
     background: url("../img/profile.png");
     background-size: cover;
     background-position: center;
     display: inline-block;
     width: 28vw;
     height: 53vh;
+    top: 2vh;
 }
 
 
-
-main>section>article{
+main>section>div>article{
     font-family: teko;
     letter-spacing: 1px;
     font-size: 25px;
@@ -134,7 +167,7 @@ main>section>article{
 }
 
 
-main>section:nth-child(1)>nav{           /*soceal meadia*/
+main>section:nth-child(1)>div>nav{           /*soceal meadia*/
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -159,7 +192,10 @@ main>section>nav>div{
 
 }
 
-
+main>section:nth-child(1)>div>nav {
+    gap: 9px;
+    left: 2.5vw;
+}
 
 /*------------------------About me page--------------------------*/
 
@@ -439,7 +475,7 @@ main>section:nth-child(5)>aside:nth-child(3)>div>h6 {
     justify-content: center;
     position: relative;
     bottom: 33px;
-    font-family: Barlow;
+    font-family: Abel;
     font-size: 19px;
 }
 
@@ -831,7 +867,7 @@ main>section:nth-child(9)>div:nth-child(1)>aside>div {
     width: 100%;
     height: calc(100%/3);
     margin: 15px;
-    /*animation-name: mainAnimation;*/
+    animation-name: mainAnimation;
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
