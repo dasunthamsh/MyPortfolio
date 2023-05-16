@@ -196,7 +196,11 @@ main>section:nth-child(1)>div>nav {
     gap: 9px;
     left: 2.5vw;
 }
+main>section:nth-child(1)>div:nth-child(2)>nav>div img:hover{
+        filter: invert(63%) sepia(94%) saturate(727%) hue-rotate(358deg) brightness(99%) contrast(107%);
+        transform: scale(.9);
 
+}
 /*------------------------About me page--------------------------*/
 
 
@@ -867,7 +871,7 @@ main>section:nth-child(9)>div:nth-child(1)>aside>div {
     width: 100%;
     height: calc(100%/3);
     margin: 15px;
-    animation-name: mainAnimation;
+    /*animation-name: mainAnimation;*/
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -941,15 +945,11 @@ main>section:nth-child(10)>div:nth-child(1)>button {
 
 /*---------------------------contact me-------------------------------------*/
 
-footer{
-    position: relative;
-    bottom: 650px;
-}
 
 
-footer>section:nth-child(1){
-    position: relative;
-}
+/*main>section:nth-child(11){*/
+/*    position: relative;*/
+/*}*/
 
 
 #ContactMe{
@@ -963,12 +963,12 @@ footer>section:nth-child(1){
 }
 
 
-footer>section:nth-child(1)>aside:nth-child(2){
+main>section:nth-child(11)>aside:nth-child(2){
     display: flex;
     flex-direction: column;
 }
 
-footer>section:nth-child(1)>aside:nth-child(2)>div>aside{
+main>section:nth-child(11)>aside:nth-child(2)>div>aside{
     position: relative;
     left: 15vw;
     top: 40vh;
@@ -977,7 +977,7 @@ footer>section:nth-child(1)>aside:nth-child(2)>div>aside{
 
 }
 
-footer>section:nth-child(1)>aside:nth-child(2)>div>img{
+main>section:nth-child(11)>aside:nth-child(2)>div>img{
     position: relative;
     left: 14vw;
     top: 40vh;
@@ -985,7 +985,7 @@ footer>section:nth-child(1)>aside:nth-child(2)>div>img{
 
 
 
-footer>section:nth-child(2)>form{
+main>section:nth-child(12)>form{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     display: grid;
@@ -996,15 +996,14 @@ footer>section:nth-child(2)>form{
     bottom: 1vh;
     font-family: Barlow;
 
-
 }
 
-footer>section:nth-child(2)>form>textarea {
+main>section:nth-child(12)>form>textarea {
     position: relative;
     width: 202%;
 }
 
-footer>section:nth-child(2)>form>input{
+main>section:nth-child(12)>form>input{
     height: 6vh;
     border-radius: 10px;  /*key bord input radius*/
     border: solid white 1px;
@@ -1039,7 +1038,16 @@ footer>section:nth-child(2)>form>input{
 }
 
 
+                                    /*---------------------------footer-------------------------------------*/
 
+
+
+
+footer{
+    position: relative;
+    height: 10vh;
+    background: black;
+}
 
 
 li::marker{     /*remove indexing in menu*/

@@ -87,7 +87,6 @@ a:hover{     /*change mouse fourcus color to yellow in menu*/
     cursor: pointer;
     box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.5);
     background: #1746EC;
-
 }
 
 .hoverImg:hover>:not(:hover){
@@ -194,9 +193,16 @@ main>section:nth-child(8)>div:nth-child(2)>aside:hover>:not(:hover) {
 /*------------------------skills animation hover --------------------------*/
 
 
-/*main>section:nth-child(5)>aside:nth-child(4)>img:hover{*/
-/*    filter: invert(63%) sepia(94%) saturate(727%) hue-rotate(358deg) brightness(99%) contrast(107%);*/
-/*    opacity: 100%;*/
-/*    box-shadow: 1px 1px 10px 1px;*/
+main>section:nth-child(5)>aside:nth-child(4)>img:hover{
+    filter: invert(63%) sepia(94%) saturate(727%) hue-rotate(358deg) brightness(99%) contrast(107%);
+    opacity: 100%;
+    box-shadow: 1px 1px 10px 1px;
 
-/*}*/
+}
+
+#ggg:hover{
+        filter: invert(63%) sepia(94%) saturate(727%) hue-rotate(358deg) brightness(99%) contrast(107%);
+    transform: scale(.9);
+
+}
+
