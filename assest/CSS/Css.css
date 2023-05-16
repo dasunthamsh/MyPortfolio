@@ -610,8 +610,7 @@ main>section:nth-child(7)>div:nth-child(4)>aside>p{
     font-family: Abel;
     font-size: 18px;
     margin: 20px;
-
-
+    text-align: center;
 }
 
 main>section:nth-child(7)>div:nth-child(1){
@@ -661,7 +660,6 @@ main>section:nth-child(8)>div:nth-child(2)>aside{
     margin: 12px;
     min-width: 257px;
 
-
 }
 
 main>section:nth-child(8)>h2:nth-child(1){
@@ -695,7 +693,7 @@ main>section:nth-child(8)>div:nth-child(2)>aside>h3{
 
 main>section:nth-child(8)>div:nth-child(2)>aside>h6{
     position: relative;
-    top: 13%;
+    top: 10%;
     display: flex;
     justify-content: center;
     font-size: 20px;
@@ -711,7 +709,7 @@ main>section:nth-child(8)>div:nth-child(2)>aside>p{
     font-family: Abel;
     font-size: 18px;
     margin: 20px;
-
+    text-align: center;
 }
 
 main>section:nth-child(8)>aside:nth-child(3){
