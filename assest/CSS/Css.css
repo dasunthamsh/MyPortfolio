@@ -77,6 +77,12 @@ a{
     text-decoration: none;
 
 }
+
+
+main{
+    overflow: hidden;
+}
+
 /*------------------------Main Home Page--------------------------*/
 
 
@@ -91,32 +97,17 @@ main>section:first-child{
 
 
 
-
-/*main>section:first-child>div>h2{        !*hellow i am*!*/
-/*    font-family: teko;*/
-/*    font-size: 2.8rem;*/
-/*    position: relative;*/
-/*    top: 11vh;*/
-/*}*/
-
-
 main>section:first-child>div>h1 {
     font-family: "Fjalla One";
     font-weight: bold;
-    font-size: 60px;
+    font-size: 65px;
     margin: auto;
     position: relative;
     top: -43vh;
+    letter-spacing: 5px;
 }
 
-/*main>section:first-child>div>h1 { !*dasun*!*/
-/*    font-family: "Fjalla One";*/
-/*    font-weight: bold;*/
-/*    font-size: 60px;*/
-/*    margin: auto;*/
-/*    position: relative;*/
-/*    top: 10vh;*/
-/*}*/
+
 
 main>section:first-child>div>h2 {
     font-family: teko;
@@ -126,25 +117,11 @@ main>section:first-child>div>h2 {
 }
 
 
-/*main>section:first-child>div:nth-child(1){  !*main png*!*/
-/*    position: relative;*/
-/*    !*width: 400px;*!*/
-/*    !*height: 400px;*!*/
-/*    left: 50vw;*/
-/*    border-radius: 100%;*/
-/*    bottom: 20vh;*/
-/*    background: url("../img/profile.png");*/
-/*    background-size: cover;*/
-/*    background-position: center;*/
-/*    display: inline-block;*/
-/*    width: 28vw;*/
-/*    height: 53vh;*/
-/*}*/
 
 main>section:first-child>div:nth-child(1) {
     position: relative;
-    /* width: 400px; */
-    /* height: 400px; */
+     width: 400px;
+     height: 400px;
     left: 50vw;
     border-radius: 100%;
     bottom: 187vh;
@@ -152,8 +129,8 @@ main>section:first-child>div:nth-child(1) {
     background-size: cover;
     background-position: center;
     display: inline-block;
-    width: 28vw;
-    height: 53vh;
+    /*width: 28vw;*/
+    /*height: 53vh;*/
     top: 2vh;
 }
 
@@ -887,6 +864,13 @@ main>section:nth-child(9)>div:nth-child(1)>aside>div {
 
 }
 
+main>section:nth-child(9)>aside:nth-child(2){
+    height: 100%;
+    background: #1746EC;
+    position: relative;
+    opacity: 50%;
+}
+
 /*---------------------------pane on animation-------------------------------------*/
 
 
@@ -956,20 +940,23 @@ main>section:nth-child(10)>div:nth-child(1)>button {
 
 
 
-/*main>section:nth-child(11){*/
-/*    position: relative;*/
-/*}*/
+main>section:nth-child(11){
+    position: relative;
+    bottom: 62vh;
+}
 
 
 #ContactMe{
     position: relative;
-    top: 35vh;
+    top: 20vh;
     display: flex;
     justify-content: center;
     font-size: 350%;
     font-family: teko;
 
 }
+
+
 
 
 main>section:nth-child(11)>aside:nth-child(2){
@@ -992,6 +979,13 @@ main>section:nth-child(11)>aside:nth-child(2)>div>img{
     top: 40vh;
 }
 
+/*------------ form --------------*/
+
+
+main>section:nth-child(12){
+    position: relative;
+    bottom: 60vh;
+}
 
 
 main>section:nth-child(12)>form{
@@ -1027,7 +1021,7 @@ main>section:nth-child(12)>form>input{
     bottom: -0.1vh;
     left: 41.1vw;
     width: 150px;
-    height: 40px;
+    height: 38px;
     background: transparent;
     border-radius: 15px;
     border: solid white 1px;
@@ -1038,7 +1032,7 @@ main>section:nth-child(12)>form>input{
     position: relative;
     bottom: 0;
     left: 41.5vw;
-    border-radius: 15px;
+    border-radius: 9px;
     border: solid white 1px;
     display: inline-block;
     width: 150px;
@@ -1056,7 +1050,19 @@ footer{
     position: relative;
     height: 10vh;
     background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 7px;
+    letter-spacing: 30px;
+
 }
+
+footer>h1{
+    font-family: "Fjalla One";
+}
+
+
 
 
 li::marker{     /*remove indexing in menu*/
