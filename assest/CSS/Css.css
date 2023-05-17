@@ -104,7 +104,6 @@ main>section:first-child>div>h1 {
     margin: auto;
     position: relative;
     top: -43vh;
-    letter-spacing: 5px;
 }
 
 
@@ -1054,7 +1053,6 @@ footer{
     align-items: center;
     justify-content: center;
     font-size: 7px;
-    letter-spacing: 30px;
 
 }
 

@@ -136,7 +136,7 @@ main>section:nth-child(5)>aside:nth-child(4)>img{
         transform: translatey(0px);
     }
     50%{
-        transform: translatey(-20px);
+        transform: translatey(-30px);
 
     }
     100%{

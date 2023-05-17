@@ -75,12 +75,40 @@
 
     /*--------------------------------------portfolio---------------------------------------*/
 
-
-    main>section:nth-child(4)>h2 {
-        left: 33vw;
+    main>section:nth-child(4) {
+        top: 92vh;
+        height: 399vh;
     }
 
 
+    main>section:nth-child(4)>h2 {
+        left: 33vw;
+        top: -53vh;
+    }
+
+
+    main>section:nth-child(4)>div:nth-child(2) {
+        top: 30vh;
+        height: 60vh;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    main>section:nth-child(4)>div:nth-child(3) {
+        top: 149vh;
+        height: 60vh;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imgs {
+        min-width: 250px;
+        min-height: 400px;
+    }
+
+    #imgPos {
+        bottom: revert;
+    }
     /*--------------------------------------myproject---------------------------------------*/
 
 
@@ -88,10 +116,7 @@
         left: 24vw;
     }
 
-    main>section:nth-child(4) {
-        position: relative;
-        top: 25vh;
-    }
+
     main>section:nth-child(6)>div:nth-child(2) {
 
         grid-template-columns: revert;
@@ -227,7 +252,19 @@
 
     /*------------------------------about---------------------------------*/
 
+    main>section:nth-child(2){
+        position: relative;
+        height: 140vh;
+    }
 
+    main>section:nth-child(2)>aside>h2 {
+        position: absolute;
+        left: 20.5%;
+        bottom: 65%;
+        font-size: 350%;
+        font-family: teko;
+        display: inline-block;
+    }
 
     main>section:nth-child(2)>aside:nth-child(2) {
         left: 0;
@@ -239,7 +276,10 @@
     }
 
     main>section:nth-child(2)>aside:nth-child(2)>p:last-child {
+        position: relative;
         font-size: 120%;
+        left: 2vw;
+        top: 42vh;
     }
 
     main>section:nth-child(2)>aside>img {
@@ -247,10 +287,12 @@
         left: 0;
         right: 0;
         margin: auto;
-        top: 4vh;
+        top: 47vh;
     }
 
-
+    main>section:nth-child(2)>aside:nth-child(2)>p:first-child {
+        display:none ;
+    }
 
 
     /*------------------------------skills----------------------------------*/
@@ -259,7 +301,9 @@
     main>section:nth-child(5) {
         height: 166vh;
     }
-
+    main>section:nth-child(5)>aside:nth-child(4) {
+        display: none;
+    }
 
 
     /*------------------------------servease----------------------------------*/
@@ -293,6 +337,7 @@
     }
 
 }
+
 
 /* screen pix 1520px*/
 /*browser-sync start --server --files "css/*.css"*/
