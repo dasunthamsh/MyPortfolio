@@ -1047,17 +1047,25 @@ main>section:nth-child(12)>form>input{
 
 footer{
     position: relative;
-    height: 10vh;
+    height: 15vh;
     background: black;
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
     font-size: 7px;
+    letter-spacing: 2px;
+
+}
+
+footer>nav:nth-child(2){
+    display: flex;
+    gap: 7px;
 
 }
 
 footer>h1{
-    font-family: "Fjalla One";
+    font-family: Rajdhani;
 }
 
 
