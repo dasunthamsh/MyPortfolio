@@ -98,10 +98,9 @@ a:hover{     /*change mouse fourcus color to yellow in menu*/
 
 
 main>section:nth-child(5)>aside:nth-child(3)>div>img:hover {
-    transform: scale(1.2);
-    transition: 3s;
+    transition: 1s;
     box-shadow: 1px 1px 10px 1px;
-
+    transform: rotate(18deg) scale(1.1);
 
 }
 
@@ -171,12 +170,12 @@ main>section:nth-child(7)>div:nth-child(4)>aside:hover {
 
 main>section:nth-child(7)>div:nth-child(4)>aside:hover>:not(:hover) {
     transition: 2s;
-    transform: scale(.9);
+    transform: scale(1.15);
 
 }
 
 
-/*------------------------serves --------------------------*/
+/*------------------------assigment --------------------------*/
 
 
 main>section:nth-child(8)>div:nth-child(2)>aside {
@@ -190,7 +189,7 @@ main>section:nth-child(8)>div:nth-child(2)>aside:hover {
 
 main>section:nth-child(8)>div:nth-child(2)>aside:hover>:not(:hover) {
     transition: 2s;
-    transform: scale(.9);
+    transform: scale(1.15);
 
 }
 
@@ -204,11 +203,6 @@ main>section:nth-child(5)>aside:nth-child(4)>img:hover{
 
 }
 
-#ggg:hover{
-        filter: invert(63%) sepia(94%) saturate(727%) hue-rotate(358deg) brightness(99%) contrast(107%);
-    transform: scale(.9);
-
-}
 
 
 /*------------------------------------------btn submint------------------------------------------------*/
