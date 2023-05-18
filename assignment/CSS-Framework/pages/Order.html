@@ -11,25 +11,118 @@
 
 </head>
 <body>
-<header>
-  <nav class="navbar navbar-expand-lg bg-light shadow-sm p-3 mb-5 bg-body rounded" >
-    <div class="container-fluid">
-      <a class="navbar-brand" style="color:#ff253a; font-weight: bold" href="#">FootCity </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light shadow-sm p-3 mb-5 bg-body rounded" >
+        <div class="container-fluid">
+          <a class="navbar-brand" style="color:#ff253a; font-weight: bold" href="#">FootCity </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
 
-          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link"  href="Customer.html">Customer</a></li>
-          <li class="nav-item"><a class="nav-link" href="item.html">Item</a></li>
-          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Order</a></li>
+              <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link"  href="Customer.html">Customer</a></li>
+              <li class="nav-item"><a class="nav-link" href="item.html">Item</a></li>
+              <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Order</a></li>
 
-        </ul>
-      </div>
-    </div>
-  </nav>
-</header>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+  <main>
+     <div class="container">
+        <div class="row">
+            <div class="m-3" style="width: 30%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
+rgba(0, 0, 0, 0.19); border-radius: 12px">
+
+              <div class="card-header bg-danger fw-bold mb-4" style="border: none; border-top-left-radius: 12px; border-top-right-radius: 12px;">Invoice Details</div>
+
+              <div class="mb-3" >
+                <label for="exampleFormControlInput1" class="form-label">Customer Id</label>
+                <input type="email" class="form-select" id="exampleFormControlInput1">
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea2" class="form-label">Order Id</label>
+                <input  class="form-select" id="exampleFormControlTextarea2">
+              </div>
+
+              <div class="mb-3">
+                <label for="orderDate" class="form-label">Order Date</label>
+                <input class="form-control" id="orderDate" type="date">
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea4" class="form-label">Email</label>
+                <input class="form-control" id="exampleFormControlTextarea4">
+              </div>
+
+
+            </div>
+
+          <div class="m-3" style="width: 30%; height: 500px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
+rgba(0, 0, 0, 0.19); border-radius: 12px">
+
+            <div class="card-header bg-danger fw-bold mb-4" style="border: none; border-top-left-radius: 12px; border-top-right-radius: 12px;">Item Select</div>
+
+            <div class="mb-3">
+                <label for="exampleFormControlInput5" class="form-label">Item Code</label>
+                <input type="email" class="form-select" id="exampleFormControlInput5">
+              </div>
+
+            <div class="mb-3">
+              <label for="exampleFormControlInput6" class="form-label">QYT on.hand</label>
+              <input type="email" class="form-control" id="exampleFormControlInput6">
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleFormControlInput7" class="form-label">price</label>
+              <input type="email" class="form-control" id="exampleFormControlInput7">
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleFormControlInput8" class="form-label">order QYT</label>
+              <input type="email" class="form-control" id="exampleFormControlInput8">
+            </div>
+
+            <button type="button" class="btn btn-danger" style="width: 90%; margin-left: 10px">Delete</button>
+
+
+          </div>
+          <div class="m-3" style="width: 30%; height: 500px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
+rgba(0, 0, 0, 0.19); border-radius: 12px" >
+
+
+              <div class="row">
+                <div class="mt-4 col-6">
+                  <span class="txt-total  fs-4">Total QYT</span>
+                </div>
+
+                <div class="mt-4 col-6 text-end ">
+                  <span class=" fs-4">10</span>
+                </div>
+
+                <div class="border w-75 mt-4 container"></div>
+
+              </div>
+
+            <div class="row">
+              <div class="mt-4 col-6">
+                <span class="txt-total  fs-4 fw-normal">Subtotal</span>
+              </div>
+
+              <div class="mt-4 text-end pt-2">
+                <span class="fs-4">5250.Rs</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+     </div>
+  </main>
 </body>
 </html>
