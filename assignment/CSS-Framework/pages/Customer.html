@@ -9,30 +9,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<header>
-    <nav class="navbar navbar-expand-lg bg-light shadow-sm p-3 mb-5 bg-body rounded" >
-        <div class="container-fluid">
-            <a class="navbar-brand" style="color:#ff253a; font-weight: bold" href="#">FootCity </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Home</a>
-                    </li><li class="nav-item">
-                    <a class="nav-link active"  href="">Customer</a>
-                </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Item</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Order</a>
-                    </li>
-                </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light shadow-sm p-3 mb-5 bg-body rounded" >
+            <div class="container-fluid">
+                <a class="navbar-brand" style="color:#ff253a; font-weight: bold" href="#">FootCity </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page"  href="">Customer</a></li>
+                        <li class="nav-item"><a class="nav-link" href="item.html">Item</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="Order.html">Order</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main >
+        <div class="d-flex  justify-content-center">
+            <div class="container row m-lg-5 " style="width: 100%;  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
+rgba(0, 0, 0, 0.19); border-radius: 12px" >
+                <div class="card-header bg-danger fw-bold" style="border: none; border-top-left-radius: 12px; border-top-right-radius: 12px;">Add New Customer</div>
+
+                <div class="mb-3 mt-4" style="width: 50%">
+                    <label for="exampleFormControlInput1" class="form-label">Customer Id</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" >
+                </div>
+
+                <div class="mb-3 mt-4" style="width: 50%">
+                    <label for="exampleFormControlTextarea2" class="form-label">Name</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea2" rows="1"></textarea>
+                </div>
+
+                <div class="mb-3" style="width: 50%">
+                    <label for="exampleFormControlTextarea3" class="form-label">Email</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea3" placeholder="name@example.com" rows="1"></textarea>
+                </div>
+
+                <div class="mb-3" style="width: 50%">
+                    <label for="exampleFormControlTextarea4" class="form-label">Contact</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea4" rows="1"></textarea>
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea5" class="form-label">Address</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea5" rows="1"  ></textarea>
+                </div>
+                 <div class="d-flex justify-content-around " style="width: 600px">
+                     <button type="button" class="btn btn-danger" style="width: 150px; margin-left: 10px">Save</button>
+                     <button type="button" class="btn btn-danger" style="width: 150px; margin-left: 10px">Update</button>
+                     <button type="button" class="btn btn-danger" style="width: 150px; margin-left: 10px">Search</button>
+                     <button type="button" class="btn btn-danger" style="width: 150px; margin-left: 10px">Delete</button>
+                 </div>
+
             </div>
         </div>
-    </nav>
-</header>
+
+
+        <div class="container">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">...</th>
+                    <th scope="col">ID</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Contact</th>
+                    <th scope="col">Address</th>
+
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>C001</td>
+                    <td>Dasun</td>
+                    <td>dasun@gmail.com</td>
+                    <td>0784 636 958</td>
+                    <td>galle</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>C002</td>
+                    <td>kasun</td>
+                    <td>kasun@gmail.com</td>
+                    <td>0784 566 658</td>
+                    <td>mathara</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>C003</td>
+                    <td>Chamara</td>
+                    <td>chamara@gmail.com</td>
+                    <td>0784 626 123</td>
+                    <td>Colombo</td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </main>
 </body>
 </html>
