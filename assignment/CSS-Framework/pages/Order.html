@@ -89,7 +89,7 @@ rgba(0, 0, 0, 0.19); border-radius: 12px">
               <input type="email" class="form-control" id="exampleFormControlInput8">
             </div>
 
-            <button type="button" class="btn btn-danger" style="width: 90%; margin-left: 10px">Delete</button>
+            <button type="button" class="btn btn-danger" style="width: 90%; margin-left: 10px">Add Item</button>
 
 
           </div>
@@ -112,17 +112,49 @@ rgba(0, 0, 0, 0.19); border-radius: 12px" >
 
             <div class="row">
               <div class="mt-4 col-6">
-                <span class="txt-total  fs-4 fw-normal">Subtotal</span>
+                <span class="txt-total  fs-4 fw-normal d-inline-block">Subtotal</span>
               </div>
 
-              <div class="mt-4 text-end pt-2">
+              <div class="mt-4 mb-3 text-end pt-2">
                 <span class="fs-4">5250.Rs</span>
               </div>
+
+              <div class="mb-3 w-50">
+                <label for="exampleFormControlInput9" class="form-label">Cash</label>
+                <input type="email" class="form-control" id="exampleFormControlInput9">
+              </div>
+
+              <div class="mb-3 w-50">
+                <label for="exampleFormControlInput10" class="form-label">Discount</label>
+                <input type="email" class="form-control" id="exampleFormControlInput10">
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleFormControlInput11" class="form-label">Balance</label>
+                <input type="email" class="form-control" id="exampleFormControlInput11">
+              </div>
+
+              <button type="button" class="btn btn-danger" style="width: 90%; margin-left: 10px">Bill</button>
+
 
             </div>
           </div>
         </div>
      </div>
+
+    <div class="col-md-12 mt-4" style="overflow-y: scroll; height: 164px">
+      <table class="table table-hover">
+        <thead class="table-warning">
+        <th scope="col">Item Code</th>
+        <th scope="col">Name</th>
+        <th scope="col">Quantity</th>
+        <th scope="col">Price</th>
+        <th scope="col">Total</th>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    </div>
   </main>
 </body>
 </html>
