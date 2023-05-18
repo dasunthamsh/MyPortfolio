@@ -872,7 +872,7 @@ main>section:nth-child(9)>div:nth-child(1)>aside>div {
     width: 100%;
     height: calc(100%/3);
     margin: 15px;
-    /*animation-name: mainAnimation;*/
+    animation-name: mainAnimation;
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
