@@ -621,7 +621,7 @@ main>section:nth-child(8){
 main>section:nth-child(8)>div:nth-child(2){
     display: flex;
     justify-content: center;
-    gap: 0px;
+    gap: 0;
     position: relative;
     top: 40vh;
     width: 65vw;
@@ -1055,7 +1055,21 @@ main>section:nth-child(12)>form>input{
     background: transparent;
 }
 
+                        /*fixed button*/
 
+main>section:nth-child(13)>button{
+
+    background: url("../img/up-arrow.png");
+    background-size: cover;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    position: fixed;
+    bottom: 150px;
+    right: 15px;
+    border: transparent;
+}
                                     /*---------------------------footer-------------------------------------*/
 
 
