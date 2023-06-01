@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <main>
+        <h1>java Script Que</h1>
+
+        <div>
+            <aside></aside>
+            <aside></aside>
+            <aside></aside>
+            <aside></aside>
+            <aside></aside>
+            <aside></aside>
+
+        </div>
+    </main>
+</body>
+
+<script>
+
+    let colors = ["red", "yellow", "green", "blue", "deeppink", "orange"];
+
+
+    setInterval(function (){
+
+        let divArray =document.querySelector("div").children;
+
+        for (let i = 0; i < divArray.length; i++) {
+            divArray[i].style.background=colors[i];
+
+        }
+
+        let lv = colors.pop();
+        colors.unshift(lv);
+    },0);
+
+
+</script>
+
+
+    <style>
+
+        body{
+            background: gray;
+        }
+
+
+        h1{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            top: 100px;
+        }
+
+        main>div{
+
+            position: relative;
+            width: 700px;
+            height: 150px;
+            left: 30vw;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+            top: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+
+        }
+
+        main>div:nth-child(2)>aside{
+            height: 140px;
+            width: 200px;
+        }
+
+        main>div:nth-child(2)>aside:nth-child(1){
+            position: relative;
+            top: 150px;
+        }
+
+        main>div:nth-child(2)>aside:nth-child(6) {
+            position: relative;
+            bottom: 150px;
+        }
+    </style>
+</html>
