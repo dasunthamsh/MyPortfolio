@@ -1057,7 +1057,7 @@ main>section:nth-child(12)>form>input{
 
                         /*fixed button*/
 
-main>section:nth-child(13)>button{
+main>section:nth-child(13)>a>button{
 
     background: url("../img/up-arrow.png");
     background-size: cover;
