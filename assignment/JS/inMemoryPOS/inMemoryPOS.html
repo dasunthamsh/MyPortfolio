@@ -5,43 +5,7 @@
 
 
     <script src="../calculator/jq/jq.js"></script>
-    <script>
 
-
-      // var customerArray = [];
-
-        $('#saveCustomer').click(function (){
-
-          var cusId =  $('#customerId').val();
-          var cusName = $('#customerName').val();
-          var cusEmail = $('#custoemrEmail').val();
-          var cusAddreess = $('#customerAddress').val();
-          var cusContact = $('#customerContact').val();
-
-          var customer ={
-            id : cusId,
-            name: cusName,
-            email: cusEmail,
-            address : cusAddreess,
-            contact : cusContact
-          }
-
-          console.log(customer);
-
-
-          // for (var i of customer){
-          //   console.log(i);
-
-            var tbl = "<tr><th>"+ customer.id +"</th><td>"+ customer.name +"</td><td>"+ customer.email +"</td><td>"+ customer.contact +"</td><td>"+ customer.address +"</td></tr>";
-            $('#customerTable').append(tbl);
-
-
-
-          // customerArray.push(customer);
-          // console.log(customerArray);
-
-        });
-    </script>
 </body>
 </html>
 
@@ -80,6 +44,11 @@
 <script src="../calculator/jq/jq.js"></script>
 
 <script>
+
+
+  let customerArray = [];
+
+
   var pages = {
     'home' : `<div class="container ">
   <div class="row">
@@ -409,6 +378,7 @@ rgba(0, 0, 0, 0.19); border-radius: 12px" >
     }
     document.getElementById('content').innerHTML = contentToReturn;
 
+
     $('#saveCustomer').click(function (){
 
       var cusId =  $('#customerId').val();
@@ -422,24 +392,45 @@ rgba(0, 0, 0, 0.19); border-radius: 12px" >
         name: cusName,
         email: cusEmail,
         address : cusAddreess,
-        contact : cusContact
+        contact : cusContact,
+
+
       }
 
-      console.log(customer);
+
+      customerArray.push(customer);
+
+      for (let i of customersArray){
+        // console.log(i.name);
+      }
+      all();
+
+    });
 
 
-      // for (var i of customer){
-      //   console.log(i);
+  $('#searchCustomer').click(function (){
 
-      var tbl = "<tr><th>"+ customer.id +"</th><td>"+ customer.name +"</td><td>"+ customer.email +"</td><td>"+ customer.contact +"</td><td>"+ customer.address +"</td></tr>";
-      $('#customerTable').append(tbl);
+      all();
+  });
 
+    function all() {
+      $('#row').empty();
+
+      for (var i of customerArray) {
+        console.log(customerArray);
+
+
+        var tbl = "<tr><th>"+ i.id +"</th><td>"+ i.name +"</td><td>"+ i.email +"</td><td>"+ i.contact +"</td><td>"+ i.address +"</td></tr>";
+        $('#customerTable').append(tbl);
+      }
+
+    }
 
 
       // customerArray.push(customer);
       // console.log(customerArray);
 
-    });
+
   }
 </script>
 </body>
