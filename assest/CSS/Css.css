@@ -116,11 +116,15 @@ main>section:first-child>div>h2 {
 }
 
 
+main>section:nth-child(1)>div:nth-child(2){
+    position: relative;
+        bottom: 50px;
+}
 
 main>section:first-child>div:nth-child(1) {
     position: relative;
-     width: 400px;
-     height: 400px;
+     width: 450px;
+     height: 450px;
     left: 50vw;
     border-radius: 100%;
     bottom: 187vh;
@@ -130,7 +134,9 @@ main>section:first-child>div:nth-child(1) {
     display: inline-block;
     /*width: 28vw;*/
     /*height: 53vh;*/
-    top: 2vh;
+    top: 10vh;
+    box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.5);
+
 }
 
 
