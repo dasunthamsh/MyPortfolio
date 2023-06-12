@@ -6,107 +6,129 @@
 </head>
 
   <style>
-      main>section{
-        position: relative;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-        width: 500px;
-        height: 700px;
-        border-radius: 20px;
-        border: solid black 2px;
+      * {
+          margin: 0;
+          padding: 0;
+          font-size: 35px;
       }
-
-
-      main>section>div:nth-child(1){
-        width: 450px;
-        height: 70px;
-        border-radius: 20px;
-        border: 1px solid black;
-        position: relative;
-        left: 0;
-        right: 0;
-        margin: auto;
-        top: 50px;
+      .calc {
+          width: 324px;
+          margin: auto;
+          background-color: #39383d;
+          padding: 20px;
+          border-radius: 8px;
       }
-
-      main>section>div:nth-child(1)>button{
-        position: relative;
-        width: 100px;
-        height: 50px;
-        background: #1746EC;
-        border-radius: 20px;
-        top: 10px;
-        left: 10px;
+      .calc-display {
+          width: 100%;
+          height: 75px;
+          border:none;
+          margin-bottom: 10px;
+          border-radius:8px;
+          border: solid black 2px;
       }
-
-      main>section>div:nth-child(1)>h1{
-          position: relative;
-          left: 424px;
-          bottom: 50px;
+      input[type=button] {
+          width: 75px;
+          height: 75px;
+          margin: 2px;
+          color: #fff;
+          border:none;
+          border-radius: 8px;
+          background-color: #58595b
       }
-
-      main>section>div:nth-child(2){
-          position: relative;
-          width: 450px;
-          height: 500px;
-          left: 25px;
-          top: 100px;
-          display: grid;
-          grid-template-columns: 1fr 1fr 1fr 1fr;
-          grid-template-rows:  1fr 1fr 1fr 1fr;
-
-      }
-
-      main>section>div:nth-child(2)>button{
-          border-radius: 20px;
-          row-gap: 5px;
-          width: 100px;
-          height: 100px;
-      }
-
-
   </style>
 
 <body>
   <main>
-    <section>
-      <div>
-        <button>C</button>
-
-              <h1>|</h1>
+      <!DOCTYPE html>
+      <html>
+      <head>
+          <title>jQuery Calculator</title>
+          <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+          <script
+                  src="https://code.jquery.com/jquery-3.3.1.min.js"
+                  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                  crossorigin="anonymous"></script>
+          <link rel="stylesheet" type="text/css" href="css/main.css">
+      </head>
+      <body>
+      <div class="calc">
+          <form name="form">
+              <input class="calc-display">
+          </form>
+          <table>
+              <tr>
+                  <td><input type="button" value="C" onclick="c()"></td>
+                  <td><input type="button" value="/" onclick="insrt('/')"></td>
+                  <td><input type="button" value="<" onclick="del()"></td>
+                  <td><input type="button" value="X" onclick="insrt('*')"></td>
+              </tr>
+              <tr>
+                  <td><input type="button" value="7" onclick="insrt(7)"></td>
+                  <td><input type="button" value="8" onclick="insrt(8)"></td>
+                  <td><input type="button" value="9" onclick="insrt(9)"></td>
+                  <td><input type="button" value="-" onclick="insrt('-')"></td>
+              </tr>
+              <tr>
+                  <td><input type="button" value="4" onclick="insrt(4)"></td>
+                  <td><input type="button" value="5" onclick="insrt(5)"></td>
+                  <td><input type="button" value="6" onclick="insrt(6)"></td>
+                  <td><input type="button" value="+" onclick="insrt('+')"></td>
+              </tr>
+              <tr>
+                  <td><input type="button" value="1" onclick="insrt(1)"></td>
+                  <td><input type="button" value="2" onclick="insrt(2)"></td>
+                  <td><input type="button" value="3" onclick="insrt(3)"></td>
+                  <td rowspan=2><input type="button" value="=" onclick="eql()"  style="height: 158px; background-color: orange"></td>
+              </tr>
+              <tr>
+                  <td colspan="2"><input type="button" value="0" onclick="insrt(0)" style="width: 158px; ;"></td>
+                  <td><input type="button" value="." onclick="insrt('.')"></td>
+              </tr>
+          </table>
       </div>
-
-
-      <div>
-              <button id="btn1">1</button>
-              <button>2</button>
-              <button>3</button>
-              <button>4</button>
-              <button>5</button>
-              <button>6</button>
-              <button>7</button>
-              <button>8</button>
-              <button>9</button>
-              <button>10</button>
-              <button>11</button>
-              <button>12</button>
-              <button>13</button>
-              <button>14</button>
-              <button>15</button>
-              <button>16</button>
-
-
-      </div>
-    </section>
+      <script type="text/javascript" src="js/main.js"></script>
+      </body>
+      </html>
   </main>
         <script src="jq/jq.js"></script>
         <script>
-            $('#btn1').click(function (){
 
-            })
+
+//                $('#clear').click(function (){
+//                    $('#textFeld').val('');
+//                });
+//
+//
+//               $('.buttons').click(function (){
+//                   var vale = $(this).text();
+//                   var currentVale = $('#textFeld').val();
+//                   $('#textFeld').val(currentVale +''+vale);
+//               });
+//
+//
+//               $('#equal').click(function (){
+//                   $('#textFeld').val(eval($('#textFeld').val()));
+//               });
+//
+//
+
+
+function insrt(num) {
+    $('.calc-display').val($('.calc-display').val() + num);
+}
+function eql() {
+    $('.calc-display').val(eval($('.calc-display').val()));
+}
+function c() {
+    $('.calc-display').val('');
+}
+function del() {
+    value = $('.calc-display').val();
+    $('.calc-display').val(value.substring(0, value.length - 1));
+}
+
+
+
         </script>
 </body>
 </html>

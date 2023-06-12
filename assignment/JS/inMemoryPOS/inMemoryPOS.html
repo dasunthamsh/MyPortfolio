@@ -121,6 +121,8 @@ rgba(0, 0, 0, 0.19); border-radius: 12px" >
         <button type="button" class="btn btn-danger" style="width: 150px; margin-left: 10px">Update</button>
         <button type="button" class="btn btn-danger" style="width: 150px; margin-left: 10px" id="searchCustomer">Search</button>
         <button type="button" class="btn btn-danger" style="width: 150px; margin-left: 10px">Delete</button>
+                <button type="button" class="btn btn-danger" style="width: 150px; margin-left: 10px" id="getAll">getAll</button>
+
       </div>
 
     </div>
@@ -139,7 +141,7 @@ rgba(0, 0, 0, 0.19); border-radius: 12px" >
       </tr>
       </thead>
 
-      <tbody id="row">
+      <tbody id="tableRows">
 
       </tbody>
 
@@ -393,22 +395,19 @@ rgba(0, 0, 0, 0.19); border-radius: 12px" >
         email: cusEmail,
         address : cusAddreess,
         contact : cusContact,
-
-
       }
 
 
       customerArray.push(customer);
 
-      for (let i of customersArray){
-        // console.log(i.name);
+      for (let i of customerArray){
       }
       all();
 
     });
 
 
-  $('#searchCustomer').click(function (){
+  $('#getAll').click(function (){
 
       all();
   });
@@ -427,8 +426,15 @@ rgba(0, 0, 0, 0.19); border-radius: 12px" >
     }
 
 
-      // customerArray.push(customer);
-      // console.log(customerArray);
+
+
+    $('#tableRows>tr').click(function (){
+      console.log(this);
+
+      console.log($(this).text());
+    });
+
+
 
 
   }

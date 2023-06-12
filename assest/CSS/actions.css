@@ -1,22 +1,21 @@
 /*------------------------Scroll bar--------------------------*/
 
-    /*::-webkit-scrollbar {*/
-    /*    width: 5px;*/
-    /*}*/
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
 
-    /*::-webkit-scrollbar-track {*/
+    ::-webkit-scrollbar-track {
 
-    /*}*/
+    }
 
     ::-webkit-scrollbar-thumb {
         background: #d9d9d7;
 
     }
 
-    /*::-webkit-scrollbar-thumb:hover {*/
-    /*    background: blueviolet;*/
-    /*}*/
-
+    ::-webkit-scrollbar-thumb:hover {
+        background: blueviolet;
+    }
 a:hover{     /*change mouse fourcus color to yellow in menu*/
     color: #ffb400;
     font-weight: bold;
