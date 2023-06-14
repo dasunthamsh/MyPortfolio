@@ -22,7 +22,7 @@
 
 <nav class="navbar navbar-expand-lg bg-danger shadow-sm p-3 mb-5  rounded " >
   <div class="container-fluid">
-    <a class="navbar-brand fw-bold"  href="#">FootCity </a>
+    <a class="navbar-brand fw-bold"  href="#" id="footCity">FootCity </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -118,10 +118,10 @@ rgba(0, 0, 0, 0.19); border-radius: 12px" >
       </div>
       <div class="container m-3 w-75" >
         <button type="button" class="btn btn-danger" style="width: 150px; margin-left: 10px" id="saveCustomer">Save</button>
-        <button type="button" class="btn btn-danger" style="width: 150px; margin-left: 10px">Update</button>
+        <button type="button" class="btn btn-danger" style="width: 150px; margin-left: 10px" id="updateCustoemr">Update</button>
         <button type="button" class="btn btn-danger" style="width: 150px; margin-left: 10px" id="searchCustomer">Search</button>
-        <button type="button" class="btn btn-danger" style="width: 150px; margin-left: 10px">Delete</button>
-                <button type="button" class="btn btn-danger" style="width: 150px; margin-left: 10px" id="getAll">getAll</button>
+        <button type="button" class="btn btn-danger" style="width: 150px; margin-left: 10px" id="deleteCustomer">Delete</button>
+                <button type="button" class="btn btn-danger" style="width: 150px; margin-left: 10px" id="getAllCustomers">getAll</button>
 
       </div>
 
@@ -398,7 +398,10 @@ rgba(0, 0, 0, 0.19); border-radius: 12px" >
       }
 
 
+
       customerArray.push(customer);
+
+
 
       for (let i of customerArray){
       }
@@ -410,7 +413,7 @@ rgba(0, 0, 0, 0.19); border-radius: 12px" >
 
   $('#getAll').click(function (){
 
-      all();
+
   });
 
     function all() {
@@ -446,16 +449,55 @@ rgba(0, 0, 0, 0.19); border-radius: 12px" >
       $('#customerContact').val(five);
 
 
-
     });
 
 
   }
 
+  // $('#tableRows>tr').on('dblclick',function (){
+  //   $(this).remove();
+  // });
+
+      // var ked = $('#customerId').on('keydown',function (event){
+      //
+      //   if(event.key=="Enter"){
+      //
+      //     $('#customerName').focus();
+      //   }
+      //
+      // });
+
+
+
+    $('#searchCustomer').click(function (){
+
+      for (var sCus of customerArray) {
+        sCus.customer;
+        if(sCus.id==$('#customerId').val()){
+
+
+          $('#customerName').val(sCus.name)
+          $('#customerAddress').val(sCus.address)
+          $('#custoemrEmail').val(sCus.email)
+          $('#customerContact').val(sCus.number)
+
+        }else {
+          alert("cant find customer id ")
+        }
+      }
+
+
+    });
+
+
+
+    $('#delete').click(function (){
+    });
 
 
 
   }
 </script>
+<script src="controller/Customer.js"></script>
 </body>
 </html>

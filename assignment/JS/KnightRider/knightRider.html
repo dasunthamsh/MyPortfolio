@@ -118,6 +118,7 @@
             document.querySelector("section:nth-child(2)").children[k].style.backgroundColor = newArray[j];
             j++;
           }
+
           j = 0;
         } else if (i < 10) {
           let newArray = colors.slice(i - 4, 5);
@@ -127,6 +128,7 @@
             document.querySelector("section:nth-child(2)").children[k].style.backgroundColor = newArray[k];
           }
         }
+
         i++;
         if (i == 10) {
           count = 0;
@@ -134,6 +136,7 @@
           j = 0;
         }
       }
+
     }, 100);
   });
   document.querySelector("body>section:nth-child(3)>button:nth-child(2)").addEventListener("click", function () {
