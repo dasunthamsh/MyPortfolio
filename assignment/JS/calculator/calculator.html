@@ -1,117 +1,178 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--</head>-->
+
+<!--  <style>-->
+<!--      * {-->
+<!--          margin: 0;-->
+<!--          padding: 0;-->
+<!--          font-size: 35px;-->
+<!--      }-->
+<!--      .calc {-->
+<!--          width: 324px;-->
+<!--          margin: auto;-->
+<!--          background-color: #39383d;-->
+<!--          padding: 20px;-->
+<!--          border-radius: 8px;-->
+<!--      }-->
+<!--      .calc-display {-->
+<!--          width: 100%;-->
+<!--          height: 75px;-->
+<!--          border:none;-->
+<!--          margin-bottom: 10px;-->
+<!--          border-radius:8px;-->
+<!--          border: solid black 2px;-->
+<!--      }-->
+<!--      input[type=button] {-->
+<!--          width: 75px;-->
+<!--          height: 75px;-->
+<!--          margin: 2px;-->
+<!--          color: #fff;-->
+<!--          border:none;-->
+<!--          border-radius: 8px;-->
+<!--          background-color: #58595b-->
+<!--      }-->
+<!--  </style>-->
+
+<!--<body>-->
+<!--  <main>-->
+<!--      <!DOCTYPE html>-->
+<!--      <html>-->
+<!--      <head>-->
+<!--          <title>jQuery Calculator</title>-->
+<!--          <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">-->
+<!--          <script-->
+<!--                  src="https://code.jquery.com/jquery-3.3.1.min.js"-->
+<!--                  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="-->
+<!--                  crossorigin="anonymous"></script>-->
+<!--          <link rel="stylesheet" type="text/css" href="css/main.css">-->
+<!--      </head>-->
+<!--      <body>-->
+<!--      <div class="calc">-->
+<!--          <form name="form">-->
+<!--              <input class="calc-display">-->
+<!--          </form>-->
+<!--          <table>-->
+<!--              <tr>-->
+<!--                  <td><input type="button" value="C" onclick="c()"></td>-->
+<!--                  <td><input type="button" value="/" onclick="insrt('/')"></td>-->
+<!--                  <td><input type="button" value="<" onclick="del()"></td>-->
+<!--                  <td><input type="button" value="X" onclick="insrt('*')"></td>-->
+<!--              </tr>-->
+<!--              <tr>-->
+<!--                  <td><input type="button" value="7" onclick="insrt(7)"></td>-->
+<!--                  <td><input type="button" value="8" onclick="insrt(8)"></td>-->
+<!--                  <td><input type="button" value="9" onclick="insrt(9)"></td>-->
+<!--                  <td><input type="button" value="-" onclick="insrt('-')"></td>-->
+<!--              </tr>-->
+<!--              <tr>-->
+<!--                  <td><input type="button" value="4" onclick="insrt(4)"></td>-->
+<!--                  <td><input type="button" value="5" onclick="insrt(5)"></td>-->
+<!--                  <td><input type="button" value="6" onclick="insrt(6)"></td>-->
+<!--                  <td><input type="button" value="+" onclick="insrt('+')"></td>-->
+<!--              </tr>-->
+<!--              <tr>-->
+<!--                  <td><input type="button" value="1" onclick="insrt(1)"></td>-->
+<!--                  <td><input type="button" value="2" onclick="insrt(2)"></td>-->
+<!--                  <td><input type="button" value="3" onclick="insrt(3)"></td>-->
+<!--                  <td rowspan=2><input type="button" value="=" onclick="eql()"  style="height: 158px; background-color: orange"></td>-->
+<!--              </tr>-->
+<!--              <tr>-->
+<!--                  <td colspan="2"><input type="button" value="0" onclick="insrt(0)" style="width: 158px; ;"></td>-->
+<!--                  <td><input type="button" value="." onclick="insrt('.')"></td>-->
+<!--              </tr>-->
+<!--          </table>-->
+<!--      </div>-->
+<!--      <script type="text/javascript" src="js/main.js"></script>-->
+<!--      </body>-->
+<!--      </html>-->
+<!--  </main>-->
+<!--        <script src="jq/jq.js"></script>-->
+<!--        <script>-->
+
+
+
+
+<!--function insrt(num) {-->
+<!--    $('.calc-display').val($('.calc-display').val() + num);-->
+<!--}-->
+<!--function eql() {-->
+<!--    $('.calc-display').val(eval($('.calc-display').val()));-->
+<!--}-->
+<!--function c() {-->
+<!--    $('.calc-display').val('');-->
+<!--}-->
+<!--function del() {-->
+<!--    value = $('.calc-display').val();-->
+<!--    $('.calc-display').val(value.substring(0, value.length - 1));-->
+<!--}-->
+
+
+
+<!--        </script>-->
+<!--</body>-->
+<!--</html>-->
+
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Website Loader</title>
+    <link rel="stylesheet" type="text/css" href="loader.css">
+    <script src="jq/jq.js"></script>
 </head>
 
-  <style>
-      * {
-          margin: 0;
-          padding: 0;
-          font-size: 35px;
-      }
-      .calc {
-          width: 324px;
-          margin: auto;
-          background-color: #39383d;
-          padding: 20px;
-          border-radius: 8px;
-      }
-      .calc-display {
-          width: 100%;
-          height: 75px;
-          border:none;
-          margin-bottom: 10px;
-          border-radius:8px;
-          border: solid black 2px;
-      }
-      input[type=button] {
-          width: 75px;
-          height: 75px;
-          margin: 2px;
-          color: #fff;
-          border:none;
-          border-radius: 8px;
-          background-color: #58595b
-      }
-  </style>
+<style>
 
+    body{
+        background: #1746EC;
+    }
+
+    #loader {
+        background:yellow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    #loader div {
+        width: 40px;
+        height: 40px;
+        background-color: #333;
+        border-radius: 50%;
+        animation: spin 1.5s infinite linear;
+    }
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+</style>
 <body>
-  <main>
-      <!DOCTYPE html>
-      <html>
-      <head>
-          <title>jQuery Calculator</title>
-          <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
-          <script
-                  src="https://code.jquery.com/jquery-3.3.1.min.js"
-                  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-                  crossorigin="anonymous"></script>
-          <link rel="stylesheet" type="text/css" href="css/main.css">
-      </head>
-      <body>
-      <div class="calc">
-          <form name="form">
-              <input class="calc-display">
-          </form>
-          <table>
-              <tr>
-                  <td><input type="button" value="C" onclick="c()"></td>
-                  <td><input type="button" value="/" onclick="insrt('/')"></td>
-                  <td><input type="button" value="<" onclick="del()"></td>
-                  <td><input type="button" value="X" onclick="insrt('*')"></td>
-              </tr>
-              <tr>
-                  <td><input type="button" value="7" onclick="insrt(7)"></td>
-                  <td><input type="button" value="8" onclick="insrt(8)"></td>
-                  <td><input type="button" value="9" onclick="insrt(9)"></td>
-                  <td><input type="button" value="-" onclick="insrt('-')"></td>
-              </tr>
-              <tr>
-                  <td><input type="button" value="4" onclick="insrt(4)"></td>
-                  <td><input type="button" value="5" onclick="insrt(5)"></td>
-                  <td><input type="button" value="6" onclick="insrt(6)"></td>
-                  <td><input type="button" value="+" onclick="insrt('+')"></td>
-              </tr>
-              <tr>
-                  <td><input type="button" value="1" onclick="insrt(1)"></td>
-                  <td><input type="button" value="2" onclick="insrt(2)"></td>
-                  <td><input type="button" value="3" onclick="insrt(3)"></td>
-                  <td rowspan=2><input type="button" value="=" onclick="eql()"  style="height: 158px; background-color: orange"></td>
-              </tr>
-              <tr>
-                  <td colspan="2"><input type="button" value="0" onclick="insrt(0)" style="width: 158px; ;"></td>
-                  <td><input type="button" value="." onclick="insrt('.')"></td>
-              </tr>
-          </table>
-      </div>
-      <script type="text/javascript" src="js/main.js"></script>
-      </body>
-      </html>
-  </main>
-        <script src="jq/jq.js"></script>
-        <script>
+<section id="loader">
+    <div></div>
+</section>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
 
+    $(document).ready(function() {
+        // Hide the loader when the page finishes loading
+        $(window).on('load', function() {
+            $('#loader').fadeOut('slow');
+        });
+    });
 
-
-function insrt(num) {
-    $('.calc-display').val($('.calc-display').val() + num);
-}
-function eql() {
-    $('.calc-display').val(eval($('.calc-display').val()));
-}
-function c() {
-    $('.calc-display').val('');
-}
-function del() {
-    value = $('.calc-display').val();
-    $('.calc-display').val(value.substring(0, value.length - 1));
-}
-
-
-
-        </script>
+</script>
 </body>
 </html>
+

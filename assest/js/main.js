@@ -63,4 +63,13 @@ el.addEventListener('mouseup', function() {
 //     $('#loader').fadeOut(1000);
 // });
 
-
+document.addEventListener('DOMContentLoaded', function() {
+    // Hide the loader when the page finishes loading
+    window.addEventListener('load', function() {
+        var loader = document.querySelector('#loader');
+        loader.style.opacity = '0';
+        setTimeout(function() {
+            loader.style.display = 'none';
+        }, 600); // Adjust the delay as needed
+    });
+});

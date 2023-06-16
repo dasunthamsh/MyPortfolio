@@ -1079,7 +1079,7 @@ main>section:nth-child(13)>a>button{
 
                                     /*------------------------loader animation---------------------------*/
 
-#loader{
+main>section:nth-child(14){
     background: black;
     position: fixed;
     width: 100vw;
@@ -1088,7 +1088,7 @@ main>section:nth-child(13)>a>button{
     z-index: 100;
 }
 
-#loader>div{
+main>section:nth-child(14)>div{
     background:url("../img/loder.gif");
     width: 200px;
     height: 200px;
