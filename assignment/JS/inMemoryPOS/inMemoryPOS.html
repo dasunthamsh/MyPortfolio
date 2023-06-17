@@ -46,7 +46,14 @@
 <script>
 
 
-  let customerArray = [];
+  let vArray = new Array();
+
+  var customerDB = [
+          {id:'C001',name:'Dasun',address:'Gale',Email:'Dasnu@gmail.com',contact:'0784565258'},
+          {id:'C002',name:'Chamara',address:'Mathara',Email:'Chamara@gmail.com',contact:'07884665258'}
+  ];
+
+
 
 
   var pages = {
@@ -387,17 +394,15 @@ rgba(0, 0, 0, 0.19); border-radius: 12px" >
     const CUS_NUMBER_REGEX = /^[0-9]$/;
     const CUS_EMAIL_REGEX = /^(a-z)$/;
 
-    let vArray = new Array();
     vArray.push([$('#customerId'),CUS_ID_REGEX]);
     vArray.push([$('#customerName'),CUS_NAME_REGEX]);
     vArray.push([$('#customerEmail'),CUS_EMAIL_REGEX]);
     vArray.push([$('#customerAddress'),CUS_ADDRESS_REGEX]);
     vArray.push([$('#customerContact'),CUS_NUMBER_REGEX]);
 
-    var customerDB = [{id:'C001',name:'Dasun',}];
 
 
-
+// save customer
 
 
 
