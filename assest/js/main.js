@@ -58,10 +58,8 @@ el.addEventListener('mouseup', function() {
 })
 
 
-// $(window).on('load', function (){
-//
-//     $('#loader').fadeOut(1000);
-// });
+
+                            // ---------------------------------loading form animation---------------------------//
 
 document.addEventListener('DOMContentLoaded', function() {
     // Hide the loader when the page finishes loading
@@ -73,3 +71,22 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 600); // Adjust the delay as needed
     });
 });
+
+
+                            // ---------------------------------education---------------------------//
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var mouse = document.getElementById('#mouse');
+
+    mouse.addEventListener('mouseenter', function() {
+        this.style.visibility = 'visible';
+    });
+
+    mouse.addEventListener('mouseleave', function() {
+        this.style.visibility = 'hidden';
+    });
+});
+
