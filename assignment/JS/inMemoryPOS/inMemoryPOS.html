@@ -103,8 +103,8 @@ rgba(0, 0, 0, 0.19); border-radius: 12px" >
       </div>
 
       <div class="mb-3 w-50">
-        <label for="custoemrEmail" class="form-label">Email</label>
-        <input class="form-control" id="custoemrEmail" placeholder="name@example.com">
+        <label for="customerEmail" class="form-label">Email</label>
+        <input class="form-control" id="customerEmail" placeholder="name@example.com">
       </div>
 
       <div class="mb-3 w-50">
@@ -114,7 +114,7 @@ rgba(0, 0, 0, 0.19); border-radius: 12px" >
 
       <div class="mb-3">
         <label for="customerAddress" class="form-label">Address</label>
-        <textarea class="form-control" id="customerAddress" rows="1"  ></textarea>
+        <input class="form-control" id="customerAddress"   >
       </div>
       <div class="container m-3 w-75" >
         <button type="button" class="btn btn-danger" style="width: 150px; margin-left: 10px" id="saveCustomer">Save</button>
@@ -380,556 +380,354 @@ rgba(0, 0, 0, 0.19); border-radius: 12px" >
     }
     document.getElementById('content').innerHTML = contentToReturn;
 
-    // $('#saveCustomer').click(function (){
-    //
-    //   var cusId =  $('#customerId').val();
-    //   var cusName = $('#customerName').val();
-    //   var cusEmail = $('#custoemrEmail').val();
-    //   var cusAddreess = $('#customerAddress').val();
-    //   var cusContact = $('#customerContact').val();
-    //
-    //   var customer ={
-    //     id : cusId,
-    //     name: cusName,
-    //     email: cusEmail,
-    //     address : cusAddreess,
-    //     contact : cusContact,
-    //   }
-    //
-    //
-    //
-    //   customerArray.push(customer);
-    //
-    //
-    //
-    //   for (let i of customerArray){
-    //   }
-    //   all();
-    //   searchCus();
-    //
-    // });
-    //
-    //
-    // $('#getAll').click(function (){
-    //
-    //
-    // });
-    //
-    // function all() {
-    //   $('#row').empty();
-    //
-    //   for (var i of customerArray) {
-    //     console.log(customerArray);
-    //
-    //
-    //     var tbl = "<tr><th>"+ i.id +"</th><td>"+ i.name +"</td><td>"+ i.email +"</td><td>"+ i.contact +"</td><td>"+ i.address +"</td></tr>";
-    //     $('#customerTable').append(tbl);
-    //   }
-    //
-    // }
-    //
-    //
-    //
-    //
-    // function searchCus(){
-    //   $('#tableRows>tr').click(function (){
-    //     console.log(this);
-    //
-    //     var one = $(this).children(':nth-child(1)').text();
-    //     var tow = $(this).children(':nth-child(2)').text();
-    //     var three = $(this).children(':nth-child(3)').text();
-    //     var fore = $(this).children(':nth-child(4)').text();
-    //     var five = $(this).children(':nth-child(5)').text();
-    //
-    //     $('#customerId').val(one);
-    //     $('#customerName').val(tow);
-    //     $('#custoemrEmail').val(three);
-    //     $('#customerAddress').val(fore);
-    //     $('#customerContact').val(five);
-    //
-    //
-    //   });
-    //
-    //
-    // }
-    //
-    // // $('#tableRows>tr').on('dblclick',function (){
-    // //   $(this).remove();
-    // // });
-    //
-    // // var ked = $('#customerId').on('keydown',function (event){
-    // //
-    // //   if(event.key=="Enter"){
-    // //
-    // //     $('#customerName').focus();
-    // //   }
-    // //
-    // // });
-    //
-    //
-    //
-    // $('#searchCustomer').click(function (){
-    //
-    //   for (var sCus of customerArray) {
-    //     sCus.customer;
-    //     if(sCus.id==$('#customerId').val()){
-    //
-    //
-    //       $('#customerName').val(sCus.name)
-    //       $('#customerAddress').val(sCus.address)
-    //       $('#custoemrEmail').val(sCus.email)
-    //       $('#customerContact').val(sCus.number)
-    //
-    //     }else {
-    //       alert("cant find customer id ")
-    //     }
-    //   }
-    //
-    //
-    // });
-    //
-    //
-    //
-    // $('#delete').click(function (){
-    // });
-    //
+// validation part
+    const CUS_ID_REGEX = /^(C00-)[0-9]{3}$/;
+    const CUS_NAME_REGEX = /^[A-Za-z ]{5,}$/;
+    const CUS_ADDRESS_REGEX = /^[A-Za-z0-9 ]{8,}$/;
+    const CUS_NUMBER_REGEX = /^[0-9]$/;
+    const CUS_EMAIL_REGEX = /^(a-z)$/;
+
+    let vArray = new Array();
+    vArray.push([$('#customerId'),CUS_ID_REGEX]);
+    vArray.push([$('#customerName'),CUS_NAME_REGEX]);
+    vArray.push([$('#customerEmail'),CUS_EMAIL_REGEX]);
+    vArray.push([$('#customerAddress'),CUS_ADDRESS_REGEX]);
+    vArray.push([$('#customerContact'),CUS_NUMBER_REGEX]);
+
+    var customerDB = [{id:'C001',name:'Dasun',}];
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//     $('#btnCNew').click(function () {
+//       clearCFields();
+//       bindCRowClickEvents();
+//     });
 //
-//     $(document).ready(function() {
-//          $('#row').empty();
-//       $('#saveCustomer').click(function() {
-//         var cusId = $('#customerId').val();
-//         var cusName = $('#customerName').val();
-//         var cusEmail = $('#customerEmail').val();
-//         var cusAddreess = $('#customerContact').val();
-//         var cusContact = $('#customerAddress').val();
+//     $('#saveCustomer').click(function () {
+//       saveCustomer($('#customerId').val(), $('#customerName').val(), $('#customerAddress').val(), $('#customerContact').val() , ('#'));
 //
-//           var customer ={
-//             id : cusId,
-//             name: cusName,
-//             email: cusEmail,
-//             address : cusAddreess,
-//             contact : cusContact
+//       loadAllCustomers();
+//
+//       bindCRowClickEvents();
+//     });
+//
+//     $('#getAllCustomers').click(function () {
+//       loadAllCustomers();
+//       bindCRowClickEvents();
+//     });
+//
+//     $('#deleteCustomer').click(function () {
+//       let deletedID = $('#customerId').val();
+//       Swal.fire({
+//         title: 'Are you sure?',
+//         text: "Do you want to delete "+ deletedID +" Customer",
+//         icon: 'warning',
+//         showCancelButton: true,
+//         confirmButtonColor: '#3085d6',
+//         cancelButtonColor: '#d33',
+//         confirmButtonText: 'Yes, delete it!'
+//       }).then((result) => {
+//         if (result.isConfirmed) {
+//           if(deleteCustomer(deletedID)){
+//             Swal.fire(
+//                     'Deleted!',
+//                     'Your file has been deleted.',
+//                     'success'
+//             )
+//             clearCFields();
+//           }else{
+//             Swal.fire(
+//                     'Error',
+//                     'NO customer to delete, Re-Check customer ID',
+//                     'error'
+//             )
+//             clearCFields();
 //           }
-//
-//           customerArray.push(customer);
-//
-//           for(var i of customerArray){
-//
-//             var tbl = "<tr><th>"+ i.id +"</th><td>"+ i.name +"</td><td>"+ i.email +"</td><td>"+ i.contact +"</td><td>"+ i.address +"</td></tr>";
-//             $('#customerTable').append(tbl);
-// //            $('#tableRows').append(newRow);
-//
-//           }
-//
-//
-//
-//         // Append the new row to the table
-//
-//         // Clear the input fields
-//         clearInputFields();
-//       });
-//
-//       // Update a customer
-//       $('#updateCustomer').click(function() {
-//         // Get the selected row
-//         var selectedRow = $('#tableRows tr.selected');
-//
-//         // Check if a row is selected
-//         if (selectedRow.length > 0) {
-//           // Update the values in the selected row
-//           selectedRow.find('td:eq(0)').text($('#customerId').val());
-//           selectedRow.find('td:eq(1)').text($('#customerName').val());
-//           selectedRow.find('td:eq(2)').text($('#customerEmail').val());
-//           selectedRow.find('td:eq(3)').text($('#customerContact').val());
-//           selectedRow.find('td:eq(4)').text($('#customerAddress').val());
-//
-//           // Clear the input fields
-//           clearInputFields();
-//
-//           // Deselect the row
-//           selectedRow.removeClass('selected');
 //         }
-//       });
+//       })
+//     });
 //
-//       // Delete a customer
-//       $('#deleteCustomer').click(function() {
-//         // Get the selected row
-//         var selectedRow = $('#tableRows tr.selected');
-//
-//         // Check if a row is selected
-//         if (selectedRow.length > 0) {
-//           // Remove the selected row
-//           selectedRow.remove();
-//
-//           // Clear the input fields
-//           clearInputFields();
-//
-//           // Deselect the row
-//           selectedRow.removeClass('selected');
-//         }
-//       });
-//
-//       // Select a row for editing
-//       $('#customerTable').on('click', 'tbody tr', function() {
-//         // Deselect the previously selected row
-//         $('#tableRows tr.selected').removeClass('selected');
-//
-//         // Select the clicked row
-//         $(this).addClass('selected');
-//
-//         // Populate the input fields with the values from the selected row
-//         $('#customerId').val($(this).find('td:eq(0)').text());
-//         $('#customerName').val($(this).find('td:eq(1)').text());
-//         $('#customerEmail').val($(this).find('td:eq(2)').text());
-//         $('#customerContact').val($(this).find('td:eq(3)').text());
-//         $('#customerAddress').val($(this).find('td:eq(4)').text());
-//       });
-//
-//       // Clear input fields
-//       function clearInputFields() {
-//
-//         $('#customerId').val('');
-//         $('#customerName').val('');
-//         $('#customerEmail').val('');
-//         $('#customerContact').val('');
-//         $('#customerAddress').val('');
+//     $('#searchCustomer').click(function () {
+//       let typedID = $('#customerId').val();
+//       let customer = searchCustomer(typedID);
+//       if(customer != null){
+//         setCTextFieldValues(customer.name, customer.address, customer.contact);
+//       }else{
+//         Swal.fire(
+//                 'Error',
+//                 'There is no customer available for ' + typedID,
+//                 'error'
+//         )
+//         setCTextFieldValues("", "", "", "");
 //       }
 //     });
 //
-//
-//     $('#searchCustomer').click(function (){
-//
-//       for (var sCus of customerArray) {
-//         sCus.customer;
-//         if(sCus.id==$('#customerId').val()){
-//
-//
-//           $('#customerName').val(sCus.name)
-//           $('#customerAddress').val(sCus.address)
-//           $('#custoemrEmail').val(sCus.email)
-//           $('#customerContact').val(sCus.number)
-//
-//         }else {
-//           alert("cant find customer id ")
+//     $('#updateCustoemr').click(function () {
+//       let updatedID = $('#customerId').val();
+//       Swal.fire({
+//         title: 'Do you want to save the changes?',
+//         showDenyButton: true,
+//         // showCancelButton: true,
+//         confirmButtonText: 'Save',
+//         denyButtonText: `Don't save`,
+//       }).then((result) => {
+//         if (result.isConfirmed) {
+//           if(updateCustomer(updatedID)){
+//             Swal.fire(
+//                     'Updated!',
+//                     'Customer updated successfully.',
+//                     'success'
+//             )
+//             clearCFields();
+//           }else{
+//             Swal.fire(
+//                     'Error',
+//                     'NO customer to update, Re-Check customer ID',
+//                     'error'
+//             )
+//             clearCFields();
+//           }
 //         }
-//       }
-//
+//       })
 //
 //     });
-
-
-    $('#btnCNew').click(function () {
-      clearCFields();
-      bindCRowClickEvents();
-    });
-
-    $('#saveCustomer').click(function () {
-      saveCustomer($('#customerId').val(), $('#customerName').val(), $('#customerAddress').val(), $('#customerContact').val() , ('#'));
-
-      loadAllCustomers();
-
-      bindCRowClickEvents();
-    });
-
-    $('#getAllCustomers').click(function () {
-      loadAllCustomers();
-      bindCRowClickEvents();
-    });
-
-    $('#deleteCustomer').click(function () {
-      let deletedID = $('#customerId').val();
-      Swal.fire({
-        title: 'Are you sure?',
-        text: "Do you want to delete "+ deletedID +" Customer",
-        icon: 'warning',
-        showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
-        confirmButtonText: 'Yes, delete it!'
-      }).then((result) => {
-        if (result.isConfirmed) {
-          if(deleteCustomer(deletedID)){
-            Swal.fire(
-                    'Deleted!',
-                    'Your file has been deleted.',
-                    'success'
-            )
-            clearCFields();
-          }else{
-            Swal.fire(
-                    'Error',
-                    'NO customer to delete, Re-Check customer ID',
-                    'error'
-            )
-            clearCFields();
-          }
-        }
-      })
-    });
-
-    $('#searchCustomer').click(function () {
-      let typedID = $('#customerId').val();
-      let customer = searchCustomer(typedID);
-      if(customer != null){
-        setCTextFieldValues(customer.name, customer.address, customer.contact);
-      }else{
-        Swal.fire(
-                'Error',
-                'There is no customer available for ' + typedID,
-                'error'
-        )
-        setCTextFieldValues("", "", "", "");
-      }
-    });
-
-    $('#updateCustoemr').click(function () {
-      let updatedID = $('#customerId').val();
-      Swal.fire({
-        title: 'Do you want to save the changes?',
-        showDenyButton: true,
-        // showCancelButton: true,
-        confirmButtonText: 'Save',
-        denyButtonText: `Don't save`,
-      }).then((result) => {
-        if (result.isConfirmed) {
-          if(updateCustomer(updatedID)){
-            Swal.fire(
-                    'Updated!',
-                    'Customer updated successfully.',
-                    'success'
-            )
-            clearCFields();
-          }else{
-            Swal.fire(
-                    'Error',
-                    'NO customer to update, Re-Check customer ID',
-                    'error'
-            )
-            clearCFields();
-          }
-        }
-      })
-
-    });
-
-    function saveCustomer(id, name, address, contact){
-
-      customerObj = new Object({
-        id : id,
-        name : name,
-        address : address,
-        contact : contact
-      });
-
-      customerArr.push(customerObj);
-
-      Swal.fire({
-        position: 'center',
-        icon: 'success',
-        title: 'Customer Saved Successfully',
-        showConfirmButton: false,
-        timer: 1800
-      })
-
-      clearCFields();
-    }
-
-    function deleteCustomer(id){
-      let customer = searchCustomer(id);
-      if(customer != null){
-        let indexNo = customerArr.indexOf(customer);
-        customerArr.splice(indexNo,1);
-        loadAllCustomers();
-        bindCRowClickEvents();
-        return true;
-      }else{
-        return false;
-      }
-    }
-
-    function searchCustomer(id){
-      for (let customer of customerArr) {
-        if(customer.id == id){
-          bindCRowClickEvents();
-          return customer;
-        }
-      }
-      return null;
-    }
-
-    function updateCustomer(id){
-      let customer = searchCustomer(id);
-      if(customer != null){
-        customer.name = $('#customerName').val();
-        customer.address = $('#customerAddress').val();
-        customer.contact = $('#customerContact').val();
-        loadAllCustomers();
-        bindCRowClickEvents();
-        return true;
-      }else {
-        return false;
-      }
-    }
-
-    function loadAllCustomers(){
-      $('#row').empty();
-
-      for (let customer of customerArr) {
-        let row = `<tr><td>${customer.id}</td><td>${customer.name}</td><td>${customer.address}</td><td>${customer.contact}</td></tr>`;
-        $('#customerTable').append(row);
-      }
-
-    }
-
-    function bindCRowClickEvents() {
-      $('#customerTable>tr').click(function () {
-        let id = $(this).children(':eq(0)').text();
-        let name = $(this).children(':eq(1)').text();
-        let address = $(this).children(':eq(2)').text();
-        let contact = $(this).children(':eq(3)').text();
-
-        $('#customerId').val(id);
-        $('#customerName').val(name);
-        $('#customerAddress').val(address);
-        $('#customerContact').val(contact);
-
-      });
-    }
-
-    function setCTextFieldValues(name, address, contact){
-      $('#customerName').val(name);
-      $('#customerAddress').val(address);
-      $('#customerContact').val(contact);
-    }
-
-    function clearCFields(){
-      $('#customerId').val("");
-      $('#customerName').val("");
-      $('#customerAddress').val("");
-      $('#customerContact').val("");
-    }
-
-//RegEx
-    $('#customerId').focus();
-
-    const cusIDRegEx = /^(C)[0-9]{1,3}$/;
-    const cusNameRegEx = /^[A-z ]{5,20}$/;
-    const cusAddressRegEx = /^[a-z]$/;
-    const cusContactRegEx = /^[0-9]{10}$/;
-
-    let customerValidations = [];
-    customerValidations.push({reg: cusIDRegEx, field: $('#customerId'),error:'Customer ID Pattern is Wrong : C001'});
-    customerValidations.push({reg: cusNameRegEx, field: $('#customerName'),error:'Customer Name Pattern is Wrong : A-z 5-20'});
-    customerValidations.push({reg: cusAddressRegEx, field: $('#customerAddress'),error:'Customer Address Pattern is Wrong : A-z 0-9 ,/'});
-    customerValidations.push({reg: cusContactRegEx, field: $('#customerContact'),error:'Customer Contact Pattern is Wrong : [0-9] 10 Numbers'});
-
-//disable tab key of all four text fields using grouping selector in CSS
-    $("#customerId,#customerName,#customerAddress,#customerContact").on('keydown', function (event) {
-      if (event.key == "Tab") {
-        event.preventDefault();
-      }
-    });
-
-    $("#customerId,#customerName,#customerAddress,#customerContact").on('keyup', function (event) {
-      checkValidity();
-    });
-    $("#customerId,#customerName,#customerAddress,#customerContact").on('blur', function (event) {
-      checkValidity();
-    });
-
-    $("#customerId").on('keydown', function (event) {
-      if (event.key == "Enter" && check(cusIDRegEx, $("#customerId"))) {
-        $("#customerName").focus();
-      } else {
-        focusText($("#customerId"));
-      }
-    });
-
-    $("#customerName").on('keydown', function (event) {
-      if (event.key == "Enter" && check(cusNameRegEx, $("#customerName"))) {
-        focusText($("#customerAddress"));
-      }
-    });
-
-    $("#customerAddress").on('keydown', function (event) {
-      if (event.key == "Enter" && check(cusAddressRegEx, $("#customerAddress"))) {
-        focusText($("#customerContact"));
-      }
-    });
-
-    $("#customerContact").on('keydown', function (event) {
-      if (event.key == "Enter" && check(cusContactRegEx, $("#customerContact"))) {
-        let res = confirm("Do you want to add this customer.?");
-        if (res) {
-          clearAllTexts();
-        }
-      }
-    });
-
-    function checkValidity() {
-      let errorCount=0;
-      for (let validation of customerValidations) {
-        if (check(validation.reg,validation.field)) {
-          textSuccess(validation.field,"");
-        } else {
-          errorCount=errorCount+1;
-          setTextError(validation.field,validation.error);
-        }
-      }
-      setButtonState(errorCount);
-    }
-
-    function check(regex, txtField) {
-      let inputValue = txtField.val();
-      return regex.test(inputValue) ? true : false;
-    }
-
-    function setTextError(txtField,error) {
-      if (txtField.val().length <= 0) {
-        defaultText(txtField,"");
-      } else {
-        txtField.css('border', '2px solid red');
-        txtField.parent().children('span').text(error);
-        txtField.parent().children('span').css('font-size','12px');
-        txtField.parent().children('span').css('color','red');
-      }
-    }
-
-    function textSuccess(txtField,error) {
-      if (txtField.val().length <= 0) {
-        defaultText(txtField,"");
-      } else {
-        txtField.css('border', '2px solid green');
-        txtField.parent().children('span').text(error);
-      }
-    }
-
-    function defaultText(txtField,error) {
-      txtField.css("border", "1px solid #ced4da");
-      txtField.parent().children('span').text(error);
-    }
-
-    function focusText(txtField) {
-      txtField.focus();
-    }
-
-    // function setButtonState(value){
-    //   if (value>0){
-    //     $("#customerId").attr('disabled',true);
-    //   }else{
-    //     $("#customerId").attr('disabled',false);
-    //   }
-    // }
-
-    function clearAllTexts() {
-      $("#customerId").focus();
-      $("#customerId,#customerName,#customerAddress,#customerContact").val("");
-      checkValidity();
-    }
-
-  }
+//
+//     function saveCustomer(id, name, address, contact){
+//
+//       customerObj = new Object({
+//         id : id,
+//         name : name,
+//         address : address,
+//         contact : contact
+//       });
+//
+//       customerArr.push(customerObj);
+//
+//       Swal.fire({
+//         position: 'center',
+//         icon: 'success',
+//         title: 'Customer Saved Successfully',
+//         showConfirmButton: false,
+//         timer: 1800
+//       })
+//
+//       clearCFields();
+//     }
+//
+//     function deleteCustomer(id){
+//       let customer = searchCustomer(id);
+//       if(customer != null){
+//         let indexNo = customerArr.indexOf(customer);
+//         customerArr.splice(indexNo,1);
+//         loadAllCustomers();
+//         bindCRowClickEvents();
+//         return true;
+//       }else{
+//         return false;
+//       }
+//     }
+//
+//     function searchCustomer(id){
+//       for (let customer of customerArr) {
+//         if(customer.id == id){
+//           bindCRowClickEvents();
+//           return customer;
+//         }
+//       }
+//       return null;
+//     }
+//
+//     function updateCustomer(id){
+//       let customer = searchCustomer(id);
+//       if(customer != null){
+//         customer.name = $('#customerName').val();
+//         customer.address = $('#customerAddress').val();
+//         customer.contact = $('#customerContact').val();
+//         loadAllCustomers();
+//         bindCRowClickEvents();
+//         return true;
+//       }else {
+//         return false;
+//       }
+//     }
+//
+//     function loadAllCustomers(){
+//       $('#row').empty();
+//
+//       for (let customer of customerArr) {
+//         let row = `<tr><td>${customer.id}</td><td>${customer.name}</td><td>${customer.address}</td><td>${customer.contact}</td></tr>`;
+//         $('#customerTable').append(row);
+//       }
+//
+//     }
+//
+//     function bindCRowClickEvents() {
+//       $('#customerTable>tr').click(function () {
+//         let id = $(this).children(':eq(0)').text();
+//         let name = $(this).children(':eq(1)').text();
+//         let address = $(this).children(':eq(2)').text();
+//         let contact = $(this).children(':eq(3)').text();
+//
+//         $('#customerId').val(id);
+//         $('#customerName').val(name);
+//         $('#customerAddress').val(address);
+//         $('#customerContact').val(contact);
+//
+//       });
+//     }
+//
+//     function setCTextFieldValues(name, address, contact){
+//       $('#customerName').val(name);
+//       $('#customerAddress').val(address);
+//       $('#customerContact').val(contact);
+//     }
+//
+//     function clearCFields(){
+//       $('#customerId').val("");
+//       $('#customerName').val("");
+//       $('#customerAddress').val("");
+//       $('#customerContact').val("");
+//     }
+//
+// //RegEx
+//     $('#customerId').focus();
+//
+//     const cusIDRegEx = /^(C)[0-9]{1,3}$/;
+//     const cusNameRegEx = /^[A-z ]{5,20}$/;
+//     const cusAddressRegEx = /^[a-z]$/;
+//     const cusContactRegEx = /^[0-9]{10}$/;
+//
+//     let customerValidations = [];
+//     customerValidations.push({reg: cusIDRegEx, field: $('#customerId'),error:'Customer ID Pattern is Wrong : C001'});
+//     customerValidations.push({reg: cusNameRegEx, field: $('#customerName'),error:'Customer Name Pattern is Wrong : A-z 5-20'});
+//     customerValidations.push({reg: cusAddressRegEx, field: $('#customerAddress'),error:'Customer Address Pattern is Wrong : A-z 0-9 ,/'});
+//     customerValidations.push({reg: cusContactRegEx, field: $('#customerContact'),error:'Customer Contact Pattern is Wrong : [0-9] 10 Numbers'});
+//
+// //disable tab key of all four text fields using grouping selector in CSS
+//     $("#customerId,#customerName,#customerAddress,#customerContact").on('keydown', function (event) {
+//       if (event.key == "Tab") {
+//         event.preventDefault();
+//       }
+//     });
+//
+//     $("#customerId,#customerName,#customerAddress,#customerContact").on('keyup', function (event) {
+//       checkValidity();
+//     });
+//     $("#customerId,#customerName,#customerAddress,#customerContact").on('blur', function (event) {
+//       checkValidity();
+//     });
+//
+//     $("#customerId").on('keydown', function (event) {
+//       if (event.key == "Enter" && check(cusIDRegEx, $("#customerId"))) {
+//         $("#customerName").focus();
+//       } else {
+//         focusText($("#customerId"));
+//       }
+//     });
+//
+//     $("#customerName").on('keydown', function (event) {
+//       if (event.key == "Enter" && check(cusNameRegEx, $("#customerName"))) {
+//         focusText($("#customerAddress"));
+//       }
+//     });
+//
+//     $("#customerAddress").on('keydown', function (event) {
+//       if (event.key == "Enter" && check(cusAddressRegEx, $("#customerAddress"))) {
+//         focusText($("#customerContact"));
+//       }
+//     });
+//
+//     $("#customerContact").on('keydown', function (event) {
+//       if (event.key == "Enter" && check(cusContactRegEx, $("#customerContact"))) {
+//         let res = confirm("Do you want to add this customer.?");
+//         if (res) {
+//           clearAllTexts();
+//         }
+//       }
+//     });
+//
+//     function checkValidity() {
+//       let errorCount=0;
+//       for (let validation of customerValidations) {
+//         if (check(validation.reg,validation.field)) {
+//           textSuccess(validation.field,"");
+//         } else {
+//           errorCount=errorCount+1;
+//           setTextError(validation.field,validation.error);
+//         }
+//       }
+//       setButtonState(errorCount);
+//     }
+//
+//     function check(regex, txtField) {
+//       let inputValue = txtField.val();
+//       return regex.test(inputValue) ? true : false;
+//     }
+//
+//     function setTextError(txtField,error) {
+//       if (txtField.val().length <= 0) {
+//         defaultText(txtField,"");
+//       } else {
+//         txtField.css('border', '2px solid red');
+//         txtField.parent().children('span').text(error);
+//         txtField.parent().children('span').css('font-size','12px');
+//         txtField.parent().children('span').css('color','red');
+//       }
+//     }
+//
+//     function textSuccess(txtField,error) {
+//       if (txtField.val().length <= 0) {
+//         defaultText(txtField,"");
+//       } else {
+//         txtField.css('border', '2px solid green');
+//         txtField.parent().children('span').text(error);
+//       }
+//     }
+//
+//     function defaultText(txtField,error) {
+//       txtField.css("border", "1px solid #ced4da");
+//       txtField.parent().children('span').text(error);
+//     }
+//
+//     function focusText(txtField) {
+//       txtField.focus();
+//     }
+//
+//     // function setButtonState(value){
+//     //   if (value>0){
+//     //     $("#customerId").attr('disabled',true);
+//     //   }else{
+//     //     $("#customerId").attr('disabled',false);
+//     //   }
+//     // }
+//
+//     function clearAllTexts() {
+//       $("#customerId").focus();
+//       $("#customerId,#customerName,#customerAddress,#customerContact").val("");
+//       checkValidity();
+//     }
+//
+   }
 </script>
 <script src="controller/Customer.js"></script>
 </body>
