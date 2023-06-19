@@ -4,11 +4,6 @@
 
 
 
-<script src="../calculator/jq/jq.js"></script>
-
-</body>
-</html>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -29,10 +24,10 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
 
-        <li class="nav-item"><a class="nav-link active" onclick="getPageContent('home')"  aria-current="page" href="#">Home</a></li>
-        <li class="nav-item"><a class="nav-link" onclick="getPageContent('customer')" href="#">Customer</a></li>
-        <li class="nav-item"><a class="nav-link" onclick="getPageContent('item')" href="#">Item</a></li>
-        <li class="nav-item"><a class="nav-link" onclick="getPageContent('order')" href="#">Order</a>
+        <li id="lnkHome" class="nav-item"><a class="nav-link active" onclick="getPageContent('home')"  aria-current="page" href="#">Home</a></li>
+        <li id="lnkCustomer" class="nav-item"><a class="nav-link" onclick="getPageContent('customer')" href="#">Customer</a></li>
+        <li id="lnkItem" class="nav-item"><a class="nav-link" onclick="getPageContent('item')" href="#">Item</a></li>
+        <li id="lnkOrders" class="nav-item"><a class="nav-link" onclick="getPageContent('order')" href="#">Order</a>
 
         </li>
       </ul>
@@ -41,23 +36,14 @@
 </nav>
 
 <div id="content"></div>
-<script src="../calculator/jq/jq.js"></script>
-
-<script>
-
-
-  let vArray = new Array();
-
-  var customerDB = [
-          {id:'C001',name:'Dasun',address:'Gale',Email:'Dasnu@gmail.com',contact:'0784565258'},
-          {id:'C002',name:'Chamara',address:'Mathara',Email:'Chamara@gmail.com',contact:'07884665258'}
-  ];
 
 
 
 
-  var pages = {
-    'home' : `<div class="container ">
+
+
+
+<div class="container " id="dashboardContent">
   <div class="row">
 
     <div class="col-md-4">
@@ -93,8 +79,13 @@
       </div>
     </div>
   </div>
-  </div>`,
-    'customer' : `<div class="container">
+  </div>
+
+
+<!--Customer Content-->
+
+
+<div class="container" id="customerContent">
     <div class="container row m-lg-5 w-100" style="  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
 rgba(0, 0, 0, 0.19); border-radius: 12px" >
       <div class="card-header bg-danger fw-bold" style="border: none; border-top-left-radius: 12px; border-top-right-radius: 12px;">Add New Customer</div>
@@ -133,51 +124,57 @@ rgba(0, 0, 0, 0.19); border-radius: 12px" >
       </div>
 
     </div>
+
+    <div class="container">
+        <table class="table" id="customerTable">
+            <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Contact</th>
+                <th scope="col">Address</th>
+            </tr>
+            </thead>
+
+            <tbody id="tableRows">
+
+            </tbody>
+
+
+        </table>
+    </div>
   </div>
 
 
-  <div class="container">
-    <table class="table" id="customerTable">
-      <thead>
-      <tr>
-        <th scope="col">ID</th>
-        <th scope="col">Name</th>
-        <th scope="col">Email</th>
-        <th scope="col">Contact</th>
-        <th scope="col">Address</th>
-      </tr>
-      </thead>
-
-      <tbody id="tableRows">
-
-      </tbody>
 
 
-    </table>
-  </div>`,
-    'item' : ` <div class="container">
+
+<!--Item Content-->
+
+  <div class="container" id="itemContent">
                     <div class="container row" style=" box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
             rgba(0, 0, 0, 0.19); border-radius: 12px">
-                        <div class="card-header bg-danger fw-bold" style="border: none; border-top-left-radius: 12px; border-top-right-radius: 12px;">Add New Customer</div>
+                        <div class="card-header bg-danger fw-bold" style="border: none; border-top-left-radius: 12px; border-top-right-radius: 12px;">Add New Item</div>
 
                         <div class="mb-3 mt-4 w-50">
-                        <label for="exampleFormControlInput1" class="form-label">Item Code</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1">
+                        <label for="itemCode" class="form-label">Item Code</label>
+                        <input type="email" class="form-control" id="itemCode">
                       </div>
 
                       <div class="mb-3 mt-4 w-50"  >
-                        <label for="exampleFormControlTextarea2" class="form-label">Item Name</label>
-                        <input class="form-control" id="exampleFormControlTextarea2">
+                        <label for="itemName" class="form-label">Item Name</label>
+                        <input class="form-control" id="itemName">
                       </div>
 
                         <div class="mb-3 w-50" >
-                            <label for="exampleFormControlTextarea3" class="form-label">QYT</label>
-                            <input class="form-control" id="exampleFormControlTextarea3">
+                            <label for="qyt" class="form-label">QYT</label>
+                            <input class="form-control" id="qyt">
                         </div>
 
                         <div class="mb-3 w-50">
-                            <label for="exampleFormControlTextarea4" class="form-label">Price</label>
-                            <input class="form-control" id="exampleFormControlTextarea4">
+                            <label for="price" class="form-label">Price</label>
+                            <input class="form-control" id="price">
                         </div>
 
                         <div class="mb-3 w-50" >
@@ -237,8 +234,12 @@ rgba(0, 0, 0, 0.19); border-radius: 12px" >
                             </tbody>
                         </table>
                     </div>
-                </div>`,
-    'order' : ` <div class="container">
+                </div>
+
+
+        <!--order content-->
+
+    <div class="container" id="orderContent">
             <div class="row">
                 <div class="m-3 col-xl-4 col-md-3" style=" box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
     rgba(0, 0, 0, 0.19); border-radius: 12px">
@@ -344,400 +345,109 @@ rgba(0, 0, 0, 0.19); border-radius: 12px" >
                 </div>
               </div>
             </div>
-         </div>
 
         <div class="col-md-12 mt-4" style="overflow-y: scroll; height: 164px">
-          <table class="table table-hover">
-            <thead class="table-warning">
-            <th scope="col">Item Code</th>
-            <th scope="col">Name</th>
-            <th scope="col">Quantity</th>
-            <th scope="col">Price</th>
-            <th scope="col">Total</th>
-            <th scope="col"><button>Delete</button></th>
-            <th scope="col"><button>Update</button></th>
+            <table class="table table-hover">
+                <thead class="table-warning">
+                <th scope="col">Item Code</th>
+                <th scope="col">Name</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Price</th>
+                <th scope="col">Total</th>
+                <th scope="col"><button>Delete</button></th>
+                <th scope="col"><button>Update</button></th>
 
 
-            </thead>
-            <tbody></tbody>
-          </table>
+                </thead>
+                <tbody></tbody>
+            </table>
         </div>
-        </div>`
-  };
 
-  function getPageContent(page) {
-    var contentToReturn;
+         </div>
 
-    switch (page) {
-      case 'home' :
-        contentToReturn = pages.home;
+
+
+
+<script src="../calculator/jq/jq.js"></script>
+<script>
+
+
+  initiateUI();
+
+  function initiateUI() {
+    clearAll();
+    $("#dashboardContent").css("display", "block");
+    setTheLastView();
+  }
+
+  function saveLastView(clickedID) {
+    switch (clickedID) {
+      case "dashboardContent":
+        localStorage.setItem("view", "HOME");
         break;
-      case 'customer' :
-        contentToReturn = pages.customer;
+      case "customerContent":
+        localStorage.setItem("view", "CUSTOMER");
         break;
-      case 'item' :
-        contentToReturn = pages.item;
+      case "itemContent":
+        localStorage.setItem("view", "ITEM");
         break;
-      case 'order' :
-        contentToReturn = pages.order;
-        break;
-      default :
-        contentToReturn = pages.home;
+      case "orderContent":
+        localStorage.setItem("view", "ORDER");
         break;
     }
-    document.getElementById('content').innerHTML = contentToReturn;
+  }
 
-// validation part
-    const CUS_ID_REGEX = /^(C00-)[0-9]{3}$/;
-    const CUS_NAME_REGEX = /^[A-Za-z ]{5,}$/;
-    const CUS_ADDRESS_REGEX = /^[A-Za-z0-9 ]{8,}$/;
-    const CUS_NUMBER_REGEX = /^[0-9]$/;
-    const CUS_EMAIL_REGEX = /^(a-z)$/;
-
-    vArray.push([$('#customerId'),CUS_ID_REGEX]);
-    vArray.push([$('#customerName'),CUS_NAME_REGEX]);
-    vArray.push([$('#customerEmail'),CUS_EMAIL_REGEX]);
-    vArray.push([$('#customerAddress'),CUS_ADDRESS_REGEX]);
-    vArray.push([$('#customerContact'),CUS_NUMBER_REGEX]);
-
-
-
-// save customer
-
-    function saveCustomer(){
-
+  function setTheLastView() {
+    let view = localStorage.getItem("view");
+    switch (view) {
+      case "HOME":
+        setView($("#dashboardContent"));
+        break;
+      case "ITEM":
+        setView($("#itemContent"));
+        break;
+      case "CUSTOMER":
+        setView($("#customerContent"));
+        break;
+      case "ORDER":
+        setView($("#orderContent"));
+        break;
+      default:
+        setView($("#dashboardContent"));
     }
+  }
+
+  function clearAll() {
+    $("#dashboardContent,#customerContent,#itemContent,#orderContent").css('display', 'none');
+  }
+
+  function setView(viewOb) {
+    clearAll();
+    viewOb.css("display", "block");
+    saveLastView(viewOb.get(0).id);
+    console.log(viewOb.get(0).id);
+  }
+
+  //bind events
+  $("#lnkHome").click(function () {
+    setView($("#dashboardContent"));
+  });
+
+  $("#lnkCustomer").click(function () {
+    setView($("#customerContent"));
+  });
+
+  $("#lnkItem").click(function () {
+    setView($("#itemContent"));
+  });
+
+  $("#lnkOrders").click(function () {
+    setView($("#orderContent"));
+  });
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//     $('#btnCNew').click(function () {
-//       clearCFields();
-//       bindCRowClickEvents();
-//     });
-//
-//     $('#saveCustomer').click(function () {
-//       saveCustomer($('#customerId').val(), $('#customerName').val(), $('#customerAddress').val(), $('#customerContact').val() , ('#'));
-//
-//       loadAllCustomers();
-//
-//       bindCRowClickEvents();
-//     });
-//
-//     $('#getAllCustomers').click(function () {
-//       loadAllCustomers();
-//       bindCRowClickEvents();
-//     });
-//
-//     $('#deleteCustomer').click(function () {
-//       let deletedID = $('#customerId').val();
-//       Swal.fire({
-//         title: 'Are you sure?',
-//         text: "Do you want to delete "+ deletedID +" Customer",
-//         icon: 'warning',
-//         showCancelButton: true,
-//         confirmButtonColor: '#3085d6',
-//         cancelButtonColor: '#d33',
-//         confirmButtonText: 'Yes, delete it!'
-//       }).then((result) => {
-//         if (result.isConfirmed) {
-//           if(deleteCustomer(deletedID)){
-//             Swal.fire(
-//                     'Deleted!',
-//                     'Your file has been deleted.',
-//                     'success'
-//             )
-//             clearCFields();
-//           }else{
-//             Swal.fire(
-//                     'Error',
-//                     'NO customer to delete, Re-Check customer ID',
-//                     'error'
-//             )
-//             clearCFields();
-//           }
-//         }
-//       })
-//     });
-//
-//     $('#searchCustomer').click(function () {
-//       let typedID = $('#customerId').val();
-//       let customer = searchCustomer(typedID);
-//       if(customer != null){
-//         setCTextFieldValues(customer.name, customer.address, customer.contact);
-//       }else{
-//         Swal.fire(
-//                 'Error',
-//                 'There is no customer available for ' + typedID,
-//                 'error'
-//         )
-//         setCTextFieldValues("", "", "", "");
-//       }
-//     });
-//
-//     $('#updateCustoemr').click(function () {
-//       let updatedID = $('#customerId').val();
-//       Swal.fire({
-//         title: 'Do you want to save the changes?',
-//         showDenyButton: true,
-//         // showCancelButton: true,
-//         confirmButtonText: 'Save',
-//         denyButtonText: `Don't save`,
-//       }).then((result) => {
-//         if (result.isConfirmed) {
-//           if(updateCustomer(updatedID)){
-//             Swal.fire(
-//                     'Updated!',
-//                     'Customer updated successfully.',
-//                     'success'
-//             )
-//             clearCFields();
-//           }else{
-//             Swal.fire(
-//                     'Error',
-//                     'NO customer to update, Re-Check customer ID',
-//                     'error'
-//             )
-//             clearCFields();
-//           }
-//         }
-//       })
-//
-//     });
-//
-//     function saveCustomer(id, name, address, contact){
-//
-//       customerObj = new Object({
-//         id : id,
-//         name : name,
-//         address : address,
-//         contact : contact
-//       });
-//
-//       customerArr.push(customerObj);
-//
-//       Swal.fire({
-//         position: 'center',
-//         icon: 'success',
-//         title: 'Customer Saved Successfully',
-//         showConfirmButton: false,
-//         timer: 1800
-//       })
-//
-//       clearCFields();
-//     }
-//
-//     function deleteCustomer(id){
-//       let customer = searchCustomer(id);
-//       if(customer != null){
-//         let indexNo = customerArr.indexOf(customer);
-//         customerArr.splice(indexNo,1);
-//         loadAllCustomers();
-//         bindCRowClickEvents();
-//         return true;
-//       }else{
-//         return false;
-//       }
-//     }
-//
-//     function searchCustomer(id){
-//       for (let customer of customerArr) {
-//         if(customer.id == id){
-//           bindCRowClickEvents();
-//           return customer;
-//         }
-//       }
-//       return null;
-//     }
-//
-//     function updateCustomer(id){
-//       let customer = searchCustomer(id);
-//       if(customer != null){
-//         customer.name = $('#customerName').val();
-//         customer.address = $('#customerAddress').val();
-//         customer.contact = $('#customerContact').val();
-//         loadAllCustomers();
-//         bindCRowClickEvents();
-//         return true;
-//       }else {
-//         return false;
-//       }
-//     }
-//
-//     function loadAllCustomers(){
-//       $('#row').empty();
-//
-//       for (let customer of customerArr) {
-//         let row = `<tr><td>${customer.id}</td><td>${customer.name}</td><td>${customer.address}</td><td>${customer.contact}</td></tr>`;
-//         $('#customerTable').append(row);
-//       }
-//
-//     }
-//
-//     function bindCRowClickEvents() {
-//       $('#customerTable>tr').click(function () {
-//         let id = $(this).children(':eq(0)').text();
-//         let name = $(this).children(':eq(1)').text();
-//         let address = $(this).children(':eq(2)').text();
-//         let contact = $(this).children(':eq(3)').text();
-//
-//         $('#customerId').val(id);
-//         $('#customerName').val(name);
-//         $('#customerAddress').val(address);
-//         $('#customerContact').val(contact);
-//
-//       });
-//     }
-//
-//     function setCTextFieldValues(name, address, contact){
-//       $('#customerName').val(name);
-//       $('#customerAddress').val(address);
-//       $('#customerContact').val(contact);
-//     }
-//
-//     function clearCFields(){
-//       $('#customerId').val("");
-//       $('#customerName').val("");
-//       $('#customerAddress').val("");
-//       $('#customerContact').val("");
-//     }
-//
-// //RegEx
-//     $('#customerId').focus();
-//
-//     const cusIDRegEx = /^(C)[0-9]{1,3}$/;
-//     const cusNameRegEx = /^[A-z ]{5,20}$/;
-//     const cusAddressRegEx = /^[a-z]$/;
-//     const cusContactRegEx = /^[0-9]{10}$/;
-//
-//     let customerValidations = [];
-//     customerValidations.push({reg: cusIDRegEx, field: $('#customerId'),error:'Customer ID Pattern is Wrong : C001'});
-//     customerValidations.push({reg: cusNameRegEx, field: $('#customerName'),error:'Customer Name Pattern is Wrong : A-z 5-20'});
-//     customerValidations.push({reg: cusAddressRegEx, field: $('#customerAddress'),error:'Customer Address Pattern is Wrong : A-z 0-9 ,/'});
-//     customerValidations.push({reg: cusContactRegEx, field: $('#customerContact'),error:'Customer Contact Pattern is Wrong : [0-9] 10 Numbers'});
-//
-// //disable tab key of all four text fields using grouping selector in CSS
-//     $("#customerId,#customerName,#customerAddress,#customerContact").on('keydown', function (event) {
-//       if (event.key == "Tab") {
-//         event.preventDefault();
-//       }
-//     });
-//
-//     $("#customerId,#customerName,#customerAddress,#customerContact").on('keyup', function (event) {
-//       checkValidity();
-//     });
-//     $("#customerId,#customerName,#customerAddress,#customerContact").on('blur', function (event) {
-//       checkValidity();
-//     });
-//
-//     $("#customerId").on('keydown', function (event) {
-//       if (event.key == "Enter" && check(cusIDRegEx, $("#customerId"))) {
-//         $("#customerName").focus();
-//       } else {
-//         focusText($("#customerId"));
-//       }
-//     });
-//
-//     $("#customerName").on('keydown', function (event) {
-//       if (event.key == "Enter" && check(cusNameRegEx, $("#customerName"))) {
-//         focusText($("#customerAddress"));
-//       }
-//     });
-//
-//     $("#customerAddress").on('keydown', function (event) {
-//       if (event.key == "Enter" && check(cusAddressRegEx, $("#customerAddress"))) {
-//         focusText($("#customerContact"));
-//       }
-//     });
-//
-//     $("#customerContact").on('keydown', function (event) {
-//       if (event.key == "Enter" && check(cusContactRegEx, $("#customerContact"))) {
-//         let res = confirm("Do you want to add this customer.?");
-//         if (res) {
-//           clearAllTexts();
-//         }
-//       }
-//     });
-//
-//     function checkValidity() {
-//       let errorCount=0;
-//       for (let validation of customerValidations) {
-//         if (check(validation.reg,validation.field)) {
-//           textSuccess(validation.field,"");
-//         } else {
-//           errorCount=errorCount+1;
-//           setTextError(validation.field,validation.error);
-//         }
-//       }
-//       setButtonState(errorCount);
-//     }
-//
-//     function check(regex, txtField) {
-//       let inputValue = txtField.val();
-//       return regex.test(inputValue) ? true : false;
-//     }
-//
-//     function setTextError(txtField,error) {
-//       if (txtField.val().length <= 0) {
-//         defaultText(txtField,"");
-//       } else {
-//         txtField.css('border', '2px solid red');
-//         txtField.parent().children('span').text(error);
-//         txtField.parent().children('span').css('font-size','12px');
-//         txtField.parent().children('span').css('color','red');
-//       }
-//     }
-//
-//     function textSuccess(txtField,error) {
-//       if (txtField.val().length <= 0) {
-//         defaultText(txtField,"");
-//       } else {
-//         txtField.css('border', '2px solid green');
-//         txtField.parent().children('span').text(error);
-//       }
-//     }
-//
-//     function defaultText(txtField,error) {
-//       txtField.css("border", "1px solid #ced4da");
-//       txtField.parent().children('span').text(error);
-//     }
-//
-//     function focusText(txtField) {
-//       txtField.focus();
-//     }
-//
-//     // function setButtonState(value){
-//     //   if (value>0){
-//     //     $("#customerId").attr('disabled',true);
-//     //   }else{
-//     //     $("#customerId").attr('disabled',false);
-//     //   }
-//     // }
-//
-//     function clearAllTexts() {
-//       $("#customerId").focus();
-//       $("#customerId,#customerName,#customerAddress,#customerContact").val("");
-//       checkValidity();
-//     }
-//
-   }
 </script>
-<script src="controller/Customer.js"></script>
+
 </body>
 </html>
