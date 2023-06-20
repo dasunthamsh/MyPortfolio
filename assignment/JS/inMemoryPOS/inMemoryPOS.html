@@ -92,35 +92,39 @@ rgba(0, 0, 0, 0.19); border-radius: 12px" >
       <div class="card-header bg-danger fw-bold" style="border: none; border-top-left-radius: 12px; border-top-right-radius: 12px;">Add New Customer</div>
 
       <div class="mb-3 mt-4 w-50">
-        <label for="customerId" class="form-label">Customer Id</label>
-        <input type="email" class="form-control" id="customerId" >
+        <label for="cusId" class="form-label">Customer Id</label>
+        <input type="email" class="form-control" id="cusId" >
+          <span class="control-error text-danger"></span>
       </div>
 
       <div class="mb-3 mt-4 w-50">
-        <label for="customerName" class="form-label">Name</label>
-        <input class="form-control" id="customerName" >
+        <label for="cusName" class="form-label">Name</label>
+        <input class="form-control" id="cusName" >
+          <span class="control-error text-danger"></span>
       </div>
 
       <div class="mb-3 w-50">
-        <label for="customerEmail" class="form-label">Email</label>
-        <input class="form-control" id="customerEmail" placeholder="name@example.com">
+        <label for="salary" class="form-label">Salary</label>
+        <input class="form-control" id="salary" placeholder="">
+          <span class="control-error text-danger"></span>
       </div>
 
       <div class="mb-3 w-50">
-        <label for="customerContact" class="form-label">Contact</label>
-        <input class="form-control" id="customerContact">
+        <label for="address" class="form-label">Address</label>
+        <input class="form-control" id="address">
+          <span class="control-error text-danger"></span>
       </div>
 
-      <div class="mb-3">
-        <label for="customerAddress" class="form-label">Address</label>
-        <input class="form-control" id="customerAddress"   >
-      </div>
+<!--      <div class="mb-3">-->
+<!--        <label for="customerAddress" class="form-label">Address</label>-->
+<!--        <input class="form-control" id="customerAddress"   >-->
+<!--      </div>-->
       <div class="container m-3 w-75" >
         <button type="button" class="btn btn-danger" style="width: 150px; margin-left: 10px" id="saveCustomer">Save</button>
-        <button type="button" class="btn btn-danger" style="width: 150px; margin-left: 10px" id="updateCustoemr">Update</button>
-        <button type="button" class="btn btn-danger" style="width: 150px; margin-left: 10px" id="searchCustomer">Search</button>
+        <button type="button" class="btn btn-danger" style="width: 150px; margin-left: 10px" id="updateCustomer">Update</button>
+        <button type="button" class="btn btn-danger" style="width: 150px; margin-left: 10px" id="customerSearchBtn">Search</button>
         <button type="button" class="btn btn-danger" style="width: 150px; margin-left: 10px" id="deleteCustomer">Delete</button>
-                <button type="button" class="btn btn-danger" style="width: 150px; margin-left: 10px" id="getAllCustomers">getAll</button>
+<!--                <button type="button" class="btn btn-danger" style="width: 150px; margin-left: 10px" id="getAllCustomers">getAll</button>-->
 
       </div>
 
@@ -132,15 +136,12 @@ rgba(0, 0, 0, 0.19); border-radius: 12px" >
             <tr>
                 <th scope="col">ID</th>
                 <th scope="col">Name</th>
-                <th scope="col">Email</th>
-                <th scope="col">Contact</th>
+                <th scope="col">Salary</th>
                 <th scope="col">Address</th>
             </tr>
             </thead>
 
-            <tbody id="tableRows">
-
-            </tbody>
+            <tbody id="tblCustomer"></tbody>
 
 
         </table>
