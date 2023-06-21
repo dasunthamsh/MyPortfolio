@@ -14,7 +14,7 @@
     }
 
     ::-webkit-scrollbar-thumb:hover {
-        background: blueviolet;
+        background: #ffb400;
     }
 a:hover{     /*change mouse fourcus color to yellow in menu*/
     color: #ffb400;
