@@ -207,7 +207,7 @@ $('#itemPrice').on('keydown', function (event) {
         }
     }
 });
-/////////////////
+//////////////////
 
 function clearTexts(){
     $('#itemCode').focus();
