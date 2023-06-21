@@ -243,65 +243,65 @@ function clearCusTexts(){
     $('#cusId,#cusName,#salary,#address').val("");
     customerValidity();
 }
-
-/****** Customer Update ******/
-let customerValidationsForUpdate = [];
-customerValidationsForUpdate.push({reg:regExId, field: $('#cusId'),error:'Item Code Pattern Is Wrong : C00-001'});
-customerValidationsForUpdate.push({reg:regCusName, field: $('#cusName'),error:'Name Pattern Is Wrong : A-z'});
-customerValidationsForUpdate.push({reg:regExSalary, field: $('#salary'),error:'Salary Pattern Is Wrong : 2000 or 2000.00'});
-customerValidationsForUpdate.push({reg:regExAddress, field: $('#address'),error:'Address Pattern Is Wrong.'});
-
-$('#cusId,#cusName,#salary,#address').on('keyup',function () {
-    ValidityForCusUpdate();
-});
-
-$('#cusId,#cusName,#salary,#address').on('blur',function () {
-    ValidityForCusUpdate();
-});
-
-$('#cusId').on('keydown', function (event) {
-    if(event.key == "Enter" && checkCustomer(regExId,$('#cusId'))) {
-        $('#cusName').focus();
-    }  else {
-        $('#cusId').focus();
-    }
-});
-
-$('#cusName').on('keydown', function (event) {
-    if (event.key == "Enter" && checkCustomer(regCusName, $('#cusName'))) {
-        $('#salary').focus();
-    }
-});
-
-$('#salary').on('keydown', function (event) {
-    if (event.key == "Enter" && checkCustomer(regExSalary, $('#salary'))) {
-        $('#address').focus();
-    }
-});
-
-$('#address').on('keydown', function (event) {
-    if (event.key == "Enter" && checkCustomer(regExAddress, $('#address'))) {
-        let res = confirm("Do you want to add this customer.?");
-        if(res) {
-            clearCusUpdates();
-        }
-    }
-});
-
-function ValidityForCusUpdate() {
-    let errCount = 0;
-    for (let validation of customerValidationsForUpdate) {
-        if(checkCustomer(validation.reg,validation.field)) {
-            inputCusSuccess(validation.field,"");
-        } else {
-            errCount += 1;
-            inputCusError(validation.field,validation.error);
-        }
-    }
-}
-
-function clearCusUpdates(){
-    $('#cusId').focus();
-    $('#cusId,#cusName,#salary,#address').val("");
-    ValidityForCusUpdate();
-}
+//
+// /****** Customer Update ******/
+// let customerValidationsForUpdate = [];
+// customerValidationsForUpdate.push({reg:regExId, field: $('#cusId'),error:'Item Code Pattern Is Wrong : C00-001'});
+// customerValidationsForUpdate.push({reg:regCusName, field: $('#cusName'),error:'Name Pattern Is Wrong : A-z'});
+// customerValidationsForUpdate.push({reg:regExSalary, field: $('#salary'),error:'Salary Pattern Is Wrong : 2000 or 2000.00'});
+// customerValidationsForUpdate.push({reg:regExAddress, field: $('#address'),error:'Address Pattern Is Wrong.'});
+//
+// $('#cusId,#cusName,#salary,#address').on('keyup',function () {
+//     ValidityForCusUpdate();
+// });
+//
+// $('#cusId,#cusName,#salary,#address').on('blur',function () {
+//     ValidityForCusUpdate();
+// });
+//
+// $('#cusId').on('keydown', function (event) {
+//     if(event.key == "Enter" && checkCustomer(regExId,$('#cusId'))) {
+//         $('#cusName').focus();
+//     }  else {
+//         $('#cusId').focus();
+//     }
+// });
+//
+// $('#cusName').on('keydown', function (event) {
+//     if (event.key == "Enter" && checkCustomer(regCusName, $('#cusName'))) {
+//         $('#salary').focus();
+//     }
+// });
+//
+// $('#salary').on('keydown', function (event) {
+//     if (event.key == "Enter" && checkCustomer(regExSalary, $('#salary'))) {
+//         $('#address').focus();
+//     }
+// });
+//
+// $('#address').on('keydown', function (event) {
+//     if (event.key == "Enter" && checkCustomer(regExAddress, $('#address'))) {
+//         let res = confirm("Do you want to add this customer.?");
+//         if(res) {
+//             clearCusUpdates();
+//         }
+//     }
+// });
+//
+// function ValidityForCusUpdate() {
+//     let errCount = 0;
+//     for (let validation of customerValidationsForUpdate) {
+//         if(checkCustomer(validation.reg,validation.field)) {
+//             inputCusSuccess(validation.field,"");
+//         } else {
+//             errCount += 1;
+//             inputCusError(validation.field,validation.error);
+//         }
+//     }
+// }
+//
+// function clearCusUpdates(){
+//     $('#cusId').focus();
+//     $('#cusId,#cusName,#salary,#address').val("");
+//     ValidityForCusUpdate();
+// }

@@ -162,78 +162,50 @@ rgba(0, 0, 0, 0.19); border-radius: 12px" >
                         <div class="mb-3 mt-4 w-50">
                         <label for="itemCode" class="form-label">Item Code</label>
                         <input type="email" class="form-control" id="itemCode">
-                      </div>
+                            <span class="control-error text-danger"></span>
+                        </div>
 
                       <div class="mb-3 mt-4 w-50"  >
                         <label for="itemName" class="form-label">Item Name</label>
                         <input class="form-control" id="itemName">
+                          <span class="control-error text-danger"></span>
                       </div>
 
                         <div class="mb-3 w-50" >
-                            <label for="qyt" class="form-label">QYT</label>
-                            <input class="form-control" id="qyt">
+                            <label for="quantity" class="form-label">QYT</label>
+                            <input class="form-control" id="quantity">
+                            <span class="control-error text-danger"></span>
                         </div>
 
                         <div class="mb-3 w-50">
-                            <label for="price" class="form-label">Price</label>
-                            <input class="form-control" id="price">
+                            <label for="itemPrice" class="form-label">Price</label>
+                            <input class="form-control" id="itemPrice">
+                            <span class="control-error text-danger"></span>
                         </div>
 
-                        <div class="mb-3 w-50" >
-                            <label for="exampleFormControlTextarea5" class="form-label">Price</label>
-                            <input class="form-control" id="exampleFormControlTextarea5">
-                        </div>
+<!--                        <div class="mb-3 w-50" >-->
+<!--                            <label for="exampleFormControlTextarea5" class="form-label">Price</label>-->
+<!--                            <input class="form-control" id="exampleFormControlTextarea5">-->
+<!--                        </div>-->
 
                         <div class="container m-3">
-                            <button type="button" class="btn btn-danger" style="width: 150px">Save</button>
-                            <button type="button" class="btn btn-danger" style="width: 150px">Update</button>
-                            <button type="button" class="btn btn-danger" style="width: 150px">Search</button>
-                            <button type="button" class="btn btn-danger" style="width: 150px">Delete</button>
+                            <button type="button" class="btn btn-danger" style="width: 150px" id="saveItem">Save</button>
+                            <button type="button" class="btn btn-danger" style="width: 150px" id="itemUpdate">Update</button>
+                            <button type="button" class="btn btn-danger" style="width: 150px" id="updateItemSearchBtn">Search</button>
+                            <button type="button" class="btn btn-danger" style="width: 150px" id="itemDelete">Delete</button>
                         </div>
 
                     </div>
 
                     <div class="container mt-4">
-                        <table class="table">
-                            <thead>
-                            <tr>
-                                <th scope="col">...</th>
-                                <th scope="col">ID</th>
-                                <th scope="col">Name</th>
-                                <th scope="col">QYT</th>
-                                <th scope="col">price</th>
-                                <th scope="col">Details</th>
-
-
-                            </tr>
+                        <table class="table table-hover">
+                            <thead class="table-warning">
+                            <th scope="col">Item Code</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Quantity On Hand</th>
+                            <th scope="col">Price</th>
                             </thead>
-                            <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>I001</td>
-                                <td>Carrot</td>
-                                <td>2KG</td>
-                                <td>250.RS</td>
-                                <td>.............</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>I002</td>
-                                <td>cake</td>
-                                <td>5KG</td>
-                                <td>2000.Rs</td>
-                                <td>................</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>I003</td>
-                                <td>Ice Cream</td>
-                                <td>1 box</td>
-                                <td>350.Rs</td>
-                                <td>.................</td>
-                            </tr>
-
-                            </tbody>
+                            <tbody id="tblItems"></tbody>
                         </table>
                     </div>
                 </div>
