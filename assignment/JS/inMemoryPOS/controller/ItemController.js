@@ -207,51 +207,7 @@ $('#itemPrice').on('keydown', function (event) {
         }
     }
 });
-
-/****** Item Update ******/
-let itemValidationsForUpdated = [];
-itemValidationsForUpdated.push({reg: regExCode, field: $('#itemCode'),error:'Item Code Pattern Is Wrong : I00-001'});
-itemValidationsForUpdated.push({reg: regExItemName, field: $('#itemName'),error:'Item Name Pattern Is Wrong : A-z 0-9 Ex: Naadu 5kg'});
-itemValidationsForUpdated.push({reg: regExItemQty, field: $('#quantity'),error:'Item Quantity Pattern Is Wrong : 0-9'});
-itemValidationsForUpdated.push({reg: regExPrice, field: $('#itemPrice'),error:'Item Price Pattern Is Wrong : 100 or 100.00'});
-
-$("#itemCode,#itemName,#quantity,#itemPrice").on('keyup',function () {
-    checkValidityForUpdate();
-});
-
-$("#itemCode,#itemName,#quantity,#itemPrice").on('blur',function () {
-    checkValidityForUpdate();
-});
-
-$('#itemCode').on('keydown', function (event) {
-    if (event.key == "Enter" && check(regExCode, $('#itemCode'))) {
-        $('#itemName').focus();
-    } else {
-        $('#itemCode').focus();
-    }
-});
-
-$('#itemName').on('keydown', function (event) {
-    if (event.key == "Enter" && check(regExItemName, $('#itemName'))) {
-        $('#quantity').focus();
-    }
-});
-
-$('#quantity').on('keydown', function (event) {
-    if (event.key == "Enter" && check(regExItemQty, $('#quantity'))) {
-        $('#itemPrice').focus();
-    }
-});
-
-$('#itemPrice').on('keydown', function (event) {
-    if (event.key == "Enter" && check(regExItemQty, $('#itemPrice'))) {
-        let res = confirm("Do you want to updated this item.?");
-        if(res) {
-            $('#itemPrice,#itemName,#quantity,#itemPrice').val("");
-        }
-    }
-});
-/****** Item Update End ******/
+/////////////////
 
 function clearTexts(){
     $('#itemCode').focus();
