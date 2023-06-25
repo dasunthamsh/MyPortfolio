@@ -13,6 +13,8 @@
   <title>Bootstrap</title>
   <link rel="stylesheet" href="../../CSS-Framework/assets/css/bootstrap.min.css">
 
+
+
 </head>
 <body>
 
@@ -214,130 +216,166 @@ rgba(0, 0, 0, 0.19); border-radius: 12px" >
         <!--order content-->
 
     <div class="container" id="orderContent">
-            <div class="row">
-                <div class="m-3 col-xl-4 col-md-3" style=" box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
-    rgba(0, 0, 0, 0.19); border-radius: 12px">
-
-                  <div class="card-header bg-danger fw-bold mb-4" style="border: none; border-top-left-radius: 12px; border-top-right-radius: 12px;">Invoice Details</div>
-
-                  <div class="mb-3" >
-                    <label for="exampleFormControlInput1" class="form-label">Customer Id</label>
-                    <input type="email" class="form-select" id="exampleFormControlInput1">
-                  </div>
-
-                  <div class="mb-3">
-                    <label for="exampleFormControlTextarea2" class="form-label">Order Id</label>
-                    <input  class="form-select" id="exampleFormControlTextarea2">
-                  </div>
-
-                  <div class="mb-3">
-                    <label for="orderDate" class="form-label">Order Date</label>
-                    <input class="form-control" id="orderDate" type="date">
-                  </div>
-
-                  <div class="mb-3">
-                    <label for="exampleFormControlTextarea4" class="form-label">Email</label>
-                    <input class="form-control" id="exampleFormControlTextarea4">
-                  </div>
-
-
-                </div>
-
-              <div class="m-3 col-xl-4 col-md-3" style=" height: 500px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
-    rgba(0, 0, 0, 0.19); border-radius: 12px">
-
-                <div class="card-header bg-danger fw-bold mb-4" style="border: none; border-top-left-radius: 12px; border-top-right-radius: 12px;">Item Select</div>
-
-                <div class="mb-3">
-                    <label for="exampleFormControlInput5" class="form-label">Item Code</label>
-                    <input type="email" class="form-select" id="exampleFormControlInput5">
-                  </div>
-
-                <div class="mb-3">
-                  <label for="exampleFormControlInput6" class="form-label">QYT on.hand</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput6">
-                </div>
-
-                <div class="mb-3">
-                  <label for="exampleFormControlInput7" class="form-label">price</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput7">
-                </div>
-
-                <div class="mb-3">
-                  <label for="exampleFormControlInput8" class="form-label">order QYT</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput8">
-                </div>
-
-                <button type="button" class="btn btn-danger" style="width: 90%; margin-left: 10px">Add Item</button>
-
-
-              </div>
-              <div class="m-3 col-xl-3 col-md-3" style=" height: 500px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
-    rgba(0, 0, 0, 0.19); border-radius: 12px" >
-
-
-                  <div class="row">
-                    <div class="mt-4 col-6">
-                      <span class="txt-total  fs-4">Total QYT</span>
+        <div class="row">
+            <div class="col-lg-4 mt-2">
+                <div class="card" style="border: none; box-shadow: rgba(50, 50, 93, 0.25) 0 13px 27px -5px, rgba(0, 0, 0, 0.3) 0 8px 16px -8px; border-radius: 12px;">
+                    <div class="card-header bg-danger fw-bold" style="border: none; border-top-left-radius: 12px; border-top-right-radius: 12px;">Invoice Details </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div>
+                                        <label>Order ID</label>
+                                        <input class="form-control" id="orderID" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div>
+                                        <label>Order Date</label>
+                                        <input class="form-control" id="currentOrderDate" type="date">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row pt-2">
+                                <div class="col-6">
+                                    <div>
+                                        <label>Customer ID</label>
+                                        <select class="form-select" id="orderCusOpt">
+                                            <option>Customer ID's</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div>
+                                        <label>Name</label>
+                                        <input class="form-control" id="orderCusName" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-12 pt-2">
+                                    <div>
+                                        <label>Salary</label>
+                                        <input class="form-control" id="orderSalary" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-12 pt-2">
+                                    <div>
+                                        <label>Address</label>
+                                        <input class="form-control" id="orderAddress" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
                     </div>
-
-                    <div class="mt-4 col-6 text-end ">
-                      <span class=" fs-4">10</span>
-                    </div>
-
-                    <div class="border w-75 mt-4 container"></div>
-
-                  </div>
-
-                <div class="row">
-                  <div class="mt-4 col-6">
-                    <span class="txt-total  fs-4 fw-normal d-inline-block">Subtotal</span>
-                  </div>
-
-                  <div class="mt-4 mb-3 text-end pt-2">
-                    <span class="fs-4">5250.Rs</span>
-                  </div>
-
-                  <div class="mb-3 w-50">
-                    <label for="exampleFormControlInput9" class="form-label">Cash</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput9">
-                  </div>
-
-                  <div class="mb-3 w-50">
-                    <label for="exampleFormControlInput10" class="form-label">Discount</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput10">
-                  </div>
-
-                  <div class="mb-3">
-                    <label for="exampleFormControlInput11" class="form-label">Balance</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput11">
-                  </div>
-
-                  <button type="button" class="btn btn-danger" style="width: 90%; margin-left: 10px">Bill</button>
-
-
                 </div>
-              </div>
             </div>
 
+            <div class="col-lg-4 mt-2">
+                <div class="card" style="border: none; box-shadow: rgba(50, 50, 93, 0.25) 0 13px 27px -5px, rgba(0, 0, 0, 0.3) 0 8px 16px -8px; border-radius: 12px;">
+                    <div class="card-header bg-danger fw-bold" style="border: none; border-top-left-radius: 12px; border-top-right-radius: 12px;">Item Select</div>
+                    <div class="card-body">
+                        <form>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div>
+                                        <label>Item Code</label>
+                                        <select id="orderItemOpt" class="form-select" aria-label="Default select example"></select>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div>
+                                        <label>Item Name</label>
+                                        <input class="form-control" id="orderItemName" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row pt-2">
+                                <div class="col-6">
+                                    <div>
+                                        <label>Unit Price</label>
+                                        <input class="form-control" id="orderUPrice" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div>
+                                        <label>Qty. on Hand</label>
+                                        <input class="form-control" id="orderQtyOnHand" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-12 pt-2">
+                                    <div>
+                                        <label>Order Quantity</label>
+                                        <input class="form-control" id="orderQty" min="1" type="number">
+                                    </div>
+                                </div>
+                                <div class="col-12" style="padding-top: 32px;">
+                                    <button id="addItemBtn" type="button" class="btn bg-danger w-100">Add Item</button>
+
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mt-2">
+                <section class="other-detail-section p-4" style="border-radius: 12px; box-shadow: rgba(50, 50, 93, 0.25) 0 13px 27px -5px, rgba(0, 0, 0, 0.3) 0 8px 16px -8px;">
+                    <div class="row">
+                        <div class="col-6">
+                            <span class="txt-total fw-normal fs-4">Total</span>
+                        </div>
+                        <div class="col-6 text-end">
+                            <span id="total" class="txt-total fw-normal fs-4">5000LKR</span>
+                        </div>
+                        <div class="col-12 border w-100 mt-2"></div>
+                        <div class="col-6 pt-2">
+                            <span class="txt-total fw-normal fs-4">Subtotal</span>
+                        </div>
+                        <div class="col-6 text-end pt-2">
+                            <span id="subTot" class="txt-total fw-normal fs-4">450LKR</span>
+                        </div>
+                    </div>
+                    <div class="row pt-2">
+                        <div class="col-6">
+                            <div>
+                                <label>Cash</label>
+                                <input id="cash" class="form-control" id="cash" type="text">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div>
+                                <label>Discount</label>
+                                <input id="discount" class="form-control" id="discount" min="0" type="number">
+                            </div>
+                        </div>
+                        <div class="col-12 pt-2">
+                            <div>
+                                <label>Balance</label>
+                                <input id="balance" class="form-control" id="balance" type="text">
+                            </div>
+                        </div>
+                        <div class="col-12" style="padding-top: 30px;">
+                            <button id="placeOrder" class="btn btn-danger w-100">Purchase</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!--order table-->
         <div class="col-md-12 mt-4" style="overflow-y: scroll; height: 164px">
             <table class="table table-hover">
                 <thead class="table-warning">
+                <th scope="col">Order ID</th>
                 <th scope="col">Item Code</th>
                 <th scope="col">Name</th>
                 <th scope="col">Quantity</th>
                 <th scope="col">Price</th>
                 <th scope="col">Total</th>
-                <th scope="col"><button>Delete</button></th>
-                <th scope="col"><button>Update</button></th>
-
-
                 </thead>
-                <tbody></tbody>
+                <tbody id="tblOrder"></tbody>
             </table>
         </div>
-
-         </div>
+    </div>
 
 
 
@@ -350,6 +388,8 @@ rgba(0, 0, 0, 0.19); border-radius: 12px" >
 <script src="model/Customer.js"></script>
 <script src="model/Item.js"></script>
 <script src="model/Order.js"></script>
+<script src="model/OrderDetail.js"></script>
+<script src="model/cart.js"></script>
 <script>
 
 
@@ -427,6 +467,10 @@ rgba(0, 0, 0, 0.19); border-radius: 12px" >
   });
 
 
+
+</script>
+
+<script>
 
 </script>
 
