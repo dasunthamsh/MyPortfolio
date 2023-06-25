@@ -1081,26 +1081,26 @@ main>section:nth-child(13)>a>button{
 
                                     /*------------------------loader animation---------------------------*/
 
-main>section:nth-child(14){
-    background: black;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    z-index: 100;
-}
+/*main>section:nth-child(14){*/
+/*    background: black;*/
+/*    position: fixed;*/
+/*    width: 100vw;*/
+/*    height: 100vh;*/
+/*    top: 0;*/
+/*    z-index: 100;*/
+/*}*/
 
-main>section:nth-child(14)>div{
-    background:url("../img/loder.gif");
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-}
+/*main>section:nth-child(14)>div{*/
+/*    background:url("../img/loder.gif");*/
+/*    width: 200px;*/
+/*    height: 200px;*/
+/*    position: absolute;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    top: 0;*/
+/*    bottom: 0;*/
+/*    margin: auto;*/
+/*}*/
 
 
 
