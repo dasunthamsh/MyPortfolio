@@ -2,7 +2,7 @@ body>section:nth-child(1)>div>p{
     position: relative;
     top: 97vh;
     right: 590px;
-    /*animation-name: animation1;*/
+    animation-name: animation1;
     animation-duration: 30s;
     animation-iteration-count: infinite;
     font-size: 10px;
@@ -122,7 +122,7 @@ main>section:nth-child(5)>aside:nth-child(4)>img{
     width: 40px;
     height: 40px;
     position: relative;
-    /*animation-name:skills ;*/
+    animation-name:skills ;
     animation-iteration-count: infinite;
     animation-duration: 6s;
     opacity: 20%;
@@ -216,11 +216,35 @@ main>section:nth-child(5)>aside:nth-child(4)>img:nth-child(13){
 
 
 
+                            /*website button animation*/
 
 
 
+main>section:nth-child(15)>a>button {
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-name: buttonAnimation;
 
 
+}
+
+
+@keyframes buttonAnimation {
+
+    0%{
+        opacity: 100%;
+    }
+    50%{
+        opacity: 70%;
+
+    }
+    100%{
+        opacity: 40%  ;
+
+    }
+
+
+}
 
 
 

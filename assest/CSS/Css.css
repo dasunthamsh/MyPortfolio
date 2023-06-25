@@ -878,7 +878,7 @@ main>section:nth-child(9)>div:nth-child(1)>aside>div {
     width: 100%;
     height: calc(100%/3);
     margin: 15px;
-    /*animation-name: mainAnimation;*/
+    animation-name: mainAnimation;
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -1131,6 +1131,18 @@ main>section:nth-child(15)>div{
     height: 95vh;
     position: relative;
 
+
+}
+
+main>section:nth-child(15)>a>button {
+    background: transparent;
+    width: 200px;
+    height: 50px;
+    border: solid white 3px;
+    font-family: teko;
+    font-size: 25px;
+    position: relative;
+    bottom: 70vh;
 
 }
 
