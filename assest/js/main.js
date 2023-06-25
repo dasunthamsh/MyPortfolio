@@ -90,3 +90,20 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+
+
+// change header color when scrolling mouse
+
+window.addEventListener('scroll', () => {
+    const header = document.getElementById('header');
+    const content = document.getElementById('content');
+
+    const scrollPosition = window.scrollY || window.pageYOffset;
+    const contentOffset = content.offsetTop;
+
+    if (scrollPosition >= contentOffset) {
+        header.style.backgroundColor = 'black';
+    } else {
+        header.style.backgroundColor = 'transparent ';
+    }
+});

@@ -878,7 +878,7 @@ main>section:nth-child(9)>div:nth-child(1)>aside>div {
     width: 100%;
     height: calc(100%/3);
     margin: 15px;
-    animation-name: mainAnimation;
+    /*animation-name: mainAnimation;*/
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -904,7 +904,7 @@ main>section:nth-child(10){
 
 main>section:nth-child(10)>div:nth-child(1) {
     position:relative;
-    top: 30vh;
+    top: 25vh;
     left: 7vw;
     width: 30vw;
 }
@@ -961,9 +961,10 @@ main>section:nth-child(10)>div:nth-child(1)>button {
 
 
 
-main>section:nth-child(11){
+main>section:nth-child(11){   /*changed*/
     position: relative;
     bottom: 62vh;
+    top: 483px;
 }
 
 
@@ -1003,9 +1004,9 @@ main>section:nth-child(11)>aside:nth-child(2)>div>img{
 /*------------ form --------------*/
 
 
-main>section:nth-child(12){
+main>section:nth-child(12){                        /*changed*/
     position: relative;
-    bottom: 60vh;
+    bottom: -64vh;
 }
 
 
@@ -1100,6 +1101,43 @@ main>section:nth-child(14)>div{
     bottom: 0;
     margin: auto;
 }
+
+
+
+                        /*my other website*/
+main>section:nth-child(15) {
+    position: relative;
+    bottom: 1200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+main>section:nth-child(15)>h1 {
+    position: relative;
+    font-family: teko;
+    font-size: 350%;
+    bottom: 50px;
+    color: #ffb400;
+}
+
+main>section:nth-child(15)>div{
+    background: url("../img/website.png");
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 95vh;
+    position: relative;
+
+
+}
+
+
+
+
+
 
                                     /*---------------------------footer-------------------------------------*/
 
