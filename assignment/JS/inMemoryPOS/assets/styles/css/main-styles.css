@@ -1,0 +1,143 @@
+main{
+    position: relative;
+    height: 675px;
+}
+
+#home-page-section{
+    background-color: #ece6e6;
+    visibility: visible;
+}
+
+#make-order-page-section{
+    background-color: #eeebeb;
+    visibility: hidden;
+}
+
+#customer-page-section{
+    background-color: #eeebeb;
+    visibility: hidden;
+}
+
+#item-page-section{
+    background-color: #e5dfdf;
+    visibility: hidden;
+}
+
+a{
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-section{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 672px;
+}
+
+#home-page-content-section{
+    position: relative;
+    top: 20px;
+}
+
+#home-page-row-1{
+    /*border: 1px solid brown;*/
+}
+
+.home-page-col-1{
+    height: 315px;
+    /*border: 1px solid #b300ff;*/
+    position: relative;
+}
+
+#home-page-row-2{
+    /*border: 1px solid #09ad61;*/
+}
+
+.home-page-col-2{
+    height: 315px;
+    /*border: 1px solid #050674;*/
+    position: relative;
+}
+
+.home-img{
+    opacity:0.6;
+}
+
+#img-4,#img-5{
+    width: 99%;
+}
+
+.home-img{
+    width: 98%;
+    height: 98%;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.main-h1{
+    position: absolute;
+    font-size: 40px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: #000000;
+    /*border: 1px solid white;*/
+    height: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-h2{
+    position: absolute;
+    font-size: 30px;
+    margin: auto;
+    top: 5px;
+    right: 10px;
+    color: #7014f6;
+    /*border: 1px solid white;*/
+    height: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#order-detail-h2,#order-history-h2{
+    left: 10px;
+}
+
+#items-h1{
+    width: 100px;
+}
+
+#customers-h1{
+    width: 220px;
+}
+
+#make-orders-h1{
+    width: 260px;
+}
+
+#order-detail-h1{
+    width: 260px;
+}
+
+#order-history-h1{
+    width: 300px;
+}
+
+th,td{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+/*#customer-page-section{*/
+/*    height: 675px;*/
+/*    position: absolute;*/
+/*}*/

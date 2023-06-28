@@ -1,0 +1,10 @@
+body{
+    position: relative;
+}
+header{
+    width: 100px;
+    height: 60px;
+    background-color: #9610ea;
+    position: fixed;
+    top: 0;
+}

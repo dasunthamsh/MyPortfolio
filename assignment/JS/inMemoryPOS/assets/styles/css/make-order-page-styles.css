@@ -1,0 +1,134 @@
+#make-order-page-content-section{
+    position: relative;
+    height: 660px;
+    background-color: #ececec;
+}
+
+#make-order-page-section{
+    background-color: #e7e4e4;
+}
+
+#order-form-section{
+    position: relative;
+    height: 300px;
+    top: 10px;
+    background-color: white;
+}
+
+#order-table-section{
+    background-color: white;
+    position: relative;
+    height: 330px;
+    top: 20px;
+}
+
+#main-col-2{
+    /*border-left: 1px solid moccasin;*/
+    /*border-right: 1px solid moccasin;*/
+    /*background-color: #dedede;*/
+}
+
+.order-form-col{
+    height: 290px;
+    /*border: 1px solid #a8a8a8;*/
+}
+
+.invoice-row{
+    position: relative;
+    /*border: 1px solid chartreuse;*/
+}
+
+#invoice-row-2,#invoice-row-3,#invoice-row-4,#item-row-2,#item-row-3,#item-row-4,#payment-row-2,#payment-row-3,#payment-row-4{
+    margin-top: 8px;
+}
+
+section>p{
+    position: relative;
+    top: 7px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-align: center;
+    /*font-size: 15px;*/
+}
+
+#invoice-detail-text-section-col{
+    background-color: #e00396;
+}
+
+#payment-detail-text-section-col{
+    background-color: #26ce02;
+}
+
+#item-detail-text-section-col{
+    width: 98%;
+    margin-left: 5px;
+    background-color: #9610ea;
+}
+
+#purchase-btn,#order-page-add-item-btn{
+    margin-top: 32px;
+    width: 100%;
+    height: 56%;
+    color: white;
+    border: transparent;
+    font-family: 'Poppins', sans-serif;
+}
+
+#invoice-row-1,#item-row-1,#payment-row-1{
+    height: 40px;
+}
+
+.invoice-col,.item-col,.payment-col{
+    /*border: 1px solid black;*/
+}
+
+#order-page-add-item-btn{
+    background-color: #9610ea;
+}
+#purchase-btn{
+    background-color: #26ce02;
+}
+
+#main-col-2{
+}
+
+#order-search-btn{
+    width: 100%;
+    height: 100%;
+    border: transparent;
+    background-color: #9610ea;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+#order-search-bar-section{
+    position: relative;
+    top: 10px;
+}
+
+#order-table-inner-section{
+    position: relative;
+    top: 20px;
+}
+
+.payment-col>p{
+    visibility: hidden;
+    position: absolute;
+    margin: auto;
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+    left: 23%;
+    top: 98%;
+}
+
+.item-col>p{
+    visibility: hidden;
+    position: absolute;
+    margin: auto;
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+    /*left: 23%;*/
+    top: 98%;
+}

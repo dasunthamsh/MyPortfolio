@@ -1,0 +1,24 @@
+
+header{
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    height: 60px;
+    width: 98.7vw;
+    z-index: 2;
+}
+
+#nav-bar{
+    position: relative;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 10px;
+}
+
+#nav-bar>a{
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    padding-right: 20px;
+}

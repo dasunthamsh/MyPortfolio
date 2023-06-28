@@ -1,0 +1,130 @@
+#main-page-section{
+    position: relative;
+    top: 90px;
+    height: 650px;
+    background-color: #efeeee;
+}
+
+#main-functions-section{
+    /*border: 1px solid black;*/
+}
+
+#main-functions-section{
+    position: relative;
+    top: 10px;
+    /*border: 1px solid black;*/
+}
+
+.function-div{
+    /*border: 1px solid red;*/
+    height: 300px;
+    position: relative;
+}
+
+.inner-function-div{
+    height: 100%;
+    position: relative;
+    background-color: transparent;
+}
+
+.func-name{
+    position: absolute;
+    font-size: 25px;
+    width: 180px;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+#func-name-1{
+    background: -webkit-linear-gradient( #4104b6, #cc18ee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: auto;
+    top: 40%;
+    bottom: 0;
+    left: 40%;
+}
+
+#func-name-2{
+    background: -webkit-linear-gradient(left, #3c02d9, #002aff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: auto;
+    top: 40%;
+    left: 10%;
+    right: 0;
+}
+
+#func-name-3{
+    background: -webkit-linear-gradient(left, #3c02d9, #0901f8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: auto;
+    top: 40%;
+    left: 10%;
+    right: 0;
+}
+
+#func-name-4{
+    background: -webkit-linear-gradient(left, #3c02d9, #014fc4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: auto;
+    top: 42%;
+    left:5%;
+    right: 0;
+}
+
+#func-name-5{
+    background: -webkit-linear-gradient(left, #3c02d9, #0053dc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: auto;
+    top: 42%;
+    left: 5%;
+    right: 0;
+}
+
+.func-aside-img{
+    position: absolute;
+    border-radius: 10px;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+}
+
+#func-1-aside-img{
+    background: url("../../images/items.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#func-2-aside-img{
+    background: url("../../images/customers.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#func-3-aside-img{
+    background: url("../../images/orders.png");
+    background-position: center;
+    background-size: cover;
+}
+
+#func-4-aside-img{
+    background: url("../../images/order-details.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#func-5-aside-img{
+    background: url("../../images/order-history.jpg");
+    background-position: center;
+    background-size: cover;
+}
