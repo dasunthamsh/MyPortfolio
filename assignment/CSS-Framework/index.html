@@ -2,77 +2,88 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="js" href="assets/js/bootstrap.min.js">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>pos-main-page</title>
+
+    <!--    google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Amita&family=Bilbo+Swash+Caps&family=DM+Mono&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Amita&family=DM+Mono&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Amita&family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+<!-- css style sheets-->
+    <link rel="stylesheet" href="assets/styles/css/normalize.css">
+    <link rel="stylesheet" href="assets/styles/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/styles/css/header-styles.css">
+    <link rel="stylesheet" href="assets/styles/css/main-page-styles.css">
+
 </head>
 <body>
-
-  <header>
-    <nav class="navbar navbar-expand-lg bg-danger shadow-sm p-3 mb-5  rounded " >
-      <div class="container-fluid">
-        <a class="navbar-brand fw-bold"  href="#">FootCity </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="pages/Customer.html">Customer</a></li>
-            <li class="nav-item"><a class="nav-link" href="pages/item.html">Item</a></li>
-            <li class="nav-item"><a class="nav-link" href="pages/Order.html">Order</a>
-
-            </li>
-          </ul>
+<header>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+<!--            <a class="navbar-brand" href="#">Navbar</a>-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav" id="nav-bar">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="pages/customers-page.html">Customers</a>
+                    <a class="nav-link" href="pages/item-page.html">Items</a>
+                    <a class="nav-link" href="pages/make-order-page.html">Orders</a>
+<!--                    <a class="nav-link" href="pages">Order History</a>-->
+<!--                    <a class="nav-link" href="#">Order Details</a>-->
+                </div>
+            </div>
         </div>
-      </div>
     </nav>
-  </header>
+</header>
+<main>
+  <section id="main-page-section" class="page-section" >
+      <section id="main-functions-section" class="container-fluid">
+          <section class="g-2 row">
 
-  <main>
+              <div id="function-div-1"  class="function-div col-4">
+                  <div id="inner-function-div-1" class="p-3 inner-function-div">
+                      <aside id="func-1-aside-img" class="func-aside-img"></aside>
+                      <p id="func-name-1" class="func-name">Items</p>
+                  </div>
+              </div>
 
-  <div class="container">
-  <div class="row">
+              <div id="function-div-2" class="function-div col-4">
+                  <div id="inner-function-div-2" class="p-3 inner-function-div">
+                      <aside id="func-2-aside-img" class="func-aside-img"></aside>
+                      <p id="func-name-2" class="func-name">Customers</p>
+                  </div>
+              </div>
 
-    <div class="col-md-4">
-      <div class="card container w-75">
-        <img src="../CSS-Framework/assets/imges/im1.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Customer Details</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="pages/Customer.html" class="btn btn-primary">Add Customer</a>
-        </div>
-      </div>
-    </div>
+              <div id="function-div-3" class="function-div col-4">
+                  <div id="inner-function-div-3" class="p-3 inner-function-div">
+                      <aside id="func-3-aside-img" class="func-aside-img"></aside>
+                      <p id="func-name-3" class="func-name">Make Orders</p>
+                  </div>
+              </div>
 
-    <div class="col-md-4">
-      <div class="card container w-75">
-        <img src="../CSS-Framework/assets/imges/img2.jpg" class="card-img-top " alt="..." height="195">
-        <div class="card-body">
-          <h5 class="card-title">Item Details</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="pages/item.html" class="btn btn-primary">Add Item</a>
-        </div>
-      </div>
-    </div>
+              <div id="function-div-4" class="function-div col-6">
+                  <div id="inner-function-div-4" class="p-3 inner-function-div">
+                      <aside id="func-4-aside-img" class="func-aside-img"></aside>
+                      <p id="func-name-4" class="func-name">Order Details</p>
+                  </div>
+              </div>
 
-    <div class="col-md-4">
-      <div class="card container w-75" >
-        <img src="../CSS-Framework/assets/imges/im3.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Order Details</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="pages/Order.html" class="btn btn-primary">Make Orders</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-  </main>
-
-
-
+              <div id="function-div-5" class="function-div col-6" >
+                  <div id="-inner-function-div-5" class="p-3 inner-function-div">
+                      <aside id="func-5-aside-img" class="func-aside-img"></aside>
+                      <p id="func-name-5" class="func-name">Orders History</p>
+                  </div>
+              </div>
+          </section>
+      </section>
+  </section>
+</main>
+<footer></footer>
 </body>
 </html>
