@@ -85,13 +85,13 @@ input::placeholder{
 }
 
 #cus-add-btn{
-    background-color: #13c600;
+    background-color: red;
 }
 #cus-update-btn{
-    background-color: #ab17ea;
+    background-color: red;
 }
 #cus-delete-btn{
-    background-color: #e20013;
+    background-color: red;
 }
 
 .customer-input-col>p{
