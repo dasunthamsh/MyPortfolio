@@ -85,11 +85,11 @@ input::placeholder{
 }
 
 #itm-add-btn{
-    background-color: #13c600;
+    background-color: red;
 }
 #itm-update-btn{
-    background-color: #ab17ea;
+    background-color:red;
 }
 #itm-delete-btn{
-    background-color: #e20013;
+    background-color: red;
 }

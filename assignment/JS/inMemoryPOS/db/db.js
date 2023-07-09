@@ -1,7 +1,7 @@
 var customers = new Array();
-customers.push(new Customer('C-000-000','Dinuth Dheeraka', 'Kalutara',9877654565));
-customers.push(new Customer('C-000-001', 'Sethmal Fonseka', 'Galle',9876543456));
-customers.push(new Customer('C-000-002',  'Kaveen Kashmika', 'Jaffna', 8767654345));
+customers.push(new Customer('C-000-000','Dasun', 'Kalutara',9877654565));
+customers.push(new Customer('C-000-001', 'Sahan', 'Galle',9876543456));
+customers.push(new Customer('C-000-002',  'Kaveen ', 'Jaffna', 8767654345));
 
 var items = new Array();
 items.push(new Item('I-000-000','Kome',400,10));
