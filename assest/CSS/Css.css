@@ -1090,9 +1090,19 @@ main>section:nth-child(14){
     z-index: 100;
 }
 
+main>section:nth-child(14)>div>h1{
+    font-family: Fasthand;
+    font-size: 40px;
+    position: relative;
+    left: 80px;
+    right: 0;
+    top: -50px;
+    bottom: 0;
+    margin: auto;
+}
+
+
 main>section:nth-child(14)>div{
-    /*width: 200px;*/
-    /*height: 200px;*/
     position: absolute;
     left: 0;
     right: 0;
