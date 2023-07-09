@@ -1104,7 +1104,7 @@ main>section:nth-child(14)>div{
     display: block;
     --height-of-loader: 4px;
     --loader-color: #0071e2;
-    width: 130px;
+    width: 200px;
     height: var(--height-of-loader);
     border-radius: 30px;
     background-color: rgba(0,0,0,0.2);
