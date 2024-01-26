@@ -23,6 +23,7 @@ a:hover{     /*change mouse fourcus color to yellow in menu*/
 }
 
 
+
 /*.btn {*/
 /*    width: 6.5em;*/
 /*    height: 2.3em;*/
@@ -96,12 +97,12 @@ a:hover{     /*change mouse fourcus color to yellow in menu*/
 /*------------------------Skills img--------------------------*/
 
 
-main>section:nth-child(5)>aside:nth-child(3)>div>img:hover {
-    transition: 1s;
-    box-shadow: 1px 1px 10px 1px;
-    transform: rotate(18deg) scale(1.1);
+/*main>section:nth-child(5)>aside:nth-child(3)>div>img:hover {*/
+/*    transition: 1s;*/
+/*    box-shadow: 1px 1px 10px 1px;*/
+/*    transform: rotate(18deg) scale(1.1);*/
 
-}
+/*}*/
 
 /*------------------------project --------------------------*/
 
@@ -163,7 +164,8 @@ main>section:nth-child(7)>div:nth-child(4)>aside:hover {
     transition: 2s;
 }
 main>section:nth-child(7)>div:nth-child(4)>aside:hover {
-    box-shadow: 10px 10px 10px 1px rgba(238, 190, 23, 0.4);
+    /*box-shadow: 10px 10px 10px 1px rgba(238, 190, 23, 0.4);*/
+    border : 2px solid rgba(238, 190, 23, 0.4);
     transition: 2s;
 }
 
@@ -182,7 +184,8 @@ main>section:nth-child(8)>div:nth-child(2)>aside {
 }
 
 main>section:nth-child(8)>div:nth-child(2)>aside:hover {
-    box-shadow: 10px 10px 10px 1px rgba(238, 190, 23, 0.4);
+    /*box-shadow: 10px 10px 10px 1px rgba(238, 190, 23, 0.4);*/
+    border : 2px solid rgba(238, 190, 23, 0.4);
     transition: 2s;
 }
 
@@ -270,4 +273,6 @@ main>section:nth-child(5)>aside:nth-child(4)>img:hover{
     -webkit-transition: box-shadow 0.2s ease-in;
     -moz-transition: box-shadow 0.2s ease-in;
     transition: box-shadow 0.2s ease-in;
+}
+#website{
 }
