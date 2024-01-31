@@ -1252,3 +1252,7 @@ textarea{
 
 }
 
+
+#loader{
+    display: none;
+}
