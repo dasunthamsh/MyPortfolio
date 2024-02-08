@@ -239,7 +239,7 @@ main>section:nth-child(2)>aside:nth-child(2)>p:first-child{
 }
 
 main>section:nth-child(2)>aside:nth-child(2)>p:last-child{
-    font-family: "Agency FB";
+    font-family: Barlow ;
     font-size: 150%;
 }
 
@@ -475,6 +475,7 @@ main>section:nth-child(5)>aside:nth-child(3)>div>h6 {
 
 main>section:nth-child(6){
     position: relative;
+
 }
 
 
@@ -494,6 +495,8 @@ main>section:nth-child(6)>div:nth-child(2){
     position: relative;
     left: 19%;
     top: 10vh;
+    height: 85vh;
+    overflow: scroll;
 
 }
 
