@@ -34,8 +34,6 @@ body>section:nth-child(2){
 }
 
 
-
-
 header{
     height: 10%;
     width: 100vw;
@@ -211,14 +209,14 @@ main>section:nth-child(2)>aside>img{  /*about me img*/
 
 main>section:nth-child(2)>div{
     position: relative;
-    width: 12vw;
-    height: 15vh;
-    left: -13vw;
-    top: -35vh;
+    width: 22vw;
+    height: 23vh;
+    left: -22vw;
+    top: -28vh;
     border-radius: 100%;
-    background: #ffb400;
+    background: #0a53be;
     z-index: -1;
-    filter: blur(200px);
+    filter: blur(250px);
     display: inline-block;
 
 }
@@ -386,7 +384,10 @@ main>section:nth-child(4)>div:nth-child(3)>aside:nth-child(3){
 }
 
 
-
+/*filter: blur(300px);*/
+/*border-radius: 100%;*/
+/*width: 20vw;*/
+/*height: 50vh;*/
 
 /*---------------------------Skills-------------------------------------*/
 
@@ -451,12 +452,13 @@ main>section:nth-child(5)>aside:nth-child(3)>div>img {
     left: 25%;
     border-radius: 20px;
     border: solid  0.001cm;
-    border-left-color: #131312;
-    border-right-color: #ffb400;
-    border-bottom-color: #ffb400;
-    border-top-color: #131312;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
-    rgba(0, 0, 0, 0.19);
+    /*border-left-color: #131312;*/
+    /*border-right-color: #ffb400;*/
+    /*border-bottom-color: #ffb400;*/
+    /*border-top-color: #131312;*/
+    box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.5);
+    /*rgba(0, 0, 0, 0.19);*/
+    transition: 1s;
 
 }
 
@@ -470,7 +472,17 @@ main>section:nth-child(5)>aside:nth-child(3)>div>h6 {
 }
 
 
-
+#portfolioBlurDiv{
+    position: absolute;
+    width: 10vw;
+    height: 20vh;
+    left: 100px;
+    border-radius: 100%;
+    background: #0a53be;
+    z-index: -1;
+    filter: blur(300px);
+    display: inline-block;
+}
 /*---------------------------projects-------------------------------------*/
 
 main>section:nth-child(6){

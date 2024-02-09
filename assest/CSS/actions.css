@@ -19,6 +19,9 @@
 a:hover{     /*change mouse fourcus color to yellow in menu*/
     color: #ffb400;
     font-weight: bold;
+    border: 2px solid #ffb400;
+    border-radius: 30px;
+    padding: 10px
 
 }
 
@@ -97,12 +100,17 @@ a:hover{     /*change mouse fourcus color to yellow in menu*/
 /*------------------------Skills img--------------------------*/
 
 
-/*main>section:nth-child(5)>aside:nth-child(3)>div>img:hover {*/
+main>section:nth-child(5)>aside:nth-child(3)>div>img:hover {
 /*    transition: 1s;*/
 /*    box-shadow: 1px 1px 10px 1px;*/
 /*    transform: rotate(18deg) scale(1.1);*/
+    border-bottom-color: #ffb400;
+    border-right-color: #ffb400;
+    transition: 1s;
+    scale: 1.1;
+    border-radius: 25px;
 
-/*}*/
+}
 
 /*------------------------project --------------------------*/
 
