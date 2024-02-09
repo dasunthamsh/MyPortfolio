@@ -21,7 +21,8 @@ a:hover{     /*change mouse fourcus color to yellow in menu*/
     font-weight: bold;
     border: 2px solid #ffb400;
     border-radius: 30px;
-    padding: 10px
+    padding: 10px;
+    transition: 1s;
 
 }
 

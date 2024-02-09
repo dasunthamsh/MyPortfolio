@@ -75,7 +75,7 @@ a{
     font-family: Arial,Helvetica,sans-serif;
     font-size: 100%;
     text-decoration: none;
-
+    transition: 1s;
 }
 
 
@@ -794,13 +794,13 @@ main>section:nth-child(9)>div>aside:nth-child(1)>div:nth-child(4) {
 }
 
 main>section:nth-child(9)>div>aside:nth-child(2)>div:nth-child(1) {
-    background: url("../../assest/img/animation/p4.png");
+    background: url("../../assest/img/animation/p10.png");
     background-size:cover;
     background-position:center;
 }
 
 main>section:nth-child(9)>div>aside:nth-child(2)>div:nth-child(2) {
-    background: url("../../assest/img/animation/p4.png");
+    background: url("../../assest/img/animation/p14.png");
     background-size:cover;
     background-position:center;
 }
@@ -812,7 +812,7 @@ main>section:nth-child(9)>div>aside:nth-child(2)>div:nth-child(3) {
 }
 
 main>section:nth-child(9)>div>aside:nth-child(2)>div:nth-child(4) {
-    background: url("../../assest/img/animation/p7.png");
+    background: url("../../assest/img/animation/p9.png");
     background-size:cover;
     background-position:center;
 }
@@ -915,7 +915,7 @@ main>section:nth-child(9)>aside:nth-child(2){
 
 main>section:nth-child(10){
     position: relative;
-    bottom: 72.2vh;
+    bottom: 71.8vh;
     background: rgba(0,0,0,0.6);
     height: 90vh;
 }
