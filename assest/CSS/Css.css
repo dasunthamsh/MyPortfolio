@@ -425,8 +425,8 @@ main>section:nth-child(5)>aside:nth-child(2)>h1:nth-child(1){
 
 main>section:nth-child(5)>aside:nth-child(3){   /*container*/
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr ;
     width: 30%;
     position: relative;
     height: 170px;
@@ -970,7 +970,7 @@ main>section:nth-child(10)>div:nth-child(1)>button {
 main>section:nth-child(11){   /*changed*/
     position: relative;
     bottom: 62vh;
-    top: 483px;
+    top: -332px;
 }
 
 
@@ -1012,7 +1012,7 @@ main>section:nth-child(11)>aside:nth-child(2)>div>img{
 
 main>section:nth-child(12){                        /*changed*/
     position: relative;
-    bottom: -64vh;
+    bottom: 48vh;
 }
 
 
@@ -1259,3 +1259,8 @@ textarea{
 #loader{
     display: none;
 }
+
+
+                                                /*my website*/
+
+
