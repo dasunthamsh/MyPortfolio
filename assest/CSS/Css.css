@@ -765,6 +765,7 @@ main>section:nth-child(9)>div>aside{
     width: 100vw;
     height: 200vh;
     margin: 7px;
+    min-width: 60vw;
 
 }
 
@@ -1166,46 +1167,46 @@ main>section:nth-child(14)>div{
 
 
                         /*my other website*/
-main>section:nth-child(15) {
-    position: relative;
-    bottom: 1200px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-}
+/*main>section:nth-child(15) {*/
+/*    position: relative;*/
+/*    bottom: 1200px;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    flex-direction: column;*/
+/*    justify-content: center;*/
+/*}*/
 
 
-main>section:nth-child(15)>h1 {
-    position: relative;
-    font-family: teko;
-    font-size: 350%;
-    bottom: 50px;
-    color: #ffb400;
-}
+/*main>section:nth-child(15)>h1 {*/
+/*    position: relative;*/
+/*    font-family: teko;*/
+/*    font-size: 350%;*/
+/*    bottom: 50px;*/
+/*    color: #ffb400;*/
+/*}*/
 
-main>section:nth-child(15)>div{
-    background: url("../img/website.png");
-    background-size: cover;
-    background-position: center;
-    width: 100vw;
-    height: 95vh;
-    position: relative;
+/*main>section:nth-child(15)>div{*/
+/*    background: url("../img/website.png");*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*    width: 100vw;*/
+/*    height: 95vh;*/
+/*    position: relative;*/
 
 
-}
+/*}*/
 
-main>section:nth-child(15)>a>button {
-    background: transparent;
-    width: 200px;
-    height: 50px;
-    border: solid white 3px;
-    font-family: teko;
-    font-size: 25px;
-    position: relative;
-    bottom: 70vh;
+/*main>section:nth-child(15)>a>button {*/
+/*    background: transparent;*/
+/*    width: 200px;*/
+/*    height: 50px;*/
+/*    border: solid white 3px;*/
+/*    font-family: teko;*/
+/*    font-size: 25px;*/
+/*    position: relative;*/
+/*    bottom: 70vh;*/
 
-}
+/*}*/
 
 
 
