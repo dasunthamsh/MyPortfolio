@@ -268,7 +268,7 @@ main>section:nth-child(3)>aside:nth-child(2) {
     justify-content: center;
     gap: 40vw;
     right: 15%;
-    top: 32%;
+    top: 38%;
     position: relative;
 }
 
@@ -765,7 +765,6 @@ main>section:nth-child(9)>div>aside{
     width: 100vw;
     height: 200vh;
     margin: 7px;
-    min-width: 60vw;
 
 }
 

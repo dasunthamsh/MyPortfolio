@@ -34,11 +34,18 @@
     main>section:nth-child(9)>div {
         right: 450px
     }
+
+    main>section:nth-child(9)>div>aside {
+        min-width: 60vw;
+    }
 }
 /*---------------------------------------------------------------------------------*/
 @media screen and (min-width: 320px) and (max-width: 375px){
 }
-@media screen and (min-width: 375px) and (max-width: 425px){}
+@media screen and (min-width: 375px) and (max-width: 425px){
+
+
+}
 
 
 
@@ -63,7 +70,8 @@
 
     main>section:nth-child(3)>h2 {
 
-        left: 30vw;
+        left: 20vw;
+        top: 20vw;
     }
 
 
@@ -202,6 +210,11 @@
     }
 
 
+/*about me*/
+
+    main>section:nth-child(3)>aside:nth-child(2) {
+        top: 45%;
+    }
 
 
 
@@ -241,7 +254,11 @@
     main>section:nth-child(11)>aside:nth-child(2)>div>aside {
         left: 7vw;
     }
-
+/* projects */
+    main>section:nth-child(6)>div:nth-child(2) {
+        width: 100%;
+        left : 2%;
+    }
 
 }
 
