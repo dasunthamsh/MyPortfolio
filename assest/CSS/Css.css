@@ -640,7 +640,7 @@ main>section:nth-child(7)>div:nth-child(1){
 
 
 main>section:nth-child(8){
-    height: 110vh;
+    /*height: 110vh;*/
 }
 
 main>section:nth-child(8)>div:nth-child(2){
@@ -745,7 +745,7 @@ main>section:nth-child(8)>aside:nth-child(3){
 main>section:nth-child(9){
     overflow: hidden;
     position: relative;
-    top: 170px;
+    top: 300px;
     left: 5px;
     width: 98vw;
 
@@ -915,7 +915,7 @@ main>section:nth-child(9)>aside:nth-child(2){
 
 main>section:nth-child(10){
     position: relative;
-    bottom: 71.8vh;
+    bottom: 55.8vh;
     background: rgba(0,0,0,0.6);
     height: 90vh;
 }
