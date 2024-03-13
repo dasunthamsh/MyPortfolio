@@ -1,3 +1,6 @@
+// scroll animations
+AOS.init();
+
 /* Store the element in el */
 let el = document.querySelector('#mainPng')
 

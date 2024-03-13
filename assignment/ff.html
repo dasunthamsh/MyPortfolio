@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Incident Reporting System - View Reports</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 10px;
+            margin: 0 10px;
+            border-radius: 5px;
+            background-color: #555;
+        }
+
+        nav a:hover {
+            background-color: #777;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        td.actions {
+            text-align: center;
+        }
+
+        .edit-btn, .delete-btn {
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .edit-btn {
+            background-color: #4CAF50;
+            color: white;
+            margin-right: 5px;
+        }
+
+        .delete-btn {
+            background-color: #f44336;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Special Incident Reporting System</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="report.html">Report Incident</a>
+    <a href="view_reports.html">View Reports</a>
+</nav>
+
+<div class="container">
+    <h1>View Submitted Reports</h1>
+    <table>
+        <thead>
+        <tr>
+            <th>Employee Name</th>
+            <th>Date of Incident</th>
+            <th>Type of Quality</th>
+            <th>Quality</th>
+            <th>Report</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- Sample data, replace with data from database -->
+        <tr>
+            <td>John Doe</td>
+            <td>2024-03-15</td>
+            <td>Positive</td>
+            <td>Teamwork</td>
+            <td>John demonstrated excellent teamwork skills during the project.</td>
+            <td class="actions">
+                <button class="edit-btn">Edit</button>
+                <button class="delete-btn">Delete</button>
+            </td>
+        </tr>
+        <!-- Add more rows as needed -->
+        </tbody>
+    </table>
+</div>
+
+<footer>
+    <p>&copy; 2024 Special Incident Reporting System. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
