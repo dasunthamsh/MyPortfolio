@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/*when scroll web change 'DASUN THAMASH' text x position*/
+
+#scrollingText {
+    position: relative; /* Allows movement */
+    transition: transform 0.1s ease-out; /* Smooth transition */
+}
+
+
+/*arrow to redirect to hero section*/
+
+#arrow-container {
+    display: none; /* Initially hidden */
+}
+
+#contact-arrow {
+    font-size: 2rem; /* Adjust icon size */
+    transition: transform 0.3s ease-in-out;
+}
+
+

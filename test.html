@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dasun Thamash | Portfolio</title>
+    <meta name="keywords" content="Dasun,dasun,thamash,web Designer">
+    <meta name="description" content="I'm still studying at the Institute of Software Engineering and I'm into Fullstack Development">
+    <meta name="author" content="Dasun">
+    <meta name="owner" content="Dasun Thamash">
+    <meta name="robots" content="index">
+    <meta name="theme-color" content="yellow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="assest/img/headderIcon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Barlow:ital,wght@1,200&family=Bebas+Neue&family=Fasthand&family=Inter:wght@100&family=Merriweather+Sans:wght@300&family=Philosopher&family=Rajdhani:wght@300&family=Teko&display=swap" rel="stylesheet">
+
+    <!-- Add Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- Add Material UI Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assest/CSS/styles.css">
+</head>
+
+<body    class="font-sans leading-normal tracking-normal bg-black">
+
+    <!-- Header Section -->
+    <header>
+        <div class="flex justify-center m-5">
+            <nav class="flex items-center rounded-full shadow-lg space-x-6 bg-gray-800 opacity-80 p-2 gap-10">
+                <a href="#" class="text-white font-bold text-lg pl-2">TUNA</a>
+                <a href="#" class="text-gray-300 hover:text-white">Home</a>
+                <a href="#" class="text-gray-300 hover:text-white">About</a>
+                <a href="#" class="text-gray-300 hover:text-white">Skills</a>
+                <a href="#" class="text-gray-300 hover:text-white">Projects</a>
+                <a href="#" class="text-gray-300 hover:text-white">Services</a>
+                <a href="#"
+                   class="bg-yellow-500 text-gray-900 font-semibold py-2 px-4 rounded-full hover:bg-yellow-600 transition duration-300"
+                   id="contact-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Arrow Icon that will replace the Contact link -->
+    <div id="arrow-container" class="fixed bottom-10 right-10 hidden">
+        <a href="#" id="contact-arrow" class="text-9xl text-yellow-500">
+            &#8593; <!-- Right arrow -->
+        </a>
+    </div>
+
+<main>
+
+    <!-- Hero Section -->
+    <div class="text-center mt-24 overflow-hidden">
+
+        <h3 class="text-3xl text-yellow-600 mt-11 font-bold">Hello, I’m</h3>
+        <h1 id="scrollingText" class="text-9xl font-bold text-transparent bg-clip-text bg-gradient-to-l from-purple-400 via-pink-600 to-red-500 mt-11" style="font-family: fantasy;">
+            DASUN THAMASH
+        </h1>
+
+        <p class=" text-lg text-white mt-11">I’m a creative Software Engineer from Sri Lanka,<br> passionate about building innovative solutions and continuously<br> improving my skills.</p>
+
+
+        <!-- Social Media Icons -->
+        <div class="mt-11 flex justify-center space-x-3">
+
+                <div id="ggg"><img  usemap="#twitterMap" src="assest/img/twitter.png" alt="twitter icon" width="40"></div>
+                <map name="twitterMap">
+                    <area shape="circle" coords="0,0,55" href="https://twitter.com/DasunThamash" target="_blank" alt="">
+                </map>
+
+                <div><img usemap="#fbMap" src="assest/img/fackbook.png" alt="fb icon" width="40"></div>
+                <map name="fbMap">
+                    <area shape="circle" coords="0,0,55" href="https://www.facebook.com/profile.php?id=100028425432835" target="_blank">
+                </map>
+
+                <div><img usemap="#linkidinMap" src="assest/img/linkdin.png" alt="linkdin icon" width="40"></div>
+                <map name="linkidinMap">
+                    <area shape="circle" coords="0,0,55" href="https://www.linkedin.com/in/dasun-thamash-4a9614252/" target="_blank">
+                </map>
+
+                <div><img usemap="#githubMap" src="assest/img/github.png" alt="github icon" width="40"></div>
+                <map name="githubMap">
+                    <area shape="circle" coords="0,0,55" href="https://github.com/dasunthamsh" target="_blank">
+                </map>
+
+        </div>
+        <!-- Available Now Circle with Text -->
+        <div id="available-now" class="fixed bottom-5 left-5 flex items-center space-x-2">
+            <div class="w-5 h-5 bg-green-400 text-white font-bold rounded-full flex items-center justify-center">
+            </div>
+            <span class="text-white ">Available Now</span>
+        </div>
+
+    </div>
+
+<!-- Add AOS Library -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+    <script src="assest/js/sus.js"></script>
+
+</body>
+</html>
