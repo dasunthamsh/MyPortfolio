@@ -100,7 +100,6 @@ document.addEventListener('DOMContentLoaded', function() {
 window.addEventListener('scroll', () => {
     const header = document.getElementById('header');
     const content = document.getElementById('content');
-
     const scrollPosition = window.scrollY || window.pageYOffset;
     const contentOffset = content.offsetTop;
 
@@ -110,3 +109,12 @@ window.addEventListener('scroll', () => {
         header.style.backgroundColor = 'transparent ';
     }
 });
+
+
+
+
+
+///////////////////////////////////////////////    test functions //////////////////////////////////////////
+
+
+
