@@ -21,15 +21,18 @@
     <!-- Add Material UI Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="assest/CSS/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
 </head>
 
-<body    class="font-sans leading-normal tracking-normal bg-black">
+<body class="font-sans leading-normal tracking-normal opacity-90" style="background: #0F0F0F">
 
     <!-- Header Section -->
     <header>
-        <div class="flex justify-center m-5">
+        <div class="flex justify-center m-10">
             <nav class="flex items-center rounded-full shadow-lg space-x-6 bg-gray-800 opacity-80 p-2 gap-10">
-                <a href="#" class="text-white font-bold text-lg pl-2">TUNA</a>
+                <a href="#" class="text-white font-bold text-lg pl-2">DASUN</a>
                 <a href="#" class="text-gray-300 hover:text-white">Home</a>
                 <a href="#" class="text-gray-300 hover:text-white">About</a>
                 <a href="#" class="text-gray-300 hover:text-white">Skills</a>
@@ -49,58 +52,247 @@
         </a>
     </div>
 
-<main>
-
-    <!-- Hero Section -->
-    <div class="text-center mt-24 overflow-hidden">
-
-        <h3 class="text-3xl text-yellow-600 mt-11 font-bold">Hello, I’m</h3>
-        <h1 id="scrollingText" class="text-9xl font-bold text-transparent bg-clip-text bg-gradient-to-l from-purple-400 via-pink-600 to-red-500 mt-11" style="font-family: fantasy;">
-            DASUN THAMASH
-        </h1>
-
-        <p class=" text-lg text-white mt-11">I’m a creative Software Engineer from Sri Lanka,<br> passionate about building innovative solutions and continuously<br> improving my skills.</p>
-
-
-        <!-- Social Media Icons -->
-        <div class="mt-11 flex justify-center space-x-3">
-
-                <div id="ggg"><img  usemap="#twitterMap" src="assest/img/twitter.png" alt="twitter icon" width="40"></div>
-                <map name="twitterMap">
-                    <area shape="circle" coords="0,0,55" href="https://twitter.com/DasunThamash" target="_blank" alt="">
-                </map>
-
-                <div><img usemap="#fbMap" src="assest/img/fackbook.png" alt="fb icon" width="40"></div>
-                <map name="fbMap">
-                    <area shape="circle" coords="0,0,55" href="https://www.facebook.com/profile.php?id=100028425432835" target="_blank">
-                </map>
-
-                <div><img usemap="#linkidinMap" src="assest/img/linkdin.png" alt="linkdin icon" width="40"></div>
-                <map name="linkidinMap">
-                    <area shape="circle" coords="0,0,55" href="https://www.linkedin.com/in/dasun-thamash-4a9614252/" target="_blank">
-                </map>
-
-                <div><img usemap="#githubMap" src="assest/img/github.png" alt="github icon" width="40"></div>
-                <map name="githubMap">
-                    <area shape="circle" coords="0,0,55" href="https://github.com/dasunthamsh" target="_blank">
-                </map>
-
+    <main>
+        <!-- main animation -->
+        <div class="container opacity-20">
+            <canvas id="threeCanvas"></canvas>
         </div>
-        <!-- Available Now Circle with Text -->
-        <div id="available-now" class="fixed bottom-5 left-5 flex items-center space-x-2">
-            <div class="w-5 h-5 bg-green-400 text-white font-bold rounded-full flex items-center justify-center">
+        <!-- Hero Section -->
+        <div class="text-center mt-24 overflow-hidden">
+
+            <h3 class="text-3xl text-yellow-600 mt-11 font-bold" style="font-family: fantasy;">Hello, I’m</h3>
+            <h1 id="scrollingText" class="text-9xl font-bold text-transparent bg-clip-text bg-gradient-to-l from-purple-400 via-pink-600 to-red-500 mt-11" style="font-family: fantasy;">
+                DASUN THAMASH
+            </h1>
+
+            <p id='about' class="text-lg text-white mt-11" style="font-family: 'Poppins', sans-serif;">I’m a creative Software Engineer from Sri Lanka,<br> passionate about building innovative solutions and continuously<br> improving my skills.</p>
+
+
+
+            <!-- Social Media Icons -->
+            <div class="mt-11 flex justify-center space-x-3">
+
+                    <div id="ggg"><img  usemap="#twitterMap" src="assest/img/twitter.png" alt="twitter icon" width="40"></div>
+                    <map name="twitterMap">
+                        <area shape="circle" coords="0,0,55" href="https://twitter.com/DasunThamash" target="_blank" alt="">
+                    </map>
+
+                    <div><img usemap="#fbMap" src="assest/img/fackbook.png" alt="fb icon" width="40"></div>
+                    <map name="fbMap">
+                        <area shape="circle" coords="0,0,55" href="https://www.facebook.com/profile.php?id=100028425432835" target="_blank">
+                    </map>
+
+                    <div><img usemap="#linkidinMap" src="assest/img/linkdin.png" alt="linkdin icon" width="40"></div>
+                    <map name="linkidinMap">
+                        <area shape="circle" coords="0,0,55" href="https://www.linkedin.com/in/dasun-thamash-4a9614252/" target="_blank">
+                    </map>
+
+                    <div><img usemap="#githubMap" src="assest/img/github.png" alt="github icon" width="40"></div>
+                    <map name="githubMap">
+                        <area shape="circle" coords="0,0,55" href="https://github.com/dasunthamsh" target="_blank">
+                    </map>
+
             </div>
-            <span class="text-white ">Available Now</span>
+            <!-- Available Now Circle with Text -->
+            <div id="available-now" class="fixed bottom-5 left-5 flex items-center space-x-2">
+                <div class="w-3 h-3 bg-green-400 text-white font-bold rounded-full flex items-center justify-center">
+                </div>
+                <span class="text-white ">Available Now</span>
+            </div>
+
         </div>
 
-    </div>
 
-<!-- Add AOS Library -->
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
-    <script src="assest/js/sus.js"></script>
+        <!-- about me -->
+        <div class="mt-32">
+            <div class="flex justify-center items-center min-h-screen p-5">
+                <div class="grid grid-cols-3 gap-4 max-w-5xl w-full">
 
+                    <!-- Profile Picture -->
+                    <div class="bg-gray-700 rounded-lg p-5 flex justify-center items-center">
+                        <img id="mainPng" src="assest/img/about.png" alt="Profile" class="rounded-lg shadow-lg">
+                    </div>
+
+                    <!-- Introduction Section -->
+                    <div class="bg-gray-700 rounded-lg p-5 col-span-2">
+                        <h1 class="text-3xl font-bold mb-4">HELLO</h1>
+                        <p class="text-gray-300 leading-relaxed">
+                            My name is Dasun Thamash. I'm a second-year student in IJSE (Institute of Software Engineering). I'm currently learning more about software engineering, web development, and internet technologies. I like to improve my skills with projects. I also have knowledge about web application design, UI/UX design, and JavaFX.
+                        </p>
+                    </div>
+
+                    <!-- What I Do Section -->
+                    <div class="bg-green-500 rounded-lg p-5 text-gray-900 font-bold">
+                        <h2 class="text-2xl mb-3">What I do</h2>
+                        <ul class="space-y-2">
+                            <li>UI/UX design</li>
+                            <li>web design</li>
+                            <li>app design</li>
+                            <li>Frontend development</li>
+                        </ul>
+                    </div>
+
+                    <!-- Current Time Section -->
+                    <div class="bg-gray-700 rounded-lg p-5 flex flex-col justify-center items-center">
+                        <h2 id="time" class="text-4xl font-extrabold">--:--</h2>
+                        <p id="amPm" class="text-xl font-semibold">AM</p>
+                        <p class="text-gray-400 mt-2 text-sm">Current local time</p>
+                    </div>
+
+                    <!-- Links Section -->
+                    <div class="bg-gray-700 rounded-lg p-5 col-span-1">
+                        <h2 class="text-2xl font-bold mb-4">LINKS</h2>
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="w-full h-20 bg-gray-500 rounded"></div>
+                            <div class="w-full h-20 bg-gray-500 rounded"></div>
+                            <div class="w-full h-20 bg-gray-    500 rounded"></div>
+                            <div class="w-full h-20 bg-gray-500 rounded"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- education and experience -->
+        <div>
+
+            <div class="flex justify-center gap-5 text-4xl font-bold my-20 text-white">
+                <h1 data-aos="fade-right" data-aos-duration="2000">Education</h1>
+                <h1 class="items-center">&</h1>
+                <h1 data-aos="fade-left" data-aos-duration="2000" class="text-end">Experience</h1>
+            </div>
+            <div class= "text-white p-8 flex justify-center">
+                <div class="space-y-8 max-w-3xl mx-auto" style="font-family: 'Poppins', sans-serif;">
+                    <!-- Section 2 -->
+                    <div class="flex items-start">
+                        <div class="flex items-center justify-center w-10 h-10 text-lg font-bold bg-gray-800 rounded-full">5</div>
+                        <div class="ml-4">
+                            <h2 class="text-lg font-semibold">AUS-ETECH (Australia)</h2>
+                            <p class="text-sm text-gray-300">
+                                Work as intern software engineer.
+                            </p>
+                            <h1 class="text-xs text-gray-400">Feb 2024 - Oct 2024</h1>
+                        </div>
+                    </div>
+                    <!-- Section 1 -->
+                    <div class="flex items-center ">
+                        <div class="flex items-center justify-center w-10 h-10 text-lg font-bold bg-gray-800 rounded-full">1</div>
+                        <div class="ml-4">
+                            <h2 class="text-lg font-semibold">(TOP UP) London Metropolitan University</h2>
+                            <p class="text-sm text-gray-300">
+                                BEng (Hons) in Software Engineering (TOP UP) <br> London Metropolitan University (UK) (LMU-T-BENG-SE).
+                            </p>
+                            <h1 class="text-xs text-gray-400">Feb 2025 - Feb 2026</h1>
+                        </div>
+                    </div>
+
+                    <!-- Section 2 -->
+                    <div class="flex items-center ">
+                        <div class="flex items-center justify-center w-10 h-10 text-lg font-bold bg-gray-800 rounded-full">2</div>
+                        <div class="ml-4">
+                            <h2 class="text-lg font-semibold">(HND) IJSE</h2>
+                            <p class="text-sm text-gray-300">
+                                Bsc(Hons). in Computer Science IJSE - Institute of Software Engineering
+                            </p>
+                            <h1 class="text-xs text-gray-400">Feb 2021 - Sep 2024</h1>
+                        </div>
+                    </div>
+
+                    <!-- Section 2 -->
+                    <div class="flex items-start">
+                        <div class="flex items-center justify-center w-10 h-10 text-lg font-bold bg-gray-800 rounded-full">3</div>
+                        <div class="ml-4">
+                            <h2 class="text-lg font-semibold">DSMP</h2>
+                            <p class="text-sm text-gray-300">
+                                Fullstack Master Program Developer stack.
+                            </p>
+                            <h1 class="text-xs text-gray-400">Jan 2023 - Sep 2023</h1>
+                        </div>
+                    </div>
+
+                    <!-- Section 2 -->
+                    <div class="flex items-start">
+                        <div class="flex items-center justify-center w-10 h-10 text-lg font-bold bg-gray-800 rounded-full">4</div>
+                        <div class="ml-4">
+                            <h2 class="text-lg font-semibold">FSD ACADEMY</h2>
+                            <p class="text-sm text-gray-300">
+                                Master UI/UX Designing Course
+                            </p>
+                            <h1 class="text-xs text-gray-400">Sep 2023 - Jan 2024</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!--        my project section-->
+
+        <section class=" py-12">
+            <div class="max-w-7xl mx-auto px-6 sm:px-12">
+                <h2 class="text-4xl font-bold text-gray-800 text-center mb-8">Project Showcase</h2>
+                <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+                    <!-- Project Card -->
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                        <img
+                                src="assest/img/website.png"
+                                alt="Project Thumbnail"
+                                class="w-full h-48 object-cover"
+                        />
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold text-gray-800">Project Title</h3>
+                            <p class="text-gray-600 mt-2">A brief description of the project. Highlight the features and tech stack used.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                        <img
+                                src="assest/img/website.png"
+                                alt="Project Thumbnail"
+                                class="w-full h-48 object-cover"
+                        />
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold text-gray-800">Project Title</h3>
+                            <p class="text-gray-600 mt-2">A brief description of the project. Highlight the features and tech stack used.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                        <img
+                                src="assest/img/website.png"
+                                alt="Project Thumbnail"
+                                class="w-full h-48 object-cover"
+                        />
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold text-gray-800">Project Title</h3>
+                            <p class="text-gray-600 mt-2">A brief description of the project. Highlight the features and tech stack used.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                        <img
+                                src="assest/img/website.png"
+                                alt="Project Thumbnail"
+                                class="w-full h-48 object-cover"
+                        />
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold text-gray-800">Project Title</h3>
+                            <p class="text-gray-600 mt-2">A brief description of the project. Highlight the features and tech stack used.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- Add AOS Library -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+        <script src="assest/js/sus.js"></script>
 </body>
 </html>
