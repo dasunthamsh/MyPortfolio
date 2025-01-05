@@ -52,3 +52,24 @@ canvas {
 
 
 
+/*word animation*/
+* {
+    user-select: none;
+}
+.word {
+    position: absolute;
+    cursor: grab;
+    font-size: 30px;
+    color: #ffeb3b;
+}
+.word.highlighted {
+    font-weight: bold;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 1rem;
+}
