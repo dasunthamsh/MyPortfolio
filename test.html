@@ -115,7 +115,7 @@
                     </div>
 
                     <!-- Profile Picture -->
-                    <div class="bg-gray-700 rounded-lg p-5 flex justify-center items-center">
+                    <div class="bg-gray-700 rounded-lg p-5 flex justify-center items-center ">
                         <img id="mainPng" src="assest/img/about.png" alt="Profile" class="rounded-lg shadow-lg">
                     </div>
 
@@ -280,7 +280,7 @@
                     </div>
 
                     <!-- Project Card -->
-                    <div style="background: #1E1E1E" class=" shadow-lg rounded-lg overflow-hidden hover:shadow-2xl  transition-shadow duration-300 p-3">
+                    <div style="background: #1E1E1E" class=" shadow-lg rounded-lg overflow-hidden hover:shadow-2xl  transition-shadow duration-300 p-3 ">
                         <img
                                 src="assest/img/website.png"
                                 alt="Project Thumbnail"
@@ -292,15 +292,234 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4 mt-10">
+                    <!-- Project Card -->
+                    <div style="background: #1E1E1E" class=" shadow-lg rounded-lg overflow-hidden hover:shadow-2xl  transition-shadow duration-300 p-3">
+                        <img
+                                src="assest/img/website.png"
+                                alt="Project Thumbnail"
+                                class="w-full h-48 object-cover rounded-md"
+                        />
+                        <div class="pt-4">
+                            <h3 class="text-white  " style="font-family: 'Poppins', sans-serif;">Project Title</h3>
+                            <p class="text-gray-400 mt-2" style="font-family: Lato;" >A brief description of the project. Highlight the features and tech stack used.</p>
+                        </div>
+                    </div>
+
+                    <!-- Project Card -->
+                    <div style="background: #1E1E1E" class=" shadow-lg rounded-lg overflow-hidden hover:shadow-2xl  transition-shadow duration-300 p-3">
+                        <img
+                                src="assest/img/website.png"
+                                alt="Project Thumbnail"
+                                class="w-full h-48 object-cover rounded-md"
+                        />
+                        <div class="pt-4">
+                            <h3 class="text-white  " style="font-family: 'Poppins', sans-serif;">Project Title</h3>
+                            <p class="text-gray-400 mt-2" style="font-family: Lato;" >A brief description of the project. Highlight the features and tech stack used.</p>
+                        </div>
+                    </div>
+
+                    <!-- Project Card -->
+                    <div style="background: #1E1E1E" class=" shadow-lg rounded-lg overflow-hidden hover:shadow-2xl  transition-shadow duration-300 p-3">
+                        <img
+                                src="assest/img/website.png"
+                                alt="Project Thumbnail"
+                                class="w-full h-48 object-cover rounded-md"
+                        />
+                        <div class="pt-4">
+                            <h3 class="text-white  " style="font-family: 'Poppins', sans-serif;">Project Title</h3>
+                            <p class="text-gray-400 mt-2" style="font-family: Lato;" >A brief description of the project. Highlight the features and tech stack used.</p>
+                        </div>
+                    </div>
+
+                    <!-- Project Card -->
+                    <div style="background: #1E1E1E" class=" shadow-lg rounded-lg overflow-hidden hover:shadow-2xl  transition-shadow duration-300 p-3 ">
+                        <img
+                                src="assest/img/website.png"
+                                alt="Project Thumbnail"
+                                class="w-full h-48 object-cover rounded-md"
+                        />
+                        <div class="pt-4">
+                            <h3 class="text-white  " style="font-family: 'Poppins', sans-serif;">Project Title</h3>
+                            <p class="text-gray-400 mt-2" style="font-family: Lato;" >A brief description of the project. Highlight the features and tech stack used.</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
 
-        <div class="text ">
-            software developer experience developed strong foundation crafting innovative
+
+
+        <!--        project section-->
+
+        <div>
+            <h1 class=" text-4xl font-bold text-white text-center my-20 tracking-wider ">Projects</h1>
+            <div class="flex justify-center w-full ">
+                <div class="w-9/12  relative ">
+                    <!-- Carousel Container -->
+                    <div id="carousel" class="overflow-hidden relative">
+                        <div class="carousel" id="carousel-inner">
+                            <!-- Slide 1 -->
+                            <div class="carousel-item  flex  text-white">
+                                <div class="w-1/2 h-full bg-cover bg-center" style="background-image: url('assest/img/website.png');"></div>
+                                <div class="w-1/2 h-full bg-blue-800 flex justify-center items-center flex-col text-center gap-5">
+                                    <h1 class="font-bold text-4xl">buy and sell website</h1>
+                                    <h1>ahinsaka demaupiyange daruwan dennek innawa kiyanne e ayata arakku kalak bonnamawenawa</h1>
+                                </div>
+                            </div>
+                            <!-- Slide 2 -->
+                            <div class="carousel-item  bg-red-500 flex items-center justify-center text-white text-2xl font-bold">Slide 2</div>
+                            <!-- Slide 3 -->
+                            <div class="carousel-item  bg-green-500 flex items-center justify-center text-white text-2xl font-bold">Slide 3</div>
+                            <!-- Slide 4 -->
+                            <div class="carousel-item bg-yellow-500 flex items-center justify-center text-white text-2xl font-bold">Slide 4</div>
+                            <!-- Slide 5 -->
+                            <div class="carousel-item  bg-purple-500 flex items-center justify-center text-white text-2xl font-bold">Slide 5</div>
+                        </div>
+                    </div>
+
+                    <!-- Dots Navigation -->
+                    <div class="flex justify-center mt-10 space-x-3">
+                        <button class="w-3 h-3 bg-gray-400 rounded-full focus:outline-none" onclick="goToSlide(0)"></button>
+                        <button class="w-3 h-3 bg-gray-400 rounded-full focus:outline-none" onclick="goToSlide(1)"></button>
+                        <button class="w-3 h-3 bg-gray-400 rounded-full focus:outline-none" onclick="goToSlide(2)"></button>
+                        <button class="w-3 h-3 bg-gray-400 rounded-full focus:outline-none" onclick="goToSlide(3)"></button>
+                        <button class="w-3 h-3 bg-gray-400 rounded-full focus:outline-none" onclick="goToSlide(4)"></button>
+                    </div>
+                </div>
+            </div>
         </div>
 
 
+
+        <div class="overflow-hidden">
+            <h1 class=" text-4xl font-bold text-white text-center my-20 tracking-wider">Latest Case Studies</h1>
+            <div class="flex justify-center gap-5" style="height: 700px">
+                <div class="case-study">
+                    <div class="h-full w-24 bg-cover bg-center rounded-lg overflow-hidden mb-2 " style="background-image: url('assest/img/website.png');"></div>
+                    <p class="title text-white font-bold" >Title One</p>
+                </div>
+                <div class="case-study">
+                    <div class="h-full w-24 bg-cover bg-center rounded-lg overflow-hidden mb-2" style="background-image: url('assest/img/website.png');"></div>
+                    <p class="title text-white font-bold">Title</p>
+                </div>
+                <div class="case-study">
+                    <div class="h-full w-24 bg-cover bg-center rounded-lg overflow-hidden mb-2" style="background-image: url('assest/img/website.png');"></div>
+                    <p class="title text-white font-bold">Title</p>
+                </div>
+                <div class="case-study">
+                    <div class="h-full w-24 bg-cover bg-center rounded-lg overflow-hidden mb-2" style="background-image: url('assest/img/website.png');"></div>
+                    <p class="title text-white font-bold">Title</p>
+                </div>
+                <div class="case-study">
+                    <div class="h-full w-24 bg-cover bg-center rounded-lg overflow-hidden mb-2" style="background-image: url('assest/img/website.png');"></div>
+                    <p class="title text-white font-bold">Title</p>
+                </div>
+                <div class="case-study">
+                    <div class="h-full w-24 bg-cover bg-center rounded-lg overflow-hidden mb-2" style="background-image: url('assest/img/website.png');"></div>
+                    <p class="title text-white font-bold">Title</p>
+                </div>
+                <div class="case-study">
+                    <div class="h-full w-24 bg-cover bg-center rounded-lg overflow-hidden mb-2" style="background-image: url('assest/img/website.png');"></div>
+                    <p class="title text-white font-bold">Title</p>
+                </div>
+                <div class="case-study">
+                    <div class="h-full w-24 bg-cover bg-center rounded-lg overflow-hidden mb-2" style="background-image: url('assest/img/website.png');"></div>
+                    <p class="title text-white font-bold">Title</p>
+                </div>
+                <div class="case-study">
+                    <div class="h-full w-24 bg-cover bg-center rounded-lg overflow-hidden mb-2" style="background-image: url('assest/img/website.png');"></div>
+                    <p class="title text-white font-bold">Title</p>
+                </div>
+                <div class="case-study">
+                    <div class="h-full w-24 bg-cover bg-center rounded-lg overflow-hidden mb-2" style="background-image: url('assest/img/website.png');"></div>
+                    <p class="title text-white font-bold">Title</p>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        <div class="h-96 bg-pink-800"></div>
+            <div class="w-full h-screen grid grid-cols-4 gap-4 p-4 bg-black overflow-y-hidden mt-36 ">
+                <!-- Column 1 -->
+                <div id="imageColOne" class="space-y-4">
+                    <div class="w-full h-2/3 bg-cover bg-center" style="background-image: url('assest/img/website.png');"></div>
+                    <div class="w-full h-2/3 bg-cover bg-center" style="background-image: url('assest/img/website.png');"></div>
+                    <div class="w-full h-2/3 bg-cover bg-center" style="background-image: url('assest/img/website.png');"></div>
+                    <div class="w-full h-2/3 bg-cover bg-center" style="background-image: url('assest/img/website.png');"></div>
+                    <div class="w-full h-2/3 bg-cover bg-center" style="background-image: url('assest/img/website.png');"></div>
+                </div>
+                <!-- Column 2 -->
+                <div id="imageColTwo" class="space-y-4">
+                    <div class="w-full h-2/3 bg-cover bg-center" style="background-image: url('assest/img/website.png');"></div>
+                    <div class="w-full h-2/3 bg-cover bg-center" style="background-image: url('assest/img/website.png');"></div>
+                    <div class="w-full h-2/3 bg-cover bg-center" style="background-image: url('assest/img/website.png');"></div>
+                    <div class="w-full h-2/3 bg-cover bg-center" style="background-image: url('assest/img/website.png');"></div>
+                    <div class="w-full h-2/3 bg-cover bg-center" style="background-image: url('assest/img/website.png');"></div>
+                </div>
+                <!-- Column 3 -->
+                <div id="imageColThree" class="space-y-4">
+                    <div class="w-full h-2/3 bg-cover bg-center" style="background-image: url('assest/img/website.png');"></div>
+                    <div class="w-full h-2/3 bg-cover bg-center" style="background-image: url('assest/img/website.png');"></div>
+                    <div class="w-full h-2/3 bg-cover bg-center" style="background-image: url('assest/img/website.png');"></div>
+                    <div class="w-full h-2/3 bg-cover bg-center" style="background-image: url('assest/img/website.png');"></div>
+                    <div class="w-full h-2/3 bg-cover bg-center" style="background-image: url('assest/img/website.png');"></div>
+                </div>
+                <!-- Column 4 -->
+                <div id="imageColFour" class="space-y-4">
+                    <div class="w-full h-2/3 bg-cover bg-center" style="background-image: url('assest/img/website.png');"></div>
+                    <div class="w-full h-2/3 bg-cover bg-center" style="background-image: url('assest/img/website.png');"></div>
+                    <div class="w-full h-2/3 bg-cover bg-center" style="background-image: url('assest/img/website.png');"></div>
+                    <div class="w-full h-2/3 bg-cover bg-center" style="background-image: url('assest/img/website.png');"></div>
+                    <div class="w-full h-2/3 bg-cover bg-center" style="background-image: url('assest/img/website.png');"></div>
+                </div>
+            </div>
+
+
+        <div class="text-white text-center ">
+            <h1 class="text-8xl  font-semibold mt-36">HAVE AN IDEA?</h1>
+            <h3 class="text-lg mt-3 mb-2">Drop me an email:</h3>
+            <h3 class="text-xl" >dasunthamash166@gmail.com</h3>
+        </div>
+
+
+
+
+
     </main>
+
+    <footer class="bg-black mt-10 absolute w-full">
+        <div class="relative bottom-0">
+            <h1 class="text-white"> &copy; DEVELOPED BY DASUN THAMASH 2023</h1>
+            <nav class="flex justify-center gap-2">
+                <div id="gg"><img  usemap="#twitterMap" src="assest/img/twitter.png" alt="twitter icon" width="30"></div>
+                <map name="twitterMap">
+                    <area shape="circle" coords="0,0,55" href="https://twitter.com/DasunThamash" target="_blank" alt="">
+                </map>
+
+                <div><img usemap="#fbMap" src="assest/img/fackbook.png" alt="fb icon" width="30"></div>
+                <map name="fbMap">
+                    <area shape="circle" coords="0,0,55" href="https://www.facebook.com/profile.php?id=100028425432835" target="_blank">
+                </map>
+
+                <div><img usemap="#linkidinMap" src="assest/img/linkdin.png" alt="linkdin icon" width="30"></div>
+                <map name="linkidinMap">
+                    <area shape="circle" coords="0,0,55" href="https://www.linkedin.com/in/dasun-thamash-4a9614252/" target="_blank">
+                </map>
+
+                <div><img usemap="#githubMap" src="assest/img/github.png" alt="github icon" width="30"></div>
+                <map name="githubMap">
+                    <area shape="circle" coords="0,0,55" href="https://github.com/dasunthamsh" target="_blank">
+                </map>
+
+            </nav>
+        </div>
+    </footer>
 
     <!-- Add AOS Library -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
