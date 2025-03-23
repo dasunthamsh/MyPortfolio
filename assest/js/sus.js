@@ -175,27 +175,11 @@ function updateDots() {
     });
 }
 
-// Initialize the carousel
-updateDots();
+// art world
 
+import { showDialog } from 'https://codepen.io/bramus/pen/ZEqMOLz/cccfe67c2b9cdfbeb5fb59083dbd0a64.js';
+showDialog('https://scroll-driven-animations.style/demos/stacking-cards/css/');
 
-window.addEventListener('scroll', function() {
-    // Get the scroll position
-    const scrollPosition = window.scrollY - 5500;
-
-    // Select the columns
-    const colOne = document.getElementById('imageColOne');
-    const colTwo = document.getElementById('imageColTwo');
-    const colThree = document.getElementById('imageColThree');
-    const colFour = document.getElementById('imageColFour');
-
-    // Apply scroll-based transform to each column
-    colOne.style.transform = `translateY(${scrollPosition / 3}px)`; // Moves up
-    colTwo.style.transform = `translateY(-${scrollPosition / 2}px)`; // Moves down
-    colThree.style.transform = `translateY(${scrollPosition / 3}px)`; // Moves up
-    colFour.style.transform = `translateY(-${scrollPosition / 2}px)`; // Moves down
-
-});
 
 
 

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrolling Image Overlay</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Add Nimbus Sans font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nimbus+Sans:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            height: 200vh;
+            background-color: black;
+            color: white;
+            overflow-x: hidden;
+        }
+        .scroll-text {
+            transition: transform 0.3s, opacity 0.3s;
+        }
+        .scroll-image {
+            transition: transform 0.3s;
+        }
+        /* Apply Nimbus Sans font to the <p> element */
+        .nimbus-sans {
+            font-family: 'Nimbus Sans', sans-serif;
+            font-weight: 300;
+        }
+    </style>
+</head>
+<body>
+<div class=" mx-5">
+    <div class="relative flex flex-col items-center justify-center h-screen text-center overflow-hidden">
+        <h1 id="text" class="absolute top-1/3 text-6xl font-bold scroll-text">
+            MORE ABOUT <br> DASUN©
+        </h1>
+        <div id="image" class="absolute top-1/2 transform -translate-y-1/2 scroll-image">
+            <img src="assest/img/about.png" alt="Fashion Model" class="w-96 rounded-lg shadow-lg ">
+        </div>
+    </div>
+
+    <div>
+        <!-- Add the nimbus-sans class to the <p> element -->
+        <p class="text-center nimbus-sans text-gray-500">
+            I'm on the cutting edge of no-code tools that allow me to bring my creative visions to life. Though my methods may<br> be unconventional, my dedication to the craft is unparalleled. I thrive on finding "unexpected solutions" and believe <br> that with the right perspective, design can elevate the human experience.
+        </p>
+    </div>
+    <div class="text-center m-5 nimbus-sans">
+        <h3 class="font-bold text-xl">What I do</h3>
+        <div class="flex-col  justify-center m-5">
+            <h5>UI/UX design</h5>
+            <h5> Frontend development</h5>
+            <h5> Graphic design</h5>
+        </div>
+
+    </div>
+    <div class="flex justify-center m-10">
+        <a href="/path/to/your/resume.pdf" download="Your_Resume.pdf">
+            <button class="bg-black hover:bg-white text-white hover:text-black font-bold py-2 px-4 rounded-full border-2 border-white">
+                Download Resume
+            </button>
+        </a>
+
+    </div>
+</div>
+<script>
+    window.addEventListener("scroll", () => {
+        let scrollY = window.scrollY;
+        let text = document.getElementById("text");
+        let image = document.getElementById("image");
+
+        text.style.transform = `translateY(${Math.min(scrollY * 0.5, 100)}px) scale(${Math.max(1 - scrollY * 0.002, 0.5)})`;
+        text.style.opacity = Math.max(1 - scrollY * 0.005, 0);
+        image.style.transform = `translateY(${Math.max(-scrollY * 0.2, -200)}px)`;
+    });
+</script>
+</body>
+</html>

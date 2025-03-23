@@ -67,11 +67,11 @@ canvas {
     transition: all 0.4s ease-in-out;
 }
 
-.case-study .h-full {
+.case-study > div {
     transition: width 0.4s ease-in-out;
 }
 
-.case-study:hover .h-full {
+.case-study:hover > div {
     width: 500px; /* Adjust the value as needed for your desired width */
 }
 
@@ -91,3 +91,43 @@ canvas {
     border-radius: 35px;
 
 }
+
+
+/* art world */
+
+
+.content {
+    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content__title {
+    font-family: "OTF® Glusp", Arial, sans-serif;
+    text-transform: uppercase;
+    z-index: 10000;
+    font-size: 4vw;
+}
+
+.content__img {
+    max-width: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+@media screen and (min-width: 50em) {
+
+    .content {
+        height: 100vh;
+        overflow: hidden;
+    }
+}
+
+
+
+/**/
+

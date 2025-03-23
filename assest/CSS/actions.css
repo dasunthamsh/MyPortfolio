@@ -1,287 +1,156 @@
-/*------------------------Scroll bar--------------------------*/
-
-    ::-webkit-scrollbar {
-        width: 5px;
-    }
-
-    ::-webkit-scrollbar-track {
-
-    }
-
-    ::-webkit-scrollbar-thumb {
-        background: #d9d9d7;
-
-    }
-
-    ::-webkit-scrollbar-thumb:hover {
-        background: #ffb400;
-    }
-a:hover{     /*change mouse fourcus color to yellow in menu*/
-    color: #ffb400;
-    font-weight: bold;
-    border: 2px solid #ffb400;
-    border-radius: 30px;
-    padding: 10px;
-    transition: 1s;
-
+:root {
+    --card-height: 40vw;
+    --card-margin: 4vw;
+    --card-top-offset: 1em;
+    --numcards: 4;
+    --outline-width: 0px;
 }
 
-
-
-/*.btn {*/
-/*    width: 6.5em;*/
-/*    height: 2.3em;*/
-/*    margin: 0.5em;*/
-/*    background: black;*/
-/*    color: white;*/
-/*    border: none;*/
-/*    border-radius: 0.625em;*/
-/*    font-size: 20px;*/
-/*    font-weight: bold;*/
-/*    cursor: pointer;*/
-/*    position: relative;*/
-/*    z-index: 1;*/
-/*    overflow: hidden;*/
-/*}*/
-
-/*button:hover {*/
-/*    color: black;*/
-/*}*/
-
-/*button:after {*/
-/*    content: "";*/
-/*    background: #ffb400;*/
-/*    position: absolute;*/
-/*    z-index: -1;*/
-/*    left: -20%;*/
-/*    right: -20%;*/
-/*    top: 0;*/
-/*    bottom: 0;*/
-/*    transform: skewX(-45deg) scale(0, 1);*/
-/*    transition: all 0.5s;*/
-/*}*/
-
-/*button:hover:after {*/
-/*    transform: skewX(-45deg) scale(1, 1);*/
-/*    -webkit-transition: all 0.5s;*/
-/*    transition: all 0.5s;*/
-/*}*/
-
-
-
-
-/*------------------------socal media--------------------------*/
-
-
-
-/*main>section:nth-child(1)>div:nth-child(2)>nav>div>img:hover { !*soceal meadia*!*/
-/*    filter: invert(63%) sepia(94%) saturate(727%) hue-rotate(358deg) brightness(99%) contrast(107%);*/
-
-/*}*/
-
-/*.navSo:hover{*/
-/*    filter: invert(63%) sepia(94%) saturate(727%) hue-rotate(358deg) brightness(99%) contrast(107%);*/
-
-/*}*/
-/*------------------------portfolio--------------------------*/
-
-
-.imgs{
-    transition: .35s;
-    cursor: pointer;
-    box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.5);
-    background: #1746EC;
+#cards {
+    padding-bottom: calc(var(--numcards) * var(--card-top-offset)); /* Make place at bottom, as items will slide to that position*/
+    margin-bottom: var(--card-margin); /* Don't include the --card-margin in padding, as that will affect the scroll-timeline*/
 }
 
-.hoverImg:hover>:not(:hover){
-    opacity: .4;
-    transform: scale(0.9);
+#card_1 {
+    --index: 1;
 }
 
-/*------------------------Skills img--------------------------*/
-
-
-main>section:nth-child(5)>aside:nth-child(3)>div>img:hover {
-/*    transition: 1s;*/
-/*    box-shadow: 1px 1px 10px 1px;*/
-/*    transform: rotate(18deg) scale(1.1);*/
-    border-bottom-color: #ffb400;
-    border-right-color: #ffb400;
-    transition: 1s;
-    scale: 1.1;
-    border-radius: 25px;
-
+#card_2 {
+    --index: 2;
 }
 
-/*------------------------project --------------------------*/
-
-main>section:nth-child(6)>div:nth-child(2)>aside>div{
-    width: 85%;
-    height: 80%;
-    top:100%;
-    right: 3%;
-    position: absolute;
-    background: linear-gradient(#1f3d4738, black);
-    backdrop-filter: blur(5px);
-    border-radius: 15px;
-    padding: 30px;
-    transition: 1.5s;
+#card_3 {
+    --index: 3;
 }
 
-main>section:nth-child(6)>div:nth-child(2)>aside:hover div{
+#card_4 {
+    --index: 4;
+}
+
+.card {
+    position: sticky;
     top: 0;
+    padding-top: calc(var(--index) * var(--card-top-offset));
 }
 
-main>section:nth-child(6)>div:nth-child(2)>aside>div>h2{
-    text-transform: uppercase;
-    font-size: 30px;
+@supports (animation-timeline: works) {
+
+    @scroll-timeline cards-element-scrolls-in-body {
+        source: selector(body);
+        scroll-offsets:
+            /* Start when the start edge touches the top of the scrollport */
+                selector(#cards) start 1,
+                    /* End when the start edge touches the start of the scrollport */
+                selector(#cards) start 0
+    ;
+        start: selector(#cards) start 1; /* Start when the start edge touches the top of the scrollport */
+        end: selector(#cards) start 0; /* End when the start edge touches the start of the scrollport */
+        time-range: 4s;
+    }
+
+    .card {
+        --index0: calc(var(--index) - 1); /* 0-based index */
+        --reverse-index: calc(var(--numcards) - var(--index0)); /* reverse index */
+        --reverse-index0: calc(var(--reverse-index) - 1); /* 0-based reverse index */
+    }
+
+    .card__content {
+        transform-origin: 50% 0%;
+        will-change: transform;
+
+        --duration: calc(var(--reverse-index0) * 1s);
+        --delay: calc(var(--index0) * 1s);
+
+        animation: var(--duration) linear scale var(--delay) forwards;
+        animation-timeline: cards-element-scrolls-in-body;
+    }
+
+    @keyframes scale {
+        to {
+            transform:
+                    scale(calc(
+                            1.1
+                            -
+                            calc(0.1 * var(--reverse-index))
+                    ));
+        }
+    }
+}
+
+/** DEBUG **/
+
+#debug {
+    position: fixed;
+    top: 1em;
+    left: 1em;
+}
+#debug::after {
+    content: " Show Debug";
+    margin-left: 1.5em;
     color: white;
-    font-family: teko;
-
-
+    white-space: nowrap;
 }
 
-main>section:nth-child(6)>div:nth-child(2)>aside>div>p{
-    font-family: Abel;
-}
-
-/*------------------------Assgment --------------------------*/
-
-
-main > section:nth-child(8) > div:nth-child(2)::-webkit-scrollbar {
-    height: 5px;
-
-}
-
-main > section:nth-child(8) > div:nth-child(2)::-webkit-scrollbar-track {
-
-}
-
-main > section:nth-child(8) > div:nth-child(2)::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-
-}
-
-main > section:nth-child(8) > div:nth-child(2)::-webkit-scrollbar-thumb:hover {
-    background-color: #555;
+#debug:checked ~ main {
+    --outline-width: 1px;
 }
 
 
-/*------------------------serves --------------------------*/
-
-main>section:nth-child(7)>div:nth-child(4)>aside:hover {
-    transition: 2s;
-}
-main>section:nth-child(7)>div:nth-child(4)>aside:hover {
-    /*box-shadow: 10px 10px 10px 1px rgba(238, 190, 23, 0.4);*/
-    border : 2px solid rgba(238, 190, 23, 0.4);
-    transition: 2s;
-}
-
-main>section:nth-child(7)>div:nth-child(4)>aside:hover>:not(:hover) {
-    transition: 2s;
-    transform: scale(1.15);
-
-}
+/** PAGE STYLING **/
 
 
-/*------------------------assigment --------------------------*/
 
 
-main>section:nth-child(8)>div:nth-child(2)>aside {
-    transition: 2s;
+
+#cards {
+    list-style: none;
+    outline: calc(var(--outline-width) * 10) solid blue;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(var(--numcards), var(--card-height));
+    gap: var(--card-margin);
 }
 
-main>section:nth-child(8)>div:nth-child(2)>aside:hover {
-    /*box-shadow: 10px 10px 10px 1px rgba(238, 190, 23, 0.4);*/
-    border : 2px solid rgba(238, 190, 23, 0.4);
-    transition: 2s;
+.card {
+    outline: var(--outline-width) solid hotpink;
 }
 
-main>section:nth-child(8)>div:nth-child(2)>aside:hover>:not(:hover) {
-    transition: 2s;
-    transform: scale(1.15);
-
-}
-
-/*------------------------skills animation hover --------------------------*/
-
-
-main>section:nth-child(5)>aside:nth-child(4)>img:hover{
-    filter: invert(63%) sepia(94%) saturate(727%) hue-rotate(358deg) brightness(99%) contrast(107%);
-    opacity: 100%;
-    box-shadow: 1px 1px 10px 1px;
-
-}
-
-
-
-/*------------------------------------------btn submint------------------------------------------------*/
-
-#btnSubmit{
-    position: relative;
-    padding: 10px 20px;
-    border-radius: 7px;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 2px;
-    background: transparent;
-    color: #fff;
+.card__content {
+    box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
+    background: rgb(255, 255, 255);
+    color: rgb(10, 5, 7);
+    border-radius: 1em;
     overflow: hidden;
-    box-shadow: 0 0 0 0 transparent;
-    -webkit-transition: all 0.2s ease-in;
-    -moz-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
+
+    display: grid;
+    grid-template-areas: "text img";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+
+    align-items: stretch;
+    outline: var(--outline-width) solid lime;
 }
 
-#btnSubmit:hover {
-    background: #ffb400;
-    box-shadow: 0 0 30px 5px #ffb400;
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
+.card__content > div {
+    grid-area: text;
+    width: 80%;
+    place-self: center;
+    text-align: left;
+
+    display: grid;
+    gap: 1em;
+    place-items: start;
 }
 
-#btnSubmit::before {
-    content: '';
-    display: block;
-    width: 0px;
-    height: 86%;
-    position: absolute;
-    top: 7%;
-    left: 0%;
-    opacity: 0;
-    background: #fff;
-    box-shadow: 0 0 50px 30px #fff;
-    -webkit-transform: skewX(-20deg);
-    -moz-transform: skewX(-20deg);
-    -ms-transform: skewX(-20deg);
-    -o-transform: skewX(-20deg);
-    transform: skewX(-20deg);
+.card__content > figure {
+    grid-area: img;
+    overflow: hidden;
 }
 
-@keyframes sh02 {
-    from {
-        opacity: 0;
-        left: 0%;
-    }
-
-    50% {
-        opacity: 1;
-    }
-
-    to {
-        opacity: 0;
-        left: 100%;
-    }
+.card__content > figure > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-#btnSubmit:active {
-    box-shadow: 0 0 0 0 transparent;
-    -webkit-transition: box-shadow 0.2s ease-in;
-    -moz-transition: box-shadow 0.2s ease-in;
-    transition: box-shadow 0.2s ease-in;
-}
-#website{
-}
